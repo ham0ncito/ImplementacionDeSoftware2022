@@ -10,7 +10,6 @@ namespace GerizimZZ.Clases
         {
 
             SqlConnection conex = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
-            conex.Open();
             return conex;
         }
     }

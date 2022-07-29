@@ -12,6 +12,7 @@ namespace GerizimZZ
         private Clientedst dstCliente;
         // asignamos nombre a un datatable
         private DataTable dtCliente;
+        private bool si;
 
         public FrmCliente()
         {
@@ -28,106 +29,132 @@ namespace GerizimZZ
             dstCliente.Tables.Add(dtCliente);
             // asignamos al datagridview de cliente con el dataset de cliente
             dgvCliente.DataSource = dstCliente.Tables[0];
+            // limitamos el tamano maximo del telefono
+            txtTelefono.MaxLength = 8;
+            // limitamos el tamano maximo del primer nombre
+            txtprimerNombre.MaxLength = 15;
+            // limitamos el tamano maximo del segundo nombre
+            txtsegundoNombre.MaxLength = 15;
+            // limitamos el tamano maximo del primer apellido
+            txtprimerApellido.MaxLength = 15;
+            // limitamos el tamano maximo del segundo apellido
+            txtsegundoApellido.MaxLength = 15;
+            // limitamos el tamano maximo de la direccion
+            txtdireccion.MaxLength = 150;
+            // limitamos el tamano maximo del codigo
+            txtID_cliente.MaxLength = 6;
         }
 
         // funcion para eliminar cliente
         private void btneliminar_Cliente_Click(object sender, EventArgs e)
         {
-            if (txtdireccion.Text == "" || txtID_cliente.Text == "" || txtprimerApellido.Text == "" || txtprimerNombre.Text == "" || txtsegundoApellido.Text == "" || txtsegundoNombre.Text == "" || txtTelefono.Text == "")
+            si = validaciones();
+            if (si == true)
             {
-                // mensaje de error al usuario para que los campos no vayan vacios
-                MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                string ID_cliente;
-                // for que recorre todos los items del datagridview uno por uno
-                foreach (DataGridViewRow item in this.dgvCliente.SelectedRows)
+                if (txtdireccion.Text == "" || txtID_cliente.Text == "" || txtprimerApellido.Text == "" || txtprimerNombre.Text == "" || txtsegundoApellido.Text == "" || txtsegundoNombre.Text == "" || txtTelefono.Text == "")
                 {
-                    // asignamos a nuestra variable de id_cliente el item en el lugar[0] de nuestro datagridview y lo convertimos a tipo string
-                    ID_cliente = item.Cells[0].Value.ToString();
-                    // hacemos un llamado a nuestro metodo Eliminar_Cliente dentro de nuestra clase de clientes y le mandamos como parametro el ID_cliente
-                    clientes.Eliminar_Cliente(ID_cliente);
+                    // mensaje de error al usuario para que los campos no vayan vacios
+                    MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                // hacemos conexion con nuestra BD
-                SqlConnection con = Cl_conexiones.GetConnection();
-                // instanciamos nuestro dataadapter
-                SqlDataAdapter comando = new SqlDataAdapter();
-                // hacemos la consulta a la BD
-                string sql = "SELECT * FROM Cliente";
-                comando.SelectCommand = new SqlCommand(sql, con);
-                // llenamos de nuevo nuestro datatable con nuestro metodo GetAll de nuestra clase Cl_Clientes
-                dtCliente = Cl_Clientes.GetAll();
-                // instanciamos de nuevo el dataset
-                dstCliente = new Clientedst();
+                else
+                {
+                    string ID_cliente;
+                    // for que recorre todos los items del datagridview uno por uno
+                    foreach (DataGridViewRow item in this.dgvCliente.SelectedRows)
+                    {
+                        // asignamos a nuestra variable de id_cliente el item en el lugar[0] de nuestro datagridview y lo convertimos a tipo string
+                        ID_cliente = item.Cells[0].Value.ToString();
+                        // hacemos un llamado a nuestro metodo Eliminar_Cliente dentro de nuestra clase de clientes y le mandamos como parametro el ID_cliente
+                        clientes.Eliminar_Cliente(ID_cliente);
+                    }
+                    // hacemos conexion con nuestra BD
+                    SqlConnection con = Cl_conexiones.GetConnection();
+                    // instanciamos nuestro dataadapter
+                    SqlDataAdapter comando = new SqlDataAdapter();
+                    // hacemos la consulta a la BD
+                    string sql = "SELECT * FROM Cliente";
+                    comando.SelectCommand = new SqlCommand(sql, con);
+                    // llenamos de nuevo nuestro datatable con nuestro metodo GetAll de nuestra clase Cl_Clientes
+                    dtCliente = Cl_Clientes.GetAll();
+                    // instanciamos de nuevo el dataset
+                    dstCliente = new Clientedst();
 
-                // llenamos de nuevo el dataset con lo que tenemos en nuestro datatable
-                dstCliente.Tables.Add(dtCliente);
-                // llenamos nuestro datagridview de Cliente con nuestro dataset
-                dgvCliente.DataSource = dstCliente.Tables[0];
-                con.Close();
-            }
+                    // llenamos de nuevo el dataset con lo que tenemos en nuestro datatable
+                    dstCliente.Tables.Add(dtCliente);
+                    // llenamos nuestro datagridview de Cliente con nuestro dataset
+                    dgvCliente.DataSource = dstCliente.Tables[0];
+                    con.Close();
+                }
+            }            
         }
 
         // funcion para modificar el cliente
         private void btnmodificar_Cliente_Click(object sender, EventArgs e)
         {
-            if (txtdireccion.Text == "" || txtID_cliente.Text == "" || txtprimerApellido.Text == "" || txtprimerNombre.Text == "" || txtsegundoApellido.Text == "" || txtsegundoNombre.Text == "" || txtTelefono.Text == "")
+            si = validaciones();
+            if (si == true)
             {
-                // mensaje de error al usuario para que los campos no vayan vacios
-                MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                // hacemos un llamado a nuestro metodo de Modificar_Cliente dentro de nuestra Cl_Clientes instanciado como clientes y mandamos como parametro toda la informacion dentro de nuestros texbox
-                clientes.Modificar_Cliente(txtID_cliente.Text, txtprimerNombre.Text, txtsegundoNombre.Text, txtprimerApellido.Text, txtsegundoApellido.Text, txtTelefono.Text, txtdireccion.Text);
-                // hacemos conexion con nuestra BD
-                SqlConnection con = Cl_conexiones.GetConnection();
-                SqlDataAdapter comando = new SqlDataAdapter();
-                // hacemos la consulta a la BD
-                string sql = "SELECT * FROM Cliente";
-                comando.SelectCommand = new SqlCommand(sql, con);
+                if (txtdireccion.Text == "" || txtID_cliente.Text == "" || txtprimerApellido.Text == "" || txtprimerNombre.Text == "" || txtsegundoApellido.Text == "" || txtsegundoNombre.Text == "" || txtTelefono.Text == "")
+                {
+                    // mensaje de error al usuario para que los campos no vayan vacios
+                    MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    // hacemos un llamado a nuestro metodo de Modificar_Cliente dentro de nuestra Cl_Clientes instanciado como clientes y mandamos como parametro toda la informacion dentro de nuestros texbox
+                    clientes.Modificar_Cliente(txtID_cliente.Text, txtprimerNombre.Text, txtsegundoNombre.Text, txtprimerApellido.Text, txtsegundoApellido.Text, txtTelefono.Text, txtdireccion.Text);
+                    // hacemos conexion con nuestra BD
+                    SqlConnection con = Cl_conexiones.GetConnection();
+                    SqlDataAdapter comando = new SqlDataAdapter();
+                    // hacemos la consulta a la BD
+                    string sql = "SELECT * FROM Cliente";
+                    comando.SelectCommand = new SqlCommand(sql, con);
 
-                // volvemos a actualizar el datagridview con la nueva informacion que modificamos
-                dtCliente = Cl_Clientes.GetAll();
-                dstCliente = new Clientedst();
-                dstCliente.Tables.Add(dtCliente);
-                // llenamos de nuevo el datagridview
-                dgvCliente.DataSource = dstCliente.Tables[0];
-                con.Close();
-            }
-            actualizarDatos();
+                    // volvemos a actualizar el datagridview con la nueva informacion que modificamos
+                    dtCliente = Cl_Clientes.GetAll();
+                    dstCliente = new Clientedst();
+                    dstCliente.Tables.Add(dtCliente);
+                    // llenamos de nuevo el datagridview
+                    dgvCliente.DataSource = dstCliente.Tables[0];
+                    con.Close();
+                }
+                actualizarDatos();
+            }    
         }
 
         // funcion para agregar cliente
         private void btnagregar_Cliente_Click(object sender, EventArgs e)
         {
-            if (txtdireccion.Text == "" || txtID_cliente.Text == "" || txtprimerApellido.Text == "" || txtprimerNombre.Text == "" || txtsegundoApellido.Text == "" || txtsegundoNombre.Text == "" || txtTelefono.Text == "")
+            si = validaciones();
+            if (si == true)
             {
-                // mensaje de error al usuario para que los campos no vayan vacios
-                MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                // hacemos un llamado a nuestro metodo de Agregar_Cliente dentro de nuestra Cl_Clientes instanciado como clientes y mandamos como parametro toda la informacion dentro de nuestros texbox
-                clientes.Agregar_Cliente(txtID_cliente.Text, txtprimerNombre.Text, txtsegundoNombre.Text, txtprimerApellido.Text, txtsegundoApellido.Text, txtTelefono.Text, txtdireccion.Text);
-                SqlConnection con = Cl_conexiones.GetConnection();
-                SqlDataAdapter comando = new SqlDataAdapter();
-                // hacemos la consulta a la BD
-                string sql = "SELECT * FROM Cliente";
-                comando.SelectCommand = new SqlCommand(sql, con);
+                if (txtdireccion.Text == "" || txtID_cliente.Text == "" || txtprimerApellido.Text == "" || txtprimerNombre.Text == "" || txtsegundoApellido.Text == "" || txtsegundoNombre.Text == "" || txtTelefono.Text == "")
+                {
+                    // mensaje de error al usuario para que los campos no vayan vacios
+                    MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    // hacemos un llamado a nuestro metodo de Agregar_Cliente dentro de nuestra Cl_Clientes instanciado como clientes y mandamos como parametro toda la informacion dentro de nuestros texbox
+                    clientes.Agregar_Cliente(txtID_cliente.Text, txtprimerNombre.Text, txtsegundoNombre.Text, txtprimerApellido.Text, txtsegundoApellido.Text, txtTelefono.Text, txtdireccion.Text);
+                    SqlConnection con = Cl_conexiones.GetConnection();
+                    SqlDataAdapter comando = new SqlDataAdapter();
+                    // hacemos la consulta a la BD
+                    string sql = "SELECT * FROM Cliente";
+                    comando.SelectCommand = new SqlCommand(sql, con);
 
-                // volvemos a actualizar el datagridview con la nueva informacion que modificamos
-                dtCliente = Cl_Clientes.GetAll();
-                dstCliente = new Clientedst();
-                dstCliente.Tables.Add(dtCliente);
-                // llenamos de nuevo el datagridview
-                dgvCliente.DataSource = dstCliente.Tables[0];
-                con.Close();
-                // mensaje para confirmarle al usuario que el campo se agrego con exito
-                MessageBox.Show("Registro agregado con exito", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            actualizarDatos();
+                    // volvemos a actualizar el datagridview con la nueva informacion que modificamos
+                    dtCliente = Cl_Clientes.GetAll();
+                    dstCliente = new Clientedst();
+                    dstCliente.Tables.Add(dtCliente);
+                    // llenamos de nuevo el datagridview
+                    dgvCliente.DataSource = dstCliente.Tables[0];
+                    con.Close();
+                    // mensaje para confirmarle al usuario que el campo se agrego con exito
+                    MessageBox.Show("Registro agregado con exito", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                actualizarDatos();
+            }   
         }
 
         public void actualizarDatos()
@@ -164,60 +191,218 @@ namespace GerizimZZ
             dgvCliente.DataSource = dstCliente.Tables[0].DefaultView;
         }
 
-        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        // funcion para eliminar cliente
+        private void bteliminar_Cliente_Click(object sender, EventArgs e)
         {
+            si = validaciones();
+            if (si == true)
+            {
+                if (txtdireccion.Text == "" || txtID_cliente.Text == "" || txtprimerApellido.Text == "" || txtprimerNombre.Text == "" || txtsegundoApellido.Text == "" || txtsegundoNombre.Text == "" || txtTelefono.Text == "")
+                {
+                    // mensaje de error al usuario para que los campos no vayan vacios
+                    MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    string ID_cliente;
+                    // for que recorre todos los items del datagridview uno por uno
+                    foreach (DataGridViewRow item in this.dgvCliente.SelectedRows)
+                    {
+                        // asignamos a nuestra variable de id_cliente el item en el lugar[0] de nuestro datagridview y lo convertimos a tipo string
+                        ID_cliente = item.Cells[0].Value.ToString();
+                        // hacemos un llamado a nuestro metodo Eliminar_Cliente dentro de nuestra clase de clientes y le mandamos como parametro el ID_cliente
+                        clientes.Eliminar_Cliente(ID_cliente);
+                    }
+                    // hacemos conexion con nuestra BD
+                    SqlConnection con = Cl_conexiones.GetConnection();
+                    // instanciamos nuestro dataadapter
+                    SqlDataAdapter comando = new SqlDataAdapter();
+                    // hacemos la consulta a la BD
+                    string sql = "SELECT * FROM Cliente";
+                    comando.SelectCommand = new SqlCommand(sql, con);
+                    // llenamos de nuevo nuestro datatable con nuestro metodo GetAll de nuestra clase Cl_Clientes
+                    dtCliente = Cl_Clientes.GetAll();
+                    // instanciamos de nuevo el dataset
+                    dstCliente = new Clientedst();
+
+                    // llenamos de nuevo el dataset con lo que tenemos en nuestro datatable
+                    dstCliente.Tables.Add(dtCliente);
+                    // llenamos nuestro datagridview de Cliente con nuestro dataset
+                    dgvCliente.DataSource = dstCliente.Tables[0];
+                    con.Close();
+                }
+            }    
         }
 
-        private void lblID_cliente_Click(object sender, EventArgs e)
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }            
         }
 
-        private void lblsegundoNombre_Click(object sender, EventArgs e)
+        private void txtprimerNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }            
         }
 
-        private void lbldireccion_Click(object sender, EventArgs e)
+        private bool validaciones()
         {
+            Boolean si = false;
+            int igual = 0, validado = 0;
+            // verificamos que el tamano minimo de cada textbox no sea de un solo caracter
+            if (txtprimerNombre.TextLength < 0 && txtsegundoNombre.TextLength < 0 && txtprimerApellido.TextLength < 0 && txtsegundoApellido.TextLength < 0)
+            {
+                MessageBox.Show("El tamano minimo para su nombre es de 2 caracteres", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                validado++;
+            }
+            for(int i = 0; i < txtprimerNombre.Text.Length - 1; i++)
+            {
+                if (txtprimerNombre.Text[i] == txtprimerNombre.Text[i + 1])
+                {
+                    igual++;
+                }
+            }
+            if (igual > 2)
+            {
+                MessageBox.Show("Revise su primer nombre, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                igual = 0;
+                validado++;
+            }
+            for (int i = 0; i < txtsegundoNombre.Text.Length - 1; i++)
+            {
+                if (txtsegundoNombre.Text[i] == txtsegundoNombre.Text[i + 1])
+                {
+                    igual++;
+                }
+            }
+            if (igual > 2)
+            {
+                MessageBox.Show("Revise su segundo nombre, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                igual = 0;
+                validado++;
+            }
+            for (int i = 0; i < txtprimerApellido.Text.Length - 1; i++)
+            {
+                if (txtprimerApellido.Text[i] == txtprimerApellido.Text[i + 1])
+                {
+                    igual++;
+                }
+            }
+            if (igual > 2)
+            {
+                MessageBox.Show("Revise su primer apellido, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                igual = 0;
+                validado++;
+            }
+            for (int i = 0; i < txtsegundoApellido.Text.Length - 1; i++)
+            {
+                if (txtsegundoApellido.Text[i] == txtsegundoApellido.Text[i + 1])
+                {
+                    igual++;
+                }
+            }
+            if (igual > 2)
+            {
+                MessageBox.Show("Revise su segundo apellido, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                igual = 0;
+                validado++;
+            }
+            for (int i = 0; i < txtdireccion.Text.Length - 1; i++)
+            {
+                if (txtdireccion.Text[i] == txtdireccion.Text[i + 1])
+                {
+                    igual++;
+                }
+            }
+            if (igual > 2)
+            {
+                MessageBox.Show("Revise la direccion, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                igual = 0;
+                validado++;
+            }
+
+            // revisamos si ha cumplido con todas las validaciones
+            if (validado == 6)
+            {
+                si = true;
+                return si;
+            }
+            else
+            {
+                return si;
+            }
         }
 
-        private void txtdireccion_TextChanged(object sender, EventArgs e)
+        private void txtsegundoNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
 
-        private void txtsegundoNombre_TextChanged(object sender, EventArgs e)
+        private void txtprimerApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
 
-        private void txtprimerNombre_TextChanged(object sender, EventArgs e)
+        private void txtsegundoApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtID_cliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
 
         private void txtID_cliente_TextChanged(object sender, EventArgs e)
         {
-        }
 
-        private void lbltelefono_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void lblprimerApellido_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void lblsegundoApellido_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtsegundoApellido_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void txtprimerApellido_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void lblprimerNombre_Click(object sender, EventArgs e)
-        {
         }
     }
 }
