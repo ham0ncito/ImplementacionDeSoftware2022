@@ -31,6 +31,7 @@ namespace GerizimZZ.Clases
 
         public void llenado(FlowLayoutPanel Contenedor, string consulta)
         {
+            SqlConnection conex = Cl_conexiones.GetConnection();
             conex.Open();
             try
             {
