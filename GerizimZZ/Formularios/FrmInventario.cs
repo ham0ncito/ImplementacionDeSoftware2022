@@ -41,6 +41,8 @@ namespace GerizimZZ
             txtPesoProducto.MaxLength = 3;
             // limitamos el tamano maximo de la cantidad
             txtCantidadProducto.MaxLength = producto.Stockactual;
+            // llenamos el combobox con un dato de la lista
+            cbcodigo_Catalogo.Text = "1";
         }
 
         private void dgvProducto_Click(object sender, EventArgs e)
@@ -114,7 +116,10 @@ namespace GerizimZZ
 
         private void txtEstadoPRoducto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar != 48 || e.KeyChar != 49))
+            if ((e.KeyChar == 48 || e.KeyChar == 49 || e.KeyChar == 08))
+            {
+            }
+            else
             {
                 MessageBox.Show("Solo números (0 o 1)", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
@@ -134,7 +139,7 @@ namespace GerizimZZ
 
         private void txtDescripcionProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
@@ -190,14 +195,12 @@ namespace GerizimZZ
                     comando.SelectCommand = new SqlCommand(sql, con);
 
                     // actualizamos nuestro datagridview con la informacion agregada
-                    dtProducto = Cl_Clientes.GetAll();
+                    dtProducto = Cl_Inventario.GetAll();
                     dstProducto = new Productosdst();
                     dstProducto.Tables.Add(dtProducto);
                     // llenamos de nuevo el datagridview
                     dgvProducto.DataSource = dstProducto.Tables[0];
                     con.Close();
-                    // mensaje para confirmarle al usuario que el campo se agrego con exito
-                    MessageBox.Show("Registro agregado con exito", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }    
         }
@@ -238,8 +241,6 @@ namespace GerizimZZ
                     // llenamos de nuevo el datagridview
                     dgvProducto.DataSource = dstProducto.Tables[0];
                     con.Close();
-                    // mensaje para confirmarle al usuario que el campo se agrego con exito
-                    MessageBox.Show("Registro modificado con exito", "Modificar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }    
         }
@@ -289,68 +290,85 @@ namespace GerizimZZ
         {
             Boolean si = false;
             int igual = 0, validado = 0;
-
-            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || cbcodigo_Catalogo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" || dateTimePicker1.Text == "" || txtID_codigoProducto.Text == "" || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
+            if(txtNombreProducto.TextLength < 3)
             {
-                if(txtNombreProducto.TextLength < 2)
+                MessageBox.Show("El tamano minimo para el nombre es de 4 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);                }
+            else
+            {
+                validado++;
+            }
+            for (int i = 0; i < txtNombreProducto.Text.Length - 1; i++)
+            {
+                if (txtNombreProducto.Text[i] == txtNombreProducto.Text[i + 1])
                 {
-                    MessageBox.Show("El tamano minimo para el nombre es de 4 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    validado++;
-                }
-                for (int i = 0; i < txtNombreProducto.Text.Length - 1; i++)
-                {
-                    if (txtNombreProducto.Text[i] == txtNombreProducto.Text[i + 1])
-                    {
-                        igual++;
-                    }
-                }
-                if (igual > 2)
-                {
-                    MessageBox.Show("Revise el nombre de producto, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-                else
-                {
-                    igual = 0;
-                    validado++;
-                }
-                for (int i = 0; i < txtCodigoBarra.Text.Length - 1; i++)
-                {
-                    if (txtCodigoBarra.Text[i] == txtCodigoBarra.Text[i + 1])
-                    {
-                        igual++;
-                    }
-                }
-                if (igual > 2)
-                {
-                    MessageBox.Show("Revise el codigo de barra, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-                else
-                {
-                    igual = 0;
-                    validado++;
-                }
-                for (int i = 0; i < txtDescripcionProducto.Text.Length - 1; i++)
-                {
-                    if (txtDescripcionProducto.Text[i] == txtDescripcionProducto.Text[i + 1])
-                    {
-                        igual++;
-                    }
-                }
-                if (igual > 2)
-                {
-                    MessageBox.Show("Revise la descripcion del producto, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-                else
-                {
-                    igual = 0;
-                    validado++;
+                    igual++;
                 }
             }
+            if (igual > 1)
+            {
+                MessageBox.Show("Revise el nombre de producto, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                igual = 0;
+            }
+            else
+            {
+                igual = 0;
+                validado++;
+            }
+            if (txtCodigoBarra.TextLength < 5)
+            {
+                MessageBox.Show("El tamano minimo para el codigo de barra es de 7 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                igual = 0;
+            }
+            else
+            {
+                validado++;
+            }
+            for (int i = 0; i < txtCodigoBarra.Text.Length - 1; i++)
+            {
+                if (txtCodigoBarra.Text[i] == txtCodigoBarra.Text[i + 1])
+                {
+                    igual++;
+                }
+            }
+            if (igual > 1)
+            {
+                MessageBox.Show("Revise el codigo de barra, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                igual = 0;
+            }
+            else
+            {
+                igual = 0;
+                validado++;
+            }
+            if (txtDescripcionProducto.TextLength < 5)
+            {
+                MessageBox.Show("El tamano minimo para la descripcion del producto es de 7 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                igual = 0;
+            }
+            else
+            {
+                validado++;
+            }
+            for (int i = 0; i < txtDescripcionProducto.Text.Length - 1; i++)
+            {
+                if (txtDescripcionProducto.Text[i] == txtDescripcionProducto.Text[i + 1])
+                {
+                    igual++;
+                }
+            }
+            if (igual > 1)
+            {
+                MessageBox.Show("Revise la descripcion del producto, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                igual = 0;
+            }
+            else
+            {
+                igual = 0;
+                validado++;
+            }
+
             // revisamos si ha cumplido con todas las validaciones
-            if (validado == 4)
+            if (validado == 6)
             {
                 si = true;
                 return si;

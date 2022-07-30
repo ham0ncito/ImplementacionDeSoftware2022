@@ -150,17 +150,22 @@ namespace GerizimZZ
                     // llenamos de nuevo el datagridview
                     dgvCliente.DataSource = dstCliente.Tables[0];
                     con.Close();
-                    // mensaje para confirmarle al usuario que el campo se agrego con exito
-                    MessageBox.Show("Registro agregado con exito", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                    }
                 actualizarDatos();
             }   
         }
 
         public void actualizarDatos()
         {
-            DetalleVenta dr = Owner as DetalleVenta;
-            dr.nombresCliente();
+            try
+            {
+                DetalleVenta dr = new DetalleVenta();
+                dr.nombresCliente();
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void dgvCliente_Click(object sender, EventArgs e)
@@ -194,9 +199,6 @@ namespace GerizimZZ
         // funcion para eliminar cliente
         private void bteliminar_Cliente_Click(object sender, EventArgs e)
         {
-            si = validaciones();
-            if (si == true)
-            {
                 if (txtdireccion.Text == "" || txtID_cliente.Text == "" || txtprimerApellido.Text == "" || txtprimerNombre.Text == "" || txtsegundoApellido.Text == "" || txtsegundoNombre.Text == "" || txtTelefono.Text == "")
                 {
                     // mensaje de error al usuario para que los campos no vayan vacios
@@ -230,8 +232,7 @@ namespace GerizimZZ
                     // llenamos nuestro datagridview de Cliente con nuestro dataset
                     dgvCliente.DataSource = dstCliente.Tables[0];
                     con.Close();
-                }
-            }    
+                }   
         }
 
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
@@ -258,98 +259,173 @@ namespace GerizimZZ
         {
             Boolean si = false;
             int igual = 0, validado = 0;
-            // verificamos que el tamano minimo de cada textbox no sea de un solo caracter
-            if (txtprimerNombre.TextLength < 0 && txtsegundoNombre.TextLength < 0 && txtprimerApellido.TextLength < 0 && txtsegundoApellido.TextLength < 0)
+            try
             {
-                MessageBox.Show("El tamano minimo para su nombre es de 2 caracteres", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                validado++;
-            }
-            for(int i = 0; i < txtprimerNombre.Text.Length - 1; i++)
-            {
-                if (txtprimerNombre.Text[i] == txtprimerNombre.Text[i + 1])
+                // verificamos que el tamano minimo de cada textbox no sea de un solo caracter
+                if (txtprimerNombre.TextLength < 0 && txtsegundoNombre.TextLength < 0 && txtprimerApellido.TextLength < 0 && txtsegundoApellido.TextLength < 0)
                 {
-                    igual++;
+                    MessageBox.Show("El tamano minimo para su nombre es de 2 caracteres", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    validado++;
+                }
+                if (txtprimerNombre.TextLength < 3)
+                {
+                    if (txtprimerNombre.Text[0] == txtprimerNombre.Text[1])
+                    {
+                        MessageBox.Show("Revise su primer nombre, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        validado++;
+                    }
+                }
+                if (txtsegundoNombre.TextLength < 3)
+                {
+                    if (txtsegundoNombre.Text[0] == txtsegundoNombre.Text[1])
+                    {
+                        MessageBox.Show("Revise su segundo nombre, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        validado++;
+                    }
+                }
+                if (txtprimerApellido.TextLength < 3)
+                {
+                    if (txtprimerApellido.Text[0] == txtprimerApellido.Text[1])
+                    {
+                        MessageBox.Show("Revise su primer apellido, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        validado++;
+                    }
+                }
+                if (txtsegundoApellido.TextLength < 3)
+                {
+                    if (txtsegundoApellido.Text[0] == txtsegundoApellido.Text[1])
+                    {
+                        MessageBox.Show("Revise su segundo apellido, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        validado++;
+                    }
+                }
+                int num1 = 3, num2 = 8, num3 = 9;
+                if(txtTelefono.TextLength > 7)
+                {
+                    if (txtTelefono.Text[0] == '3')
+                    {
+                        validado++;
+                    }else if(txtTelefono.Text[0] == '8')
+                    {
+                        validado++;
+                    }else if (txtTelefono.Text[0] == '9')
+                    {
+                        validado++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Solo numeros locales que empiecen con 3, 8 o 9", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Digite los 8 digitos de su telefono", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }                
+                for (int i = 0; i < txtprimerNombre.Text.Length - 1; i++)
+                {
+                    if (txtprimerNombre.Text[i] == txtprimerNombre.Text[i + 1])
+                    {
+                        igual++;
+                    }
+                }
+                if (igual > 1)
+                {
+                    MessageBox.Show("Revise su primer nombre, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    igual = 0;
+                    validado++;
+                }
+                for (int i = 0; i < txtsegundoNombre.Text.Length - 1; i++)
+                {
+                    if (txtsegundoNombre.Text[i] == txtsegundoNombre.Text[i + 1])
+                    {
+                        igual++;
+                    }
+                }
+                if (igual > 1)
+                {
+                    MessageBox.Show("Revise su segundo nombre, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    igual = 0;
+                    validado++;
+                }
+                for (int i = 0; i < txtprimerApellido.Text.Length - 1; i++)
+                {
+                    if (txtprimerApellido.Text[i] == txtprimerApellido.Text[i + 1])
+                    {
+                        igual++;
+                    }
+                }
+                if (igual > 1)
+                {
+                    MessageBox.Show("Revise su primer apellido, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    igual = 0;
+                    validado++;
+                }
+                for (int i = 0; i < txtsegundoApellido.Text.Length - 1; i++)
+                {
+                    if (txtsegundoApellido.Text[i] == txtsegundoApellido.Text[i + 1])
+                    {
+                        igual++;
+                    }
+                }
+                if (igual > 1)
+                {
+                    MessageBox.Show("Revise su segundo apellido, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    igual = 0;
+                    validado++;
+                }
+                for (int i = 0; i < txtdireccion.Text.Length - 1; i++)
+                {
+                    if (txtdireccion.Text[i] == txtdireccion.Text[i + 1])
+                    {
+                        igual++;
+                    }
+                }
+                if (igual > 1)
+                {
+                    MessageBox.Show("Revise la direccion, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    igual = 0;
+                    validado++;
                 }
             }
-            if (igual > 2)
+            catch (Exception ex)
             {
-                MessageBox.Show("Revise su primer nombre, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
             }
-            else
-            {
-                igual = 0;
-                validado++;
-            }
-            for (int i = 0; i < txtsegundoNombre.Text.Length - 1; i++)
-            {
-                if (txtsegundoNombre.Text[i] == txtsegundoNombre.Text[i + 1])
-                {
-                    igual++;
-                }
-            }
-            if (igual > 2)
-            {
-                MessageBox.Show("Revise su segundo nombre, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                igual = 0;
-                validado++;
-            }
-            for (int i = 0; i < txtprimerApellido.Text.Length - 1; i++)
-            {
-                if (txtprimerApellido.Text[i] == txtprimerApellido.Text[i + 1])
-                {
-                    igual++;
-                }
-            }
-            if (igual > 2)
-            {
-                MessageBox.Show("Revise su primer apellido, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                igual = 0;
-                validado++;
-            }
-            for (int i = 0; i < txtsegundoApellido.Text.Length - 1; i++)
-            {
-                if (txtsegundoApellido.Text[i] == txtsegundoApellido.Text[i + 1])
-                {
-                    igual++;
-                }
-            }
-            if (igual > 2)
-            {
-                MessageBox.Show("Revise su segundo apellido, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                igual = 0;
-                validado++;
-            }
-            for (int i = 0; i < txtdireccion.Text.Length - 1; i++)
-            {
-                if (txtdireccion.Text[i] == txtdireccion.Text[i + 1])
-                {
-                    igual++;
-                }
-            }
-            if (igual > 2)
-            {
-                MessageBox.Show("Revise la direccion, tiene mas de 2 caracteres iguales consecutivos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                igual = 0;
-                validado++;
-            }
+            
 
             // revisamos si ha cumplido con todas las validaciones
-            if (validado == 6)
+            if (validado >= 7)
             {
                 si = true;
                 return si;

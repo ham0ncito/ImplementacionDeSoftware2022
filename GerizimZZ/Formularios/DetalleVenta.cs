@@ -126,7 +126,7 @@ namespace GerizimZZ
                 errorProvider1.SetError(dgDetalleVenta, "");
                 try
                 {
-                    SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
+                    SqlConnection conexion = Cl_conexiones.GetConnection();
                     conexion.Open();
                     try
                     {
@@ -252,7 +252,7 @@ namespace GerizimZZ
         public void Recargar()
         {
             int numeroFactura = 0;
-            SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
+            SqlConnection conexion = Cl_conexiones.GetConnection();
 
             SqlCommand comando = new SqlCommand("Use Gerizim; select MAX(ID_factura) from Factura ;", conexion);
             comando.Parameters.AddWithValue("ID", lblNumeroFactura.Text);
@@ -402,7 +402,7 @@ namespace GerizimZZ
         }
         public void direccion()
         {
-            SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
+            SqlConnection conexion = Cl_conexiones.GetConnection();
             conexion.Open();
             SqlCommand coma = new SqlCommand(" exec Direcciones '" + lblCodigoCliente.Text + "' ; ", conexion);
             SqlDataReader regist = coma.ExecuteReader();
@@ -416,7 +416,7 @@ namespace GerizimZZ
         {
             try
             {
-                SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
+                SqlConnection conexion = Cl_conexiones.GetConnection();
                 SqlCommand comando = new SqlCommand(" exec Telefonos '" + lblCodigoCliente.Text + "' ; ", conexion);
                 conexion.Open();
                 SqlDataReader registro = comando.ExecuteReader();
@@ -441,7 +441,7 @@ namespace GerizimZZ
         {
             try
             {
-                SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
+                SqlConnection conexion = Cl_conexiones.GetConnection();
 
                 SqlCommand comando = new SqlCommand(" exec buscarId '" + cmbCliente.Text + "' ; ", conexion);
                 conexion.Open();
@@ -468,7 +468,7 @@ namespace GerizimZZ
         {
             try
             {
-                SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
+                SqlConnection conexion = Cl_conexiones.GetConnection();
 
                 SqlCommand comando = new SqlCommand("exec nombres; ", conexion);
                 conexion.Open();

@@ -78,7 +78,7 @@
             this.dgvProducto.RowHeadersWidth = 51;
             this.dgvProducto.RowTemplate.Height = 29;
             this.dgvProducto.Size = new System.Drawing.Size(1072, 273);
-            this.dgvProducto.TabIndex = 25;
+            this.dgvProducto.TabIndex = 13;
             this.dgvProducto.Click += new System.EventHandler(this.dgvProducto_Click);
             // 
             // LineaNegraEstetica
@@ -345,7 +345,7 @@
             this.cbcodigo_Catalogo.Location = new System.Drawing.Point(426, 553);
             this.cbcodigo_Catalogo.Name = "cbcodigo_Catalogo";
             this.cbcodigo_Catalogo.Size = new System.Drawing.Size(143, 28);
-            this.cbcodigo_Catalogo.TabIndex = 59;
+            this.cbcodigo_Catalogo.TabIndex = 51;
             // 
             // dateTimePicker1
             // 
