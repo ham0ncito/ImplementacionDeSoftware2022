@@ -7,6 +7,7 @@ namespace GerizimZZ
     public partial class RegistrosVentas : Form
 
     {
+        //Llamado de las funciones
         public RegistrosVentas()
         {
             InitializeComponent();
@@ -20,16 +21,18 @@ namespace GerizimZZ
         {
         }
 
+        //Para llenar los datos del Datagridview
         private void RegistrosVentas_Load(object sender, EventArgs e)
         {
             cmda.llenargrid(dataGridView1);
         }
 
+        //Aqui se llenan los text box con los datos del DataGridView
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            nventa.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            fechapago.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            nventa.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            fechapago.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             idsucursal.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
             idcajas.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
         }
@@ -38,8 +41,9 @@ namespace GerizimZZ
         {
         }
 
-        private SqlConnection conectarr = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
+        private SqlConnection conectarr = new SqlConnection("Data Source =TATO180\\SQLEXPRESS ; Initial Catalog =Gerizim ; Integrated Security = True");
 
+        //Barra de busqueda
         private void barraBusqueda_KeyUp(object sender, KeyEventArgs e)
         {
             conectarr.Open();
@@ -71,7 +75,7 @@ namespace GerizimZZ
 
         private void VPedido_Click(object sender, EventArgs e)
         {
-            //RegistroPedido rc = new RegistroPedido();
+            //pantallafactura rc = new pan();
             //rc.ShowDialog();
         }
 
@@ -83,11 +87,12 @@ namespace GerizimZZ
         {
         }
 
+        //Revisa ventas diarias
         public void calculosDiarios()
         {
             try
             {
-                SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
+                SqlConnection conexion = new SqlConnection("Data Source = TATO180\\SQLEXPRESS ; Initial Catalog = Gerizim; Integrated Security = True");
                 SqlCommand comando = new SqlCommand("exec totalDiario; ", conexion);
                 conexion.Open();
                 SqlDataReader registro = comando.ExecuteReader();
@@ -108,11 +113,12 @@ namespace GerizimZZ
             }
         }
 
+        //Revisa cuantaas ventas mensuales hay 
         public void calculosMensuales()
         {
             try
             {
-                SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
+                SqlConnection conexion = new SqlConnection("Data Source = TATO180\\SQLEXPRESS ; Initial Catalog = Gerizim; Integrated Security = True");
                 SqlCommand comando = new SqlCommand("exec totalMensual; ", conexion);
                 conexion.Open();
                 SqlDataReader registro = comando.ExecuteReader();

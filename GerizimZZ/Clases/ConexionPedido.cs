@@ -5,10 +5,10 @@ namespace GerizimZZ.Clases
 {
     internal class ConexionPedido: Cl_conexiones
     {
-        
+        SqlConnection conec = new SqlConnection("Data Source = TATO180\\SQLEXPRESS; Initial Catalog =Gerizim ; Integrated Security = True");
         public void llenargrid(DataGridView grid)
         {
-            SqlCommand cm = new SqlCommand("Select * From Pedidos", conex);
+            SqlCommand cm = new SqlCommand("Select * From Pedidos", conec);
             SqlDataAdapter da = new SqlDataAdapter(cm);
             DataTable dt = new DataTable();
 

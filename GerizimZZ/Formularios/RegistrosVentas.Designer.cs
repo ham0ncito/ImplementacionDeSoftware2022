@@ -206,9 +206,9 @@
             this.label4.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(25, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(209, 18);
+            this.label4.Size = new System.Drawing.Size(175, 18);
             this.label4.TabIndex = 21;
-            this.label4.Text = "Busqueda de fechas de venta";
+            this.label4.Text = "Busqueda de ID Cliente";
             // 
             // VFactura
             // 
