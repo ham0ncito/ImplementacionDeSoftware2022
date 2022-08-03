@@ -11,7 +11,7 @@ namespace GerizimZZ
 {
     internal class Cl_Repartidores
     {
-        SqlConnection conec = new SqlConnection("Data Source = TATO180\\SQLEXPRESS; Initial Catalog =Gerizim ; Integrated Security = True");
+        SqlConnection conec = new SqlConnection("Data Source = localhost; Initial Catalog =Gerizim ; Integrated Security = True");
 
         //Aquí se realiza la consulta para llenar el DataGridView utilizando datos de dos tablas distintas
         public void infogrid(DataGridView grid)

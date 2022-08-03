@@ -193,7 +193,7 @@ namespace GerizimZZ
                     //Llama a la clase de Solicitar Inventario 
 
                     inventario.Agregar_Solicitud(codigo, PrecioProducto, txtNombreOriginal.Text, pesoproducto, txtCodigoBarra.Text, txtCodigoCatalogo.Text, cantidadproducto, cantidadminima, txtDescripcion.Text, estadoproducto, Convert.ToDateTime(txtFechaIngresoo.Text));
-                    SqlConnection conec = new SqlConnection("Data Source= TATO180\\SQLEXPRESS;Initial Catalog=Gerizim; Integrated Security=True;");
+                    SqlConnection conec = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
                     SqlDataAdapter coman = new SqlDataAdapter();
                     string sql = "SELECT * FROM Producto";
                     coman.SelectCommand = new SqlCommand(sql, conec);

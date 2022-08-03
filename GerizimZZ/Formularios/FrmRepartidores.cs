@@ -16,7 +16,7 @@ namespace GerizimZZ
     public partial class FrmRepartidores : Form
     {
         //Abrimos conexion 
-        SqlConnection conec = new SqlConnection("Data Source =TATO180\\SQLEXPRESS ; Initial Catalog =Gerizim ; Integrated Security = True");
+        SqlConnection conec = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
         public FrmRepartidores()
         {
             InitializeComponent();
@@ -47,7 +47,7 @@ namespace GerizimZZ
 
         private void brbRepartidores_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection conectarr = new SqlConnection("Data Source = TATO180\\SQLEXPRESS; Initial Catalog =Gerizim ; Integrated Security = True");
+            SqlConnection conectarr = new SqlConnection("Data Source = localhost; Initial Catalog =Gerizim ; Integrated Security = True");
             //Codigo para crear la barra de busqueda por nombres de repartidores.
             conectarr.Open();
             SqlCommand cmda = conectarr.CreateCommand();

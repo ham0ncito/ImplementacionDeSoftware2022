@@ -54,6 +54,16 @@
             this.fechapago = new System.Windows.Forms.TextBox();
             this.idsucursal = new System.Windows.Forms.TextBox();
             this.idcajas = new System.Windows.Forms.TextBox();
+            this.ImprimirFactura = new System.Drawing.Printing.PrintDocument();
+            this.label10 = new System.Windows.Forms.Label();
+            this.indetalle = new System.Windows.Forms.TextBox();
+            this.infecha = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.incliente = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.insucursal = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.printPreviewDialog2 = new System.Windows.Forms.PrintPreviewDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -217,7 +227,7 @@
             this.VFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VFactura.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VFactura.ForeColor = System.Drawing.Color.Black;
-            this.VFactura.Location = new System.Drawing.Point(518, 429);
+            this.VFactura.Location = new System.Drawing.Point(520, 430);
             this.VFactura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VFactura.Name = "VFactura";
             this.VFactura.Size = new System.Drawing.Size(126, 28);
@@ -327,11 +337,114 @@
             this.idcajas.Size = new System.Drawing.Size(110, 23);
             this.idcajas.TabIndex = 33;
             // 
+            // ImprimirFactura
+            // 
+            this.ImprimirFactura.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.ImprimirSolicitud_PrintPage);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(474, 193);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(62, 18);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Detalle:";
+            // 
+            // indetalle
+            // 
+            this.indetalle.BackColor = System.Drawing.Color.Honeydew;
+            this.indetalle.Location = new System.Drawing.Point(598, 193);
+            this.indetalle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.indetalle.Name = "indetalle";
+            this.indetalle.Size = new System.Drawing.Size(110, 23);
+            this.indetalle.TabIndex = 36;
+            // 
+            // infecha
+            // 
+            this.infecha.BackColor = System.Drawing.Color.Honeydew;
+            this.infecha.Location = new System.Drawing.Point(598, 403);
+            this.infecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.infecha.Name = "infecha";
+            this.infecha.Size = new System.Drawing.Size(110, 23);
+            this.infecha.TabIndex = 37;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(474, 403);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(117, 18);
+            this.label11.TabIndex = 38;
+            this.label11.Text = "Fecha de venta:";
+            // 
+            // incliente
+            // 
+            this.incliente.BackColor = System.Drawing.Color.Honeydew;
+            this.incliente.Location = new System.Drawing.Point(358, 398);
+            this.incliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.incliente.Name = "incliente";
+            this.incliente.Size = new System.Drawing.Size(110, 23);
+            this.incliente.TabIndex = 39;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(281, 399);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 18);
+            this.label12.TabIndex = 40;
+            this.label12.Text = "Cliente:";
+            // 
+            // insucursal
+            // 
+            this.insucursal.BackColor = System.Drawing.Color.Honeydew;
+            this.insucursal.Location = new System.Drawing.Point(366, 436);
+            this.insucursal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.insucursal.Name = "insucursal";
+            this.insucursal.Size = new System.Drawing.Size(110, 23);
+            this.insucursal.TabIndex = 41;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(281, 434);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(71, 18);
+            this.label13.TabIndex = 42;
+            this.label13.Text = "Sucursal:";
+            // 
+            // printPreviewDialog2
+            // 
+            this.printPreviewDialog2.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog2.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog2.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog2.Document = this.ImprimirFactura;
+            this.printPreviewDialog2.Enabled = true;
+            this.printPreviewDialog2.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog2.Icon")));
+            this.printPreviewDialog2.Name = "printPreviewDialog2";
+            this.printPreviewDialog2.Visible = false;
+            // 
             // RegistrosVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 467);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.insucursal);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.incliente);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.infecha);
+            this.Controls.Add(this.indetalle);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.idcajas);
             this.Controls.Add(this.idsucursal);
             this.Controls.Add(this.fechapago);
@@ -397,5 +510,15 @@
         private TextBox fechapago;
         private TextBox idsucursal;
         private TextBox idcajas;
+        public System.Drawing.Printing.PrintDocument ImprimirFactura;
+        private Label label10;
+        private TextBox indetalle;
+        private TextBox infecha;
+        private Label label11;
+        private TextBox incliente;
+        private Label label12;
+        private TextBox insucursal;
+        private Label label13;
+        private PrintPreviewDialog printPreviewDialog2;
     }
 }
