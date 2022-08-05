@@ -11,7 +11,13 @@ namespace GerizimZZ.Clases
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+<<<<<<< HEAD:GerizimZZ/Clases/Program.cs
             Application.Run(new RegistrosVentas());
+=======
+            Application.Run(new FrmLogin());
+            
+            
+>>>>>>> parent of e367ade (Cambio nuevo):GerizimZZ/Program.cs
         }
     }
 }

@@ -19,12 +19,16 @@ namespace GerizimZZ
 {
     public partial class FrmSolicitudInventario : Form
     {
-        //Llamado de clases dataset y DataTable creadas con antelacion 
+
         Cl_SolicitarInventario inventario = new Cl_SolicitarInventario();
         Productosdst dstInventario;
         DataTable dtInventario;
+<<<<<<< HEAD:GerizimZZ/Formularios/FrmSolicitudInventario.cs
 
         //Creación de variables 
+=======
+       
+>>>>>>> parent of e367ade (Cambio nuevo):GerizimZZ/FrmSolicitudInventario.cs
         int codigo, cantidadproducto, cantidadminima, estadoproducto;
         double PrecioProducto, pesoproducto;
 
@@ -33,7 +37,6 @@ namespace GerizimZZ
 
         }
 
-        //Codigo para la barra de busqueda funciona realizando una busqueda en las celdas
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             dstInventario.Tables[0].DefaultView.RowFilter = string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "ID_codigoProducto", txtBuscar.Text) + " OR " +
@@ -109,7 +112,6 @@ namespace GerizimZZ
 
         }
 
-        //Este codigo ordena mediante coordendas la ubicación exacta en la que se imprimiran cada uno de los datos
         private void ImprimirSolicitud_PrintPage(object sender, PrintPageEventArgs e)
         {
             System.Drawing.Font fuente = new System.Drawing.Font("Arial", 15, FontStyle.Regular, GraphicsUnit.Point);
@@ -117,9 +119,14 @@ namespace GerizimZZ
             e.Graphics.DrawImage(ImgLogoGerizim.Image, 370, 100, 150, 150); //(Desplazamiento Izquierda/Derecha, Altura en el Doc, Ancho, Alto)
             e.Graphics.DrawString(" Multiservicios Gerizim  ", fuente, Brushes.Green, new RectangleF(330, 240, 600, 60));
             e.Graphics.DrawString(" Barrio Paz Barahona  1 Calle  2 Avenida  22505876 ", fuente, Brushes.Black, new RectangleF(200, 280, 1000, 100));
+<<<<<<< HEAD:GerizimZZ/Formularios/FrmSolicitudInventario.cs
             e.Graphics.DrawString("Solicitud Inventario ", fuente, Brushes.Black, new RectangleF(330, 310, 1000, 100));
             e.Graphics.DrawString("Nombre Original: " + txtNombreOriginal.Text, fuente, Brushes.Black, new RectangleF(190, 350, 1000, 100));
             e.Graphics.DrawString("Cantidad Producto: " + txtCantidadProducto.Text, fuente, Brushes.Black, new RectangleF(190, 380, 1000, 100));
+=======
+            e.Graphics.DrawString("Nombre Original: " + txtNombreOriginal.Text, fuente, Brushes.Black, new RectangleF (190, 350, 1000, 100));
+            e.Graphics.DrawString("Cantidad Producto: " + txtCantidadProducto.Text, fuente, Brushes.Black, new RectangleF (190, 380, 1000, 100));
+>>>>>>> parent of e367ade (Cambio nuevo):GerizimZZ/FrmSolicitudInventario.cs
             e.Graphics.DrawString("Codigo Barra: " + txtCodigoBarra.Text, fuente, Brushes.Black, new RectangleF(190, 410, 1000, 100));
             e.Graphics.DrawString("Estado Producto: " + txtEstadoProducto.Text, fuente, Brushes.Black, new RectangleF(190, 440, 1000, 100));
             e.Graphics.DrawString("Peso Producto: " + txtPesoProducto.Text, fuente, Brushes.Black, new RectangleF(190, 470, 1000, 100));
@@ -148,7 +155,6 @@ namespace GerizimZZ
 
         }
 
-        //Llenamos el dataGridview
         private void dgvSolicitudInventario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             foreach (DataGridViewRow item in this.dgvInventario.SelectedRows)

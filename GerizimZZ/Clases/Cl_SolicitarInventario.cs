@@ -11,16 +11,22 @@ namespace GerizimZZ
 
     internal class Cl_SolicitarInventario
     {
+<<<<<<< HEAD:GerizimZZ/Clases/Cl_SolicitarInventario.cs
         SqlConnection conec = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+=======
+        SqlConnection conec = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+>>>>>>> parent of e367ade (Cambio nuevo):GerizimZZ/Cl_SolicitarInventario.cs
 
-        //Conexion con SQL
         private static SqlConnection GetConnection()
         {
+<<<<<<< HEAD:GerizimZZ/Clases/Cl_SolicitarInventario.cs
             SqlConnection conec = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+=======
+            SqlConnection conec = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+>>>>>>> parent of e367ade (Cambio nuevo):GerizimZZ/Cl_SolicitarInventario.cs
             return conec;
         }
 
-        //Creación del Data Table én el que se selecciona la tabla con la que se trabajará
         public static DataTable GetAll()
         {
             SqlConnection conec = GetConnection();
@@ -38,7 +44,6 @@ namespace GerizimZZ
             }
         }
 
-        //Clase Agregar Solicitud para Modificar la base de datos con lo campos aquí descritos
         public void Agregar_Solicitud(int ID_codigoProducto, double Precio_producto, string NombreProducto, double PesoProducto, string CodigoBarra, string CodigoCatologo, int CantidadProducto, int CantidadMinima, string DescripcionProducto, int EstadoPRoducto, DateTime Fechaingreso)
         {
             DialogResult result = MessageBox.Show("Seguro que desea solicitar el producto?", "Agregar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
