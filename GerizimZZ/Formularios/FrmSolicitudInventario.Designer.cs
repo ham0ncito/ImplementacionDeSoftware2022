@@ -34,7 +34,6 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.LineaNegraEstetica = new System.Windows.Forms.PictureBox();
-            this.LogoGerizim = new System.Windows.Forms.PictureBox();
             this.dgvInventario = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,7 +44,6 @@
             this.txtCantidadProducto = new System.Windows.Forms.TextBox();
             this.txtCodigoBarra = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.btnSolicitar = new System.Windows.Forms.Button();
             this.btnIngresarSolicitud = new System.Windows.Forms.Button();
             this.txtEstadoProducto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,9 +61,14 @@
             this.btnimprimir = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.Imprimir = new System.Drawing.Printing.PrintDocument();
+            this.ImprimirSolicitud = new System.Drawing.Printing.PrintDocument();
+            this.btnImpresion = new System.Windows.Forms.Button();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.ImgLogoGerizim = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.LineaNegraEstetica)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgLogoGerizim)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -98,7 +101,7 @@
             // 
             // LineaNegraEstetica
             // 
-            this.LineaNegraEstetica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LineaNegraEstetica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LineaNegraEstetica.Image = global::GerizimZZ.Properties.Resources.substract;
             this.LineaNegraEstetica.Location = new System.Drawing.Point(-99, 78);
@@ -108,19 +111,6 @@
             this.LineaNegraEstetica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LineaNegraEstetica.TabIndex = 36;
             this.LineaNegraEstetica.TabStop = false;
-            // 
-            // LogoGerizim
-            // 
-            this.LogoGerizim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LogoGerizim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.LogoGerizim.Image = global::GerizimZZ.Properties.Resources.logoComprimido;
-            this.LogoGerizim.Location = new System.Drawing.Point(334, -10);
-            this.LogoGerizim.Name = "LogoGerizim";
-            this.LogoGerizim.Size = new System.Drawing.Size(142, 113);
-            this.LogoGerizim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoGerizim.TabIndex = 35;
-            this.LogoGerizim.TabStop = false;
             // 
             // dgvInventario
             // 
@@ -212,19 +202,9 @@
             this.txtDescripcion.Size = new System.Drawing.Size(320, 52);
             this.txtDescripcion.TabIndex = 49;
             // 
-            // btnSolicitar
-            // 
-            this.btnSolicitar.Location = new System.Drawing.Point(259, 483);
-            this.btnSolicitar.Name = "btnSolicitar";
-            this.btnSolicitar.Size = new System.Drawing.Size(109, 38);
-            this.btnSolicitar.TabIndex = 50;
-            this.btnSolicitar.Text = "Solicitar";
-            this.btnSolicitar.UseVisualStyleBackColor = true;
-            this.btnSolicitar.Click += new System.EventHandler(this.btnSolicitar_Click);
-            // 
             // btnIngresarSolicitud
             // 
-            this.btnIngresarSolicitud.Location = new System.Drawing.Point(388, 483);
+            this.btnIngresarSolicitud.Location = new System.Drawing.Point(257, 482);
             this.btnIngresarSolicitud.Name = "btnIngresarSolicitud";
             this.btnIngresarSolicitud.Size = new System.Drawing.Size(109, 39);
             this.btnIngresarSolicitud.TabIndex = 51;
@@ -339,11 +319,11 @@
             // 
             // btnimprimir
             // 
-            this.btnimprimir.Location = new System.Drawing.Point(555, 483);
+            this.btnimprimir.Location = new System.Drawing.Point(388, 482);
             this.btnimprimir.Name = "btnimprimir";
             this.btnimprimir.Size = new System.Drawing.Size(109, 39);
             this.btnimprimir.TabIndex = 64;
-            this.btnimprimir.Text = "Imprimir";
+            this.btnimprimir.Text = "Guardar";
             this.btnimprimir.UseVisualStyleBackColor = true;
             this.btnimprimir.Click += new System.EventHandler(this.btnimprimir_Click);
             // 
@@ -362,11 +342,52 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // Imprimir
+            // 
+            this.Imprimir.DocumentName = "Factura";
+            // 
+            // ImprimirSolicitud
+            // 
+            this.ImprimirSolicitud.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.ImprimirSolicitud_PrintPage);
+            // 
+            // btnImpresion
+            // 
+            this.btnImpresion.Location = new System.Drawing.Point(517, 483);
+            this.btnImpresion.Name = "btnImpresion";
+            this.btnImpresion.Size = new System.Drawing.Size(105, 38);
+            this.btnImpresion.TabIndex = 66;
+            this.btnImpresion.Text = "Imprimir";
+            this.btnImpresion.UseVisualStyleBackColor = true;
+            this.btnImpresion.Click += new System.EventHandler(this.btnImpresion_Click);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.ImprimirSolicitud;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // ImgLogoGerizim
+            // 
+            this.ImgLogoGerizim.Image = global::GerizimZZ.Properties.Resources._199848567_4174426372616759_1130399733558613204_n_PhotoRoom1;
+            this.ImgLogoGerizim.Location = new System.Drawing.Point(350, -16);
+            this.ImgLogoGerizim.Name = "ImgLogoGerizim";
+            this.ImgLogoGerizim.Size = new System.Drawing.Size(160, 104);
+            this.ImgLogoGerizim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgLogoGerizim.TabIndex = 67;
+            this.ImgLogoGerizim.TabStop = false;
+            // 
             // FrmSolicitudInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(822, 533);
+            this.Controls.Add(this.ImgLogoGerizim);
+            this.Controls.Add(this.btnImpresion);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnimprimir);
             this.Controls.Add(this.txtFechaIngresoo);
@@ -382,7 +403,6 @@
             this.Controls.Add(this.txtID_CodigoProducto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnIngresarSolicitud);
-            this.Controls.Add(this.btnSolicitar);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtEstadoProducto);
             this.Controls.Add(this.txtCodigoBarra);
@@ -397,15 +417,14 @@
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.LineaNegraEstetica);
-            this.Controls.Add(this.LogoGerizim);
             this.Controls.Add(this.dgvInventario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSolicitudInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmSolicitudInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LineaNegraEstetica)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgLogoGerizim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,7 +436,6 @@
         private TextBox txtBuscar;
         private Label lblBuscar;
         private PictureBox LineaNegraEstetica;
-        private PictureBox LogoGerizim;
         private DataGridView dgvInventario;
         private Label label1;
         private Label label2;
@@ -428,7 +446,6 @@
         private TextBox txtCantidadProducto;
         private TextBox txtCodigoBarra;
         private TextBox txtDescripcion;
-        private Button btnSolicitar;
         private Button btnIngresarSolicitud;
         private TextBox txtEstadoProducto;
         private Label label5;
@@ -446,5 +463,10 @@
         private Button btnimprimir;
         private System.Windows.Forms.Timer timer1;
         private Button btnLimpiar;
+        public System.Drawing.Printing.PrintDocument Imprimir;
+        public System.Drawing.Printing.PrintDocument ImprimirSolicitud;
+        private Button btnImpresion;
+        private PrintPreviewDialog printPreviewDialog1;
+        private PictureBox ImgLogoGerizim;
     }
 }

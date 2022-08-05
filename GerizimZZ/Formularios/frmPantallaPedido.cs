@@ -28,7 +28,7 @@ namespace GerizimZZ
         private ConexionPedido cmda = new ConexionPedido();
 
         //_______________________________________________________________________________
-        private SqlConnection conectaa = new SqlConnection("Data Source =TATO180\\SQLEXPRESS ; Initial Catalog =Gerizim ; Integrated Security = True");
+        private SqlConnection conectaa = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
 
         private void BarraDeBusqueda_TextChanged(object sender, EventArgs e)
         {
@@ -51,9 +51,9 @@ namespace GerizimZZ
         //Agarra valores de las celdas del datagrid y las puestra en los textbox
         private void datagridPedidosRecientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtFactura.Text = datagridPedidosRecientes.CurrentRow.Cells[5].Value.ToString();
-            txtRepartidor.Text = datagridPedidosRecientes.CurrentRow.Cells[3].Value.ToString();
-            txtEntrega.Text = datagridPedidosRecientes.CurrentRow.Cells[4].Value.ToString();
+            txtFactura.Text = datagridPedidosRecientes.CurrentRow.Cells[4].Value.ToString();
+            txtRepartidor.Text = datagridPedidosRecientes.CurrentRow.Cells[5].Value.ToString();
+            txtEntrega.Text = datagridPedidosRecientes.CurrentRow.Cells[2].Value.ToString();
             txtFechaPedido.Text = datagridPedidosRecientes.CurrentRow.Cells[1].Value.ToString();
         }
 
