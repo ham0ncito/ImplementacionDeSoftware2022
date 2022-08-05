@@ -12,6 +12,7 @@ namespace GerizimZZ
     internal class Cl_SolicitarInventario
     {
 <<<<<<< HEAD:GerizimZZ/Clases/Cl_SolicitarInventario.cs
+<<<<<<< HEAD:GerizimZZ/Clases/Cl_SolicitarInventario.cs
         SqlConnection conec = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
 =======
         SqlConnection conec = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
@@ -22,6 +23,13 @@ namespace GerizimZZ
 <<<<<<< HEAD:GerizimZZ/Clases/Cl_SolicitarInventario.cs
             SqlConnection conec = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
 =======
+            SqlConnection conec = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+>>>>>>> parent of e367ade (Cambio nuevo):GerizimZZ/Cl_SolicitarInventario.cs
+=======
+        SqlConnection conec = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+
+        private static SqlConnection GetConnection()
+        {
             SqlConnection conec = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
 >>>>>>> parent of e367ade (Cambio nuevo):GerizimZZ/Cl_SolicitarInventario.cs
             return conec;

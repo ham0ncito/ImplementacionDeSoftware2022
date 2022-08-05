@@ -12,8 +12,11 @@ namespace GerizimZZ.Clases
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 <<<<<<< HEAD:GerizimZZ/Clases/Program.cs
+<<<<<<< HEAD:GerizimZZ/Clases/Program.cs
             Application.Run(new RegistrosVentas());
 =======
+=======
+>>>>>>> parent of e367ade (Cambio nuevo):GerizimZZ/Program.cs
             Application.Run(new FrmLogin());
             
             
