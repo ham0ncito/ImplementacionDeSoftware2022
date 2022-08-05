@@ -56,27 +56,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Clientedst.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Clientedst.xsd</DependentUpon>
-    </Compile>
-    <Compile Update="DataSet1.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Update="DataSet2.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>DataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Update="Datasets\Productosdst.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Productosdst.xsd</DependentUpon>
-    </Compile>
-    <Compile Update="Productosdst.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Productosdst.xsd</DependentUpon>
@@ -96,23 +76,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Clientedst.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Clientedst.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
-    </None>
     <None Update="Datasets\Productosdst.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Productosdst.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="Productosdst.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>Productosdst.Designer.cs</LastGenOutput>
     </None>
