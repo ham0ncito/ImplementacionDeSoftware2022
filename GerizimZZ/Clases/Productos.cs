@@ -38,7 +38,10 @@ namespace GerizimZZ.Clases
                 SqlCommand comando = new SqlCommand(consulta, conex);
                 comando.CommandType = CommandType.Text;
                 SqlDataReader reader = comando.ExecuteReader();
-
+                if (!reader.Read())
+                {
+                    MessageBox.Show("No encontramos productos", "Consulte inventario", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                }
                 while (reader.Read())
                 {
                     idproducto = Convert.ToInt32(reader[0]);

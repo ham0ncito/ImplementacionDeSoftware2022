@@ -23,14 +23,14 @@ namespace GerizimZZ
         Cl_SolicitarInventario inventario = new Cl_SolicitarInventario();
         Productosdst dstInventario;
         DataTable dtInventario;
-       
+
         //Creación de variables 
         int codigo, cantidadproducto, cantidadminima, estadoproducto;
         double PrecioProducto, pesoproducto;
 
         private void btnSolicitar_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         //Codigo para la barra de busqueda funciona realizando una busqueda en las celdas
@@ -52,7 +52,7 @@ namespace GerizimZZ
 
         private void btnimprimir_Click(object sender, EventArgs e)
         {
-     
+
         }
 
         private void dgvInventario_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -67,7 +67,7 @@ namespace GerizimZZ
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace GerizimZZ
             limpiar();
             txtFechaIngresoo.Text = DateTime.Now.ToString("d");
         }
-        public void limpiar ()
+        public void limpiar()
         {
             txtNombreOriginal.Clear();
             txtBuscar.Clear();
@@ -87,7 +87,7 @@ namespace GerizimZZ
             txtDescripcion.Clear();
             txtPesoProducto.Clear();
             txtPrecioProducto.Clear();
-            
+
             txtID_CodigoProducto.Clear();
         }
 
@@ -97,15 +97,15 @@ namespace GerizimZZ
             ImprimirSolicitud = new PrintDocument();
             PrinterSettings ps = new PrinterSettings();
             ImprimirSolicitud.PrinterSettings = ps;
-            ImprimirSolicitud.PrintPage += Impresion ;
+            ImprimirSolicitud.PrintPage += Impresion;
             ImprimirSolicitud.Print();
             printPreviewDialog1.Show();//Esta hace que imprima
-          
+
         }
 
-        private void Impresion (object sender, PrintPageEventArgs e)
+        private void Impresion(object sender, PrintPageEventArgs e)
         {
-           
+
 
         }
 
@@ -114,12 +114,12 @@ namespace GerizimZZ
         {
             System.Drawing.Font fuente = new System.Drawing.Font("Arial", 15, FontStyle.Regular, GraphicsUnit.Point);
             ////Graphics.DrawImage(pictureBox1.Image, 350, 60, 150, 150);
-            e.Graphics.DrawImage(ImgLogoGerizim.Image,370,100,150,150); //(Desplazamiento Izquierda/Derecha, Altura en el Doc, Ancho, Alto)
+            e.Graphics.DrawImage(ImgLogoGerizim.Image, 370, 100, 150, 150); //(Desplazamiento Izquierda/Derecha, Altura en el Doc, Ancho, Alto)
             e.Graphics.DrawString(" Multiservicios Gerizim  ", fuente, Brushes.Green, new RectangleF(330, 240, 600, 60));
             e.Graphics.DrawString(" Barrio Paz Barahona  1 Calle  2 Avenida  22505876 ", fuente, Brushes.Black, new RectangleF(200, 280, 1000, 100));
-            e.Graphics.DrawString("Solicitud Inventario " , fuente, Brushes.Black, new RectangleF(330, 310, 1000, 100));
-            e.Graphics.DrawString("Nombre Original: " + txtNombreOriginal.Text, fuente, Brushes.Black, new RectangleF (190, 350, 1000, 100));
-            e.Graphics.DrawString("Cantidad Producto: " + txtCantidadProducto.Text, fuente, Brushes.Black, new RectangleF (190, 380, 1000, 100));
+            e.Graphics.DrawString("Solicitud Inventario ", fuente, Brushes.Black, new RectangleF(330, 310, 1000, 100));
+            e.Graphics.DrawString("Nombre Original: " + txtNombreOriginal.Text, fuente, Brushes.Black, new RectangleF(190, 350, 1000, 100));
+            e.Graphics.DrawString("Cantidad Producto: " + txtCantidadProducto.Text, fuente, Brushes.Black, new RectangleF(190, 380, 1000, 100));
             e.Graphics.DrawString("Codigo Barra: " + txtCodigoBarra.Text, fuente, Brushes.Black, new RectangleF(190, 410, 1000, 100));
             e.Graphics.DrawString("Estado Producto: " + txtEstadoProducto.Text, fuente, Brushes.Black, new RectangleF(190, 440, 1000, 100));
             e.Graphics.DrawString("Peso Producto: " + txtPesoProducto.Text, fuente, Brushes.Black, new RectangleF(190, 470, 1000, 100));
@@ -193,7 +193,7 @@ namespace GerizimZZ
                     //Llama a la clase de Solicitar Inventario 
 
                     inventario.Agregar_Solicitud(codigo, PrecioProducto, txtNombreOriginal.Text, pesoproducto, txtCodigoBarra.Text, txtCodigoCatalogo.Text, cantidadproducto, cantidadminima, txtDescripcion.Text, estadoproducto, Convert.ToDateTime(txtFechaIngresoo.Text));
-                    SqlConnection conec = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+                    SqlConnection conec = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
                     SqlDataAdapter coman = new SqlDataAdapter();
                     string sql = "SELECT * FROM Producto";
                     coman.SelectCommand = new SqlCommand(sql, conec);
@@ -208,7 +208,7 @@ namespace GerizimZZ
                 {
                     MessageBox.Show(ex.Message);
                 }
-               
+
             }
         }
     }

@@ -12,9 +12,10 @@ using System.Data.SqlClient;
 
 namespace GerizimZZ
 {
-    
+
     public partial class FrmRepartidores : Form
     {
+        //Abrimos conexion 
         SqlConnection conec = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
         public FrmRepartidores()
         {
@@ -32,20 +33,21 @@ namespace GerizimZZ
         {
             cmda.infogrid(dataGridView1);
         }
-        
-       private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+      
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //Llenar textboxt con datos del datagridview
             tb_Nombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             tb_CodigoRepartidor.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             tb_Direccion.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             tb_Codigo.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-           
+
         }
 
         private void brbRepartidores_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection conectarr = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
+            SqlConnection conectarr = new SqlConnection("Data Source = localhost; Initial Catalog =Gerizim ; Integrated Security = True");
             //Codigo para crear la barra de busqueda por nombres de repartidores.
             conectarr.Open();
             SqlCommand cmda = conectarr.CreateCommand();
@@ -62,10 +64,10 @@ namespace GerizimZZ
             dataGridView1.DataSource = dt;
 
             conectarr.Close();
-           
+
         }
 
-   
+
         private void btn_Asignar_Click(object sender, EventArgs e)
         {
             //Llamar datos de los Textboxt a otro form
@@ -81,7 +83,7 @@ namespace GerizimZZ
 
         private void tb_Fecha_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void fecha_Tick(object sender, EventArgs e)
@@ -95,7 +97,6 @@ namespace GerizimZZ
 
         }
     }
-  }
-    
-    
+}
+
 

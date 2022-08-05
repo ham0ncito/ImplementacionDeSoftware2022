@@ -38,7 +38,7 @@ namespace GerizimZZ
             {
                 comboBox1.Items.Add(i.ToString());
             }
-            comboBox1.Text = "0";
+            comboBox1.SelectedIndex = 0;
         }
 
         public int Id

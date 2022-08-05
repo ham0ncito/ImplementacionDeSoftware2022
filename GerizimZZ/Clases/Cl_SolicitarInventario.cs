@@ -8,15 +8,15 @@ using System.Data.SqlClient;
 
 namespace GerizimZZ
 {
-    
+
     internal class Cl_SolicitarInventario
     {
-        SqlConnection conec = new SqlConnection("Data Source=TATO180\\SQLEXPRESS;Initial Catalog=Gerizim; Integrated Security=True;");
+        SqlConnection conec = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
 
         //Conexion con SQL
         private static SqlConnection GetConnection()
         {
-            SqlConnection conec = new SqlConnection("Data Source=TATO180\\SQLEXPRESS;Initial Catalog=Gerizim; Integrated Security=True;");
+            SqlConnection conec = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
             return conec;
         }
 
