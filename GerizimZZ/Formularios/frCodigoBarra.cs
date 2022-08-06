@@ -13,6 +13,7 @@ namespace GerizimZZ
         haciendo referencia que el producto no fue encontrado. 
 
          */
+        string verificacionNombre; 
         private SqlCommand cmd;
         private bool existe = false;
         private SqlConnection connection = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
@@ -68,7 +69,7 @@ namespace GerizimZZ
             {
                 errorProvider1.SetError(groupBox1, "Ingrese todos los datos");
             }
-            else if (existe == true && string.IsNullOrEmpty(textBox1.Text) == false && textBox1.Text.Length > 6)
+            else if (existe == true && string.IsNullOrEmpty(textBox1.Text) == false && textBox1.Text.Length > 6 && string.Compare(lblNombre.Text, verificacionNombre)== 0)
             {
                 errorProvider1.SetError(groupBox1, "");
                 SqlCommand consulta = new SqlCommand("Select ID_codigoProducto, precio_producto, nombreProducto, cantidadProducto, estadoPRoducto from Producto where codigoBarra = '" + textBox1.Text + "';", connection);
@@ -185,6 +186,7 @@ namespace GerizimZZ
                         {
                             existe = true;
                             lblNombre.Text = reader[1].ToString();
+                            verificacionNombre = reader[1].ToString();
                             byte[] imag = (byte[])(reader[0]);
                             if (imag == null)
                             {
