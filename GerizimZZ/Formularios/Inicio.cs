@@ -23,37 +23,15 @@ namespace GerizimZZ
         {
             flp = Contenedor;
         }
-
+        //llena el datagrid de productos. 
         public void Llenado()
         {
             Productos llenar = new Productos();
             string consulta = "select * from dbo.Producto where cantidadProducto > 0 order by nombreProducto  ASC ;  ";
             llenar.llenado(Contenedor, consulta);
         }
-
-        public void NombreBienvenida()
-        {
-            var hora = DateTime.Parse("01:00:00 PM");
-            var ahora = DateTime.Parse(DateTime.Now.ToString("hh:mm:ss tt"));
-            SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
-            SqlCommand comando = new SqlCommand(" exec nombre '" + Usuario.username.ToString() + "' ", conexion);
-
-            conexion.Open();
-            SqlDataReader registro = comando.ExecuteReader();
-            if (registro.Read())
-            {
-                if (ahora >= hora)
-                {
-                    lblUsernma.Text = "Buenas tardes " + registro[0].ToString;
-                }
-                else
-                {
-                    lblUsernma.Text = "Buenos días " + registro[0].ToString;
-                }
-            }
-            conexion.Close();
-        }
-
+     
+        //toma los valores del carrito y los envia al fomrulario
         protected override void WndProc(ref Message m)
         {
             const int WM_NCCALCSIZE = 0x0083;
@@ -88,7 +66,7 @@ namespace GerizimZZ
         private void btnBodega_Click(object sender, EventArgs e)
         {
         }
-
+        //llama al formulario de bodega
         private void btnBodega_Click_1(object sender, EventArgs e)
         {
             frInicioBodega frInicioBodega = new frInicioBodega();
@@ -108,7 +86,7 @@ namespace GerizimZZ
                 MessageBox.Show("Salida del sistema cancelada");
             }
         }
-
+        //llama al formulario de clientes
         private void btnclientesmi_Click(object sender, EventArgs e)
         {
             FrmCliente cliente = new FrmCliente();
@@ -124,7 +102,7 @@ namespace GerizimZZ
         {
             btnclientesmi.BackColor = Color.FromArgb(214, 224, 229);
         }
-
+        //llama al formulario de inventario
         private void btninventariomi_Click(object sender, EventArgs e)
         {
             FrmInventario inventario = new FrmInventario();
@@ -176,19 +154,20 @@ namespace GerizimZZ
         {
             btnpedidosmi.BackColor = Color.FromArgb(214, 224, 229);
         }
-
+        //cierra el menu lateral
         private void btnregresarMI_Click(object sender, EventArgs e)
         {
             CollapseMenu();
         }
-
+        //llama al formulario de ventas
         private void btnventasmi_Click(object sender, EventArgs e)
         {
             RegistrosVentas frVentas = new RegistrosVentas();
             AddOwnedForm(frVentas);
             frVentas.Show();
         }
-
+        //Todos los botones funcionan de esta manera. Al pasar sobre ellos se iluminaran con un color cyan
+        //al salir de ellos el color volverá a su color natural
         private void btnventasmi_Hover(object sender, EventArgs e)
         {
             btnventasmi.BackColor = Color.Cyan;
@@ -198,11 +177,13 @@ namespace GerizimZZ
         {
             btnventasmi.BackColor = Color.FromArgb(214, 224, 229);
         }
-
+        //Este boton sirve para realizar busquedas de productos. Funciona mediante un query que toma el contenido del textboxt
+        // y mediante un query selecciona los productos con ese nombre, codigo. 
         private void button1_Click(object sender, EventArgs e)
         {
             buscar(); 
         }
+        //realiza la funcion de busqueda, toma el valor del textbox y lo busca en la base de datos. 
         private void buscar()
         {
             string busqueda;
@@ -213,7 +194,7 @@ namespace GerizimZZ
                 try
                 {
                     busqueda = "select * from dbo.Producto where nombreProducto like '%" + barraBusqueda.Text + "%' or codigoBarra like '%" + barraBusqueda.Text + "%' and cantidadProducto >0 order by nombreProducto  ASC; ";
-                    SqlConnection conexion = new SqlConnection("Data Source =DESKTOP-2H6N4DP ; Initial Catalog =Gerizim ; Integrated Security = True");
+                    SqlConnection conexion = new SqlConnection("Data Source =localhost; Initial Catalog =Gerizim ; Integrated Security = True");
                     Contenedor.Controls.Clear();
                     pr.llenado(Contenedor, busqueda);
                 }
@@ -246,7 +227,7 @@ namespace GerizimZZ
         {
             this.btnMenuIzquierdo.BackColor = Color.Transparent;
         }
-
+        //llama al fornulario de detalle venta
         private void button3_Click(object sender, EventArgs e)
         {
             DetalleVenta detalleVenta = new DetalleVenta();

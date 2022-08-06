@@ -2,6 +2,9 @@
 {
     public partial class Mensaje : UserControl
     {
+        /*
+         Este user control sirve de plantilla, sus valores son tomados y luego modificados. 
+         */
         private string idMensaje;
         private string nombreUsuario;
         private string mensajeenviar;

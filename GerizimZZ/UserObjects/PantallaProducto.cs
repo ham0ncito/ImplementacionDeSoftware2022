@@ -3,6 +3,13 @@ using System.Data;
 
 namespace GerizimZZ
 {
+    //Este user form funciona de esta forma
+    /* 
+     Es una plantilla la cual los campos son encapsulados para poder ser alterados
+    esto permite que toda la informacion esencial del producto sea mostrada
+    De igual manera este usercontrol tiene dos metodos. Uno que permite que sus datos sean enviados al detalle venta y otro
+    el cual despliega la informacion del producto, 
+     */
     public partial class Producto : UserControl
     {
         private int id = 0;

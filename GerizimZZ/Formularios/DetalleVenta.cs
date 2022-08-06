@@ -5,6 +5,9 @@ using System.Drawing.Printing;
 using System.Text.RegularExpressions;
 namespace GerizimZZ
 {
+    //detalle venta realiza todas las funciones de venta
+
+
     public partial class DetalleVenta : Form
     {
         private int x = 0;
@@ -17,7 +20,7 @@ namespace GerizimZZ
 
 
 
-
+        //inicializa el detallventa, busca nombres de cliente, lee los valores el datagrid
         public DetalleVenta()
         {
             InitializeComponent();
@@ -25,7 +28,7 @@ namespace GerizimZZ
             DataGridLector();
             datagrid();
         }
-
+        //activa las funciones del chechbox de delivery
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             datagrid();
@@ -56,7 +59,7 @@ namespace GerizimZZ
         private void label8_Click(object sender, EventArgs e)
         {
         }
-
+        //TODOS los botones toman un color al momento de hacer hover en ellos y retornan a su valor inicial saliendo
         private void button1_Hover(object sender, EventArgs e)
         {
             this.btnCancelarVenta.BackColor = Color.IndianRed;
@@ -76,11 +79,12 @@ namespace GerizimZZ
         {
             this.btnGenerarVenta.BackColor = Color.Transparent;
         }
-
+        //limpia los datos de la venta
         private void button1_Click_1(object sender, EventArgs e)
         {
             Limpiar();
         }
+        //este metodo limpia todos los valores que son alterados al momento de realizar una venta. 
 
         public void Limpiar()
         {
@@ -109,6 +113,7 @@ namespace GerizimZZ
                 MessageBox.Show(x.Message);
             }
         }
+        //este boton es el que verifica si se realizara una venta, al verificar realiza las funciones de impresion, y modificacion
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -179,12 +184,12 @@ namespace GerizimZZ
         public DataGridView DgView1 { get => dgView; set => dgView = value; }
       
        
-
+        //encapsula el datagrid para poder ser tomado como un objeto
         public void DataGridLector()
         {
             dgView = dgDetalleVenta;
         }
-
+        //llena el datagrid de venta, tomando los valores de los users controls de la pantalla de inicio. 
         public void llenartablita()
         {
             int cont = 0;
@@ -241,14 +246,16 @@ namespace GerizimZZ
                 }
             }
         }
-
+        //inicializa y recarga los valores de detalle venta. lenta el datagrid con los valores de los users controls
         public void DetalleVenta_Load(object sender, EventArgs e)
         {
             datagrid();
             dgDetalleVenta.DataSource = tablita;
             Recargar();
         }
-
+        //reiniza los valores de factura, si hubo una venta tomara el valor maximo y lo sumara
+        //esto permite que al momento de hacer la venta, este valor sea el id de toda la venta, posibilitando
+        //que se ingresen los valores. 
         public void Recargar()
         {
             int numeroFactura = 0;
@@ -281,14 +288,15 @@ namespace GerizimZZ
         private void label4_Click(object sender, EventArgs e)
         {
         }
-
+        //accede al formulario de codigobarra , rl cual permite leer los valores
         private void button4_Click(object sender, EventArgs e)
         {
             frCodigoBarra CodigoBarra = new frCodigoBarra();
             AddOwnedForm(CodigoBarra);
             CodigoBarra.Show();
         }
-
+        //Este es el documento que se modifica segun la venta. Es una plantilla que se llena segun los datos la cual 
+        //luego se manda a imprimir 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             Font fuente = new Font("Arial", 12);
@@ -320,7 +328,7 @@ namespace GerizimZZ
         private void lblHora_Click(object sender, EventArgs e)
         {
         }
-
+        //timer que modifica la hora de venta
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblFecha.Text = DateTime.Now.ToLongDateString();
@@ -330,7 +338,7 @@ namespace GerizimZZ
         private void txtFactura_TextChanged(object sender, EventArgs e)
         {
         }
-
+        //suma los valores del datagrid, esto permite totalizar todos los valores en cada columna
         private void datagrid()
         {
             suma = 0;
@@ -353,6 +361,7 @@ namespace GerizimZZ
         private void groupBox1_Enter(object sender, EventArgs e)
         {
         }
+        //verifica los valores si hay un pedido
 
         private void verificacion()
         {
@@ -376,20 +385,21 @@ namespace GerizimZZ
             }
             lblTotal.Text = "L. " + suma.ToString();
         }
-
+        //actualiza los valores del datagrid
         private void button3_Click(object sender, EventArgs e)
         {
             datagrid();
             verificacion();
         }
-
+        //accede al formulario de cliente si sdesea agregar
         private void NuevoCliente_Click(object sender, EventArgs e)
         {
             FrmCliente frmCliente = new FrmCliente();
             AddOwnedForm(frmCliente);
             frmCliente.Show();
         }
-
+        //busca los valores del cliente segun su id. Esto permite que al selleccionar un nuevo nombre
+        //los datos del envio sean alterados y se asignen los de ese cleinte
         private void cmbCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbDireccion.Items.Clear();
@@ -400,6 +410,7 @@ namespace GerizimZZ
 
             TelefonosDireccions();
         }
+        //busca las direcciones del cliente que han sido registradas
         public void direccion()
         {
             SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
@@ -412,6 +423,8 @@ namespace GerizimZZ
             }
             conexion.Close();
         }
+
+        //busca los telefonos que el cliente tiene registrado. 
         public void TelefonosDireccions()
         {
             try
@@ -436,7 +449,7 @@ namespace GerizimZZ
                 MessageBox.Show(x.Message);
             }
         }
-
+        //busca el id del cliente segun el seleccionado en el combobox. 
         public void buscarId()
         {
             try
@@ -463,7 +476,7 @@ namespace GerizimZZ
                 MessageBox.Show(x.Message);
             }
         }
-
+        //busca todos los nombres de clientes que han sido registrados. 
         public void nombresCliente()
         {
             try
@@ -493,7 +506,7 @@ namespace GerizimZZ
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
         }
-
+        //verifica que el numero del cliente sea valido
         private void btnNuevoTelefono_Click(object sender, EventArgs e)
         {
             vertelefono();
@@ -516,6 +529,8 @@ namespace GerizimZZ
                 }
             }
         }
+        //por medio de un inputbox, toma los valores ingresados por el cliente, y luego los verifica 
+
         private void btnNuevaDireccion_Click(object sender, EventArgs e)
         {
             verDireccion(); 
@@ -549,7 +564,8 @@ namespace GerizimZZ
             }
 
         }
-
+        // al acceder una nueva fila en el datagrid, se actualizan los valores mediante el metodo datagrid. 
+        
         private void dgDetalleVenta_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
             datagrid(); 
