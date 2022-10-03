@@ -61,7 +61,7 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContraseña.Location = new System.Drawing.Point(55, 79);
+            this.lblContraseña.Location = new System.Drawing.Point(56, 90);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(87, 18);
             this.lblContraseña.TabIndex = 1;
@@ -81,7 +81,7 @@
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtContraseña.Location = new System.Drawing.Point(179, 73);
+            this.txtContraseña.Location = new System.Drawing.Point(179, 93);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(217, 24);
@@ -92,7 +92,7 @@
             // 
             this.btSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btSalir.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btSalir.Location = new System.Drawing.Point(113, 269);
+            this.btSalir.Location = new System.Drawing.Point(268, 269);
             this.btSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(121, 41);
@@ -105,7 +105,7 @@
             // 
             this.btConectar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btConectar.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btConectar.Location = new System.Drawing.Point(287, 269);
+            this.btConectar.Location = new System.Drawing.Point(124, 269);
             this.btConectar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btConectar.Name = "btConectar";
             this.btConectar.Size = new System.Drawing.Size(121, 41);
@@ -121,12 +121,15 @@
             this.chbxmotrar.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbxmotrar.Font = new System.Drawing.Font("Garamond", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chbxmotrar.ForeColor = System.Drawing.Color.Black;
-            this.chbxmotrar.Location = new System.Drawing.Point(16, 126);
+            this.chbxmotrar.Location = new System.Drawing.Point(414, 96);
             this.chbxmotrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbxmotrar.Name = "chbxmotrar";
-            this.chbxmotrar.Size = new System.Drawing.Size(126, 18);
+            this.chbxmotrar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbxmotrar.Size = new System.Drawing.Size(38, 18);
             this.chbxmotrar.TabIndex = 6;
-            this.chbxmotrar.Text = "Mostrar Contraseña";
+            this.chbxmotrar.Text = "👁️";
+            this.chbxmotrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chbxmotrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.chbxmotrar.UseVisualStyleBackColor = false;
             this.chbxmotrar.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -147,7 +150,7 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Garamond", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.linkLabel1.Location = new System.Drawing.Point(183, 99);
+            this.linkLabel1.Location = new System.Drawing.Point(179, 119);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(130, 18);
             this.linkLabel1.TabIndex = 8;
@@ -167,7 +170,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(12, 97);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(443, 149);
+            this.groupBox1.Size = new System.Drawing.Size(467, 167);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingrese sus datos para continuar";

@@ -138,9 +138,10 @@ namespace GerizimZZ
             // 
             this.delivery.AutoSize = true;
             this.delivery.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.delivery.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.delivery.Location = new System.Drawing.Point(12, 27);
             this.delivery.Name = "delivery";
-            this.delivery.Size = new System.Drawing.Size(81, 22);
+            this.delivery.Size = new System.Drawing.Size(73, 22);
             this.delivery.TabIndex = 14;
             this.delivery.Text = "Delivery";
             this.delivery.UseVisualStyleBackColor = true;
@@ -242,7 +243,7 @@ namespace GerizimZZ
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(126, 79);
             this.button4.TabIndex = 32;
-            this.button4.Text = "Escanear Codigo";
+            this.button4.Text = "Escanear Código";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -306,7 +307,7 @@ namespace GerizimZZ
             this.lblCodCliente.Name = "lblCodCliente";
             this.lblCodCliente.Size = new System.Drawing.Size(102, 18);
             this.lblCodCliente.TabIndex = 24;
-            this.lblCodCliente.Text = "Codigo Cliente";
+            this.lblCodCliente.Text = "Código Cliente";
             this.lblCodCliente.Visible = false;
             // 
             // cmbCliente
@@ -345,7 +346,7 @@ namespace GerizimZZ
             this.btnNuevaDireccion.Name = "btnNuevaDireccion";
             this.btnNuevaDireccion.Size = new System.Drawing.Size(126, 35);
             this.btnNuevaDireccion.TabIndex = 22;
-            this.btnNuevaDireccion.Text = "Otra direccion";
+            this.btnNuevaDireccion.Text = "Otra dirección";
             this.btnNuevaDireccion.UseVisualStyleBackColor = true;
             this.btnNuevaDireccion.Visible = false;
             this.btnNuevaDireccion.Click += new System.EventHandler(this.btnNuevaDireccion_Click);
@@ -356,7 +357,7 @@ namespace GerizimZZ
             this.btnNuevoTelefono.Name = "btnNuevoTelefono";
             this.btnNuevoTelefono.Size = new System.Drawing.Size(126, 35);
             this.btnNuevoTelefono.TabIndex = 21;
-            this.btnNuevoTelefono.Text = "Otro Telefono";
+            this.btnNuevoTelefono.Text = "Otro Teléfono";
             this.btnNuevoTelefono.UseVisualStyleBackColor = true;
             this.btnNuevoTelefono.Visible = false;
             this.btnNuevoTelefono.Click += new System.EventHandler(this.btnNuevoTelefono_Click);
@@ -386,7 +387,7 @@ namespace GerizimZZ
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(70, 18);
             this.label10.TabIndex = 18;
-            this.label10.Text = "Direccion";
+            this.label10.Text = "Dirección";
             // 
             // label3
             // 
@@ -395,7 +396,7 @@ namespace GerizimZZ
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 18);
             this.label3.TabIndex = 17;
-            this.label3.Text = "Telefono";
+            this.label3.Text = "Teléfono";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button3
@@ -405,7 +406,7 @@ namespace GerizimZZ
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 67);
             this.button3.TabIndex = 37;
-            this.button3.Text = "Actualizar Informacion";
+            this.button3.Text = "Actualizar Información";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

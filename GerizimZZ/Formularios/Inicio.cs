@@ -12,7 +12,7 @@ namespace GerizimZZ
         {
             InitializeComponent();
 
-            CollapseMenu();
+            //CollapseMenu();
 
             Llenado();
         }
@@ -21,14 +21,14 @@ namespace GerizimZZ
 
         public void IniciarFlowLayout()
         {
-            flp = Contenedor;
+            //flp = Contenedor;
         }
         //llena el datagrid de productos. 
         public void Llenado()
         {
             Productos llenar = new Productos();
             string consulta = "select * from dbo.Producto where cantidadProducto > 0 order by nombreProducto  ASC ;  ";
-            llenar.llenado(Contenedor, consulta);
+           //llenar.llenado(Contenedor, consulta);
         }
      
         //toma los valores del carrito y los envia al fomrulario
@@ -56,7 +56,7 @@ namespace GerizimZZ
         //Boton panel lateral derecho
         private void bt_Click(object sender, EventArgs e)
         {
-            CollapseMenu();
+            //CollapseMenu();
         }
 
         private void btn(object sender, MouseEventArgs e)
@@ -69,9 +69,7 @@ namespace GerizimZZ
         //llama al formulario de bodega
         private void btnBodega_Click_1(object sender, EventArgs e)
         {
-            frInicioBodega frInicioBodega = new frInicioBodega();
-            AddOwnedForm(frInicioBodega);
-            frInicioBodega.Show();
+           
         }
 
         //click a boton de cerrar
@@ -157,7 +155,7 @@ namespace GerizimZZ
         //cierra el menu lateral
         private void btnregresarMI_Click(object sender, EventArgs e)
         {
-            CollapseMenu();
+            //CollapseMenu();
         }
         //llama al formulario de ventas
         private void btnventasmi_Click(object sender, EventArgs e)
@@ -181,7 +179,8 @@ namespace GerizimZZ
         // y mediante un query selecciona los productos con ese nombre, codigo. 
         private void button1_Click(object sender, EventArgs e)
         {
-            buscar(); 
+            buscar();
+            //barraBusqueda.Clear(); 
         }
         //realiza la funcion de busqueda, toma el valor del textbox y lo busca en la base de datos. 
         private void buscar()
@@ -189,63 +188,60 @@ namespace GerizimZZ
             string busqueda;
 
             Productos pr = new Productos();
-            if (!(String.IsNullOrEmpty(this.barraBusqueda.Text)))
+            //if (!(String.IsNullOrEmpty(this.barraBusqueda.Text)))
             {
                 try
                 {
-                    busqueda = "select * from dbo.Producto where nombreProducto like '%" + barraBusqueda.Text + "%' or codigoBarra like '%" + barraBusqueda.Text + "%' and cantidadProducto >0 order by nombreProducto  ASC; ";
+                   // busqueda = "select * from dbo.Producto where nombreProducto like '%" + barraBusqueda.Text + "%' or codigoBarra like '%" + barraBusqueda.Text + "%' and cantidadProducto >0 order by nombreProducto  ASC; ";
                     SqlConnection conexion = new SqlConnection("Data Source =localhost; Initial Catalog =Gerizim ; Integrated Security = True");
-                    Contenedor.Controls.Clear();
-                    pr.llenado(Contenedor, busqueda);
+                    //Contenedor.Controls.Clear();
+                   // pr.llenado(Contenedor, busqueda);
                 }
                 catch (SqlException x)
                 {
                     MessageBox.Show(x.Message);
                 }
             }
-            if ((String.IsNullOrEmpty(this.barraBusqueda.Text)))
+           // if ((String.IsNullOrEmpty(this.barraBusqueda.Text)))
             {
-                busqueda = "select * from dbo.Producto order by nombreProducto ASC; ";
-                Contenedor.Controls.Clear();
-                pr.llenado(Contenedor, busqueda);
+              //  busqueda = "select * from dbo.Producto order by nombreProducto ASC; ";
+               // Contenedor.Controls.Clear();
+                //pr.llenado(Contenedor, busqueda);
             }
         }
 
         //boton lateral derecho menu tipo google
         private void button2_Click(object sender, EventArgs e)
         {
-            Barra_preview barra_Preview = new Barra_preview();
-            barra_Preview.ShowDialog();
+           
         }
 
         private void button2_Hover(object sender, EventArgs e)
         {
-            this.btnMenuIzquierdo.BackColor = Color.Cyan;
+           
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
-            this.btnMenuIzquierdo.BackColor = Color.Transparent;
+            
         }
         //llama al fornulario de detalle venta
         private void button3_Click(object sender, EventArgs e)
         {
-            DetalleVenta detalleVenta = new DetalleVenta();
-            AddOwnedForm(detalleVenta);
-            detalleVenta.ShowDialog();
+            
         }
 
         private void button3_Hover(object sender, EventArgs e)
         {
-            this.btnDetalleVenta.BackColor = Color.Cyan;
+            
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
         {
-            this.btnDetalleVenta.BackColor = Color.Transparent;
+           
         }
 
-        private void CollapseMenu()
+       /* private void CollapseMenu()
         {
             if (this.panelsidemenu.Width > 200)
             {
@@ -265,7 +261,7 @@ namespace GerizimZZ
                     menuButton.Visible = true;
                 }
             }
-        }
+        }*/
 
         private void Contenedor_Paint(object sender, PaintEventArgs e)
         {
@@ -333,6 +329,26 @@ namespace GerizimZZ
         private void panel2_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            frInicioBodega frInicioBodega = new frInicioBodega();
+            AddOwnedForm(frInicioBodega);
+            frInicioBodega.Show();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            DetalleVenta detalleVenta = new DetalleVenta();
+            AddOwnedForm(detalleVenta);
+            detalleVenta.ShowDialog();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Barra_preview barra_Preview = new Barra_preview();
+            barra_Preview.ShowDialog();
         }
     }
 }
