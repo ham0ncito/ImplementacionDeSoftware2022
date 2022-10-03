@@ -28,7 +28,7 @@ namespace GerizimZZ
         private ConexionPedido cmda = new ConexionPedido();
 
         //_______________________________________________________________________________
-        private SqlConnection conectaa = new SqlConnection("Data Source =TATO180\\SQLEXPRESS ; Initial Catalog =Gerizim ; Integrated Security = True");
+        private SqlConnection conectaa = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
 
         private void BarraDeBusqueda_TextChanged(object sender, EventArgs e)
         {
