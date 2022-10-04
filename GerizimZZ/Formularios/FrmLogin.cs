@@ -1,4 +1,5 @@
 ﻿using GerizimZZ.Clases;
+using iTextSharp.text.xml;
 
 namespace GerizimZZ
 {
@@ -101,6 +102,28 @@ namespace GerizimZZ
             {
                 MessageBox.Show(x.Message); 
             }
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("Ingrese el usuario dado por el equipo de soporte en la caja de texto de la parte superior, y su contraseña de 8 carácteres en la siguiente caja de texto \n\t - Equipo de soporte","Tutorial", MessageBoxButtons.OK);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!(check(txtContraseña.Text) && check(txtUsuario.Text)))
+            {
+                txtContraseña.Clear();
+                txtUsuario.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Campos se encuentran vacios", "Campos Vacios", MessageBoxButtons.OK);
+            }
+        }
+        public static bool check(string s)
+        {
+            return (s == null || s == String.Empty) ? true : false;
         }
     }
 }

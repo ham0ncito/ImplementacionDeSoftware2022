@@ -40,7 +40,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -49,53 +51,55 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUsuario.Location = new System.Drawing.Point(66, 41);
+            this.lblUsuario.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUsuario.Location = new System.Drawing.Point(41, 42);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(65, 18);
+            this.lblUsuario.Size = new System.Drawing.Size(72, 21);
             this.lblUsuario.TabIndex = 0;
-            this.lblUsuario.Text = "Usuario :";
+            this.lblUsuario.Text = "Usuario ";
             this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContraseña.Location = new System.Drawing.Point(56, 90);
+            this.lblContraseña.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblContraseña.Location = new System.Drawing.Point(41, 93);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(87, 18);
+            this.lblContraseña.Size = new System.Drawing.Size(100, 21);
             this.lblContraseña.TabIndex = 1;
-            this.lblContraseña.Text = "Contraseña :";
+            this.lblContraseña.Text = "Contraseña ";
             this.lblContraseña.Click += new System.EventHandler(this.lblContraseña_Click);
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUsuario.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUsuario.Location = new System.Drawing.Point(179, 41);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(217, 24);
+            this.txtUsuario.PlaceholderText = "usuarioGerizim";
+            this.txtUsuario.Size = new System.Drawing.Size(219, 29);
             this.txtUsuario.TabIndex = 2;
             this.txtUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtContraseña.Location = new System.Drawing.Point(179, 93);
+            this.txtContraseña.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtContraseña.Location = new System.Drawing.Point(179, 87);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(217, 24);
+            this.txtContraseña.PlaceholderText = "************";
+            this.txtContraseña.Size = new System.Drawing.Size(217, 29);
             this.txtContraseña.TabIndex = 3;
             this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // btSalir
             // 
-            this.btSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btSalir.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btSalir.Location = new System.Drawing.Point(268, 269);
+            this.btSalir.BackColor = System.Drawing.Color.LightCoral;
+            this.btSalir.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btSalir.Location = new System.Drawing.Point(373, 363);
             this.btSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(121, 41);
+            this.btSalir.Size = new System.Drawing.Size(137, 54);
             this.btSalir.TabIndex = 4;
             this.btSalir.Text = "Salir";
             this.btSalir.UseVisualStyleBackColor = false;
@@ -103,12 +107,13 @@
             // 
             // btConectar
             // 
-            this.btConectar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btConectar.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btConectar.Location = new System.Drawing.Point(124, 269);
+            this.btConectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btConectar.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btConectar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btConectar.Location = new System.Drawing.Point(79, 363);
             this.btConectar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btConectar.Name = "btConectar";
-            this.btConectar.Size = new System.Drawing.Size(121, 41);
+            this.btConectar.Size = new System.Drawing.Size(141, 55);
             this.btConectar.TabIndex = 5;
             this.btConectar.Text = "Conectar";
             this.btConectar.UseVisualStyleBackColor = false;
@@ -119,13 +124,13 @@
             this.chbxmotrar.AutoSize = true;
             this.chbxmotrar.BackColor = System.Drawing.Color.Transparent;
             this.chbxmotrar.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbxmotrar.Font = new System.Drawing.Font("Garamond", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.chbxmotrar.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chbxmotrar.ForeColor = System.Drawing.Color.Black;
-            this.chbxmotrar.Location = new System.Drawing.Point(414, 96);
+            this.chbxmotrar.Location = new System.Drawing.Point(411, 87);
             this.chbxmotrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbxmotrar.Name = "chbxmotrar";
             this.chbxmotrar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbxmotrar.Size = new System.Drawing.Size(38, 18);
+            this.chbxmotrar.Size = new System.Drawing.Size(50, 25);
             this.chbxmotrar.TabIndex = 6;
             this.chbxmotrar.Text = "👁️";
             this.chbxmotrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -137,9 +142,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::GerizimZZ.Properties.Resources._199848567_4174426372616759_1130399733558613204_n_PhotoRoom1;
-            this.pictureBox1.Location = new System.Drawing.Point(206, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(221, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(98, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(163, 126);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -150,7 +155,7 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Garamond", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.linkLabel1.Location = new System.Drawing.Point(179, 119);
+            this.linkLabel1.Location = new System.Drawing.Point(32, 141);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(130, 18);
             this.linkLabel1.TabIndex = 8;
@@ -161,31 +166,61 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.linkLabel2);
             this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Controls.Add(this.lblUsuario);
             this.groupBox1.Controls.Add(this.chbxmotrar);
             this.groupBox1.Controls.Add(this.lblContraseña);
             this.groupBox1.Controls.Add(this.txtContraseña);
-            this.groupBox1.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(12, 97);
+            this.groupBox1.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(58, 153);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(467, 167);
+            this.groupBox1.Size = new System.Drawing.Size(467, 191);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Ingrese sus datos para continuar";
+            this.groupBox1.Text = "Datos de acceso";
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.Font = new System.Drawing.Font("Garamond", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.linkLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabel2.Location = new System.Drawing.Point(179, 141);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(54, 18);
+            this.linkLabel2.TabIndex = 9;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Tutorial";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button1.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(226, 363);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 55);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Limpiar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GerizimZZ.Properties.Resources._026_Saint_Petersburg;
+            this.BackgroundImage = global::GerizimZZ.Properties.Resources._053_Soft_Grass;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(491, 321);
+            this.ClientSize = new System.Drawing.Size(566, 466);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btConectar);
             this.Controls.Add(this.btSalir);
@@ -218,5 +253,7 @@
         public TextBox txtUsuario;
         private GroupBox groupBox1;
         private ErrorProvider errorProvider1;
+        private LinkLabel linkLabel2;
+        private Button button1;
     }
 }
