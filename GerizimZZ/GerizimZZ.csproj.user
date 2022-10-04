@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>C:\Users\HP\OneDrive\Documentos\GitHub\GerizimZZ\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Formularios\frmInicioBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Formularios\FrmBarrapreview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -17,9 +20,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\frCodigoBarra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Formularios\frInicioBodega.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\frmAvisos.cs">

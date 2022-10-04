@@ -333,9 +333,9 @@ namespace GerizimZZ
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            frInicioBodega frInicioBodega = new frInicioBodega();
-            AddOwnedForm(frInicioBodega);
-            frInicioBodega.Show();
+            frmInicioBodega frmInicio = new frmInicioBodega();
+            AddOwnedForm(frInicio);
+            frInicio.Show();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)

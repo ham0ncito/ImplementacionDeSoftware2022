@@ -330,3 +330,4 @@ C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\re
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pdb
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.genruntimeconfig.cache
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\ref\GerizimZZ.dll
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frInicioBodega.resources
