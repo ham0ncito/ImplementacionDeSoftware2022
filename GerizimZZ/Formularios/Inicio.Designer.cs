@@ -57,7 +57,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::GerizimZZ.Properties.Resources.logoComprimido;
             this.pictureBox1.Location = new System.Drawing.Point(236, 0);
@@ -113,7 +113,7 @@
             // 
             // panelsidemenu
             // 
-            this.panelsidemenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelsidemenu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panelsidemenu.Controls.Add(this.iconButton3);
             this.panelsidemenu.Controls.Add(this.iconButton2);
             this.panelsidemenu.Controls.Add(this.iconButton1);
@@ -133,7 +133,7 @@
             // 
             // iconButton3
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(229)))));
+            this.iconButton3.BackColor = System.Drawing.Color.LightGray;
             this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -146,7 +146,7 @@
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10);
             this.iconButton3.Size = new System.Drawing.Size(240, 84);
-            this.iconButton3.TabIndex = 16;
+            this.iconButton3.TabIndex = 7;
             this.iconButton3.Tag = "user";
             this.iconButton3.Text = "Bodega";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -155,7 +155,7 @@
             // 
             // iconButton2
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(229)))));
+            this.iconButton2.BackColor = System.Drawing.Color.LightGray;
             this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -168,7 +168,7 @@
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10);
             this.iconButton2.Size = new System.Drawing.Size(240, 84);
-            this.iconButton2.TabIndex = 15;
+            this.iconButton2.TabIndex = 6;
             this.iconButton2.Tag = "user";
             this.iconButton2.Text = "Ventas";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -177,7 +177,7 @@
             // 
             // iconButton1
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(229)))));
+            this.iconButton1.BackColor = System.Drawing.Color.LightGray;
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -189,7 +189,7 @@
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10);
             this.iconButton1.Size = new System.Drawing.Size(240, 72);
-            this.iconButton1.TabIndex = 14;
+            this.iconButton1.TabIndex = 5;
             this.iconButton1.TabStop = false;
             this.iconButton1.Tag = "user";
             this.iconButton1.Text = "Menu de usuario";
@@ -208,7 +208,7 @@
             // 
             // btnclientesmi
             // 
-            this.btnclientesmi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(229)))));
+            this.btnclientesmi.BackColor = System.Drawing.Color.LightGray;
             this.btnclientesmi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnclientesmi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclientesmi.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -220,7 +220,7 @@
             this.btnclientesmi.Name = "btnclientesmi";
             this.btnclientesmi.Padding = new System.Windows.Forms.Padding(10);
             this.btnclientesmi.Size = new System.Drawing.Size(240, 74);
-            this.btnclientesmi.TabIndex = 10;
+            this.btnclientesmi.TabIndex = 4;
             this.btnclientesmi.Tag = "user";
             this.btnclientesmi.Text = "Clientes";
             this.btnclientesmi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -231,7 +231,7 @@
             // 
             // btnventasmi
             // 
-            this.btnventasmi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(229)))));
+            this.btnventasmi.BackColor = System.Drawing.Color.LightGray;
             this.btnventasmi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnventasmi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnventasmi.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -243,7 +243,7 @@
             this.btnventasmi.Name = "btnventasmi";
             this.btnventasmi.Padding = new System.Windows.Forms.Padding(10);
             this.btnventasmi.Size = new System.Drawing.Size(240, 70);
-            this.btnventasmi.TabIndex = 9;
+            this.btnventasmi.TabIndex = 3;
             this.btnventasmi.Tag = "ventas";
             this.btnventasmi.Text = "Ventas";
             this.btnventasmi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -254,7 +254,7 @@
             // 
             // btnpedidosmi
             // 
-            this.btnpedidosmi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(229)))));
+            this.btnpedidosmi.BackColor = System.Drawing.Color.LightGray;
             this.btnpedidosmi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnpedidosmi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnpedidosmi.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -266,7 +266,7 @@
             this.btnpedidosmi.Name = "btnpedidosmi";
             this.btnpedidosmi.Padding = new System.Windows.Forms.Padding(10);
             this.btnpedidosmi.Size = new System.Drawing.Size(240, 69);
-            this.btnpedidosmi.TabIndex = 8;
+            this.btnpedidosmi.TabIndex = 2;
             this.btnpedidosmi.Tag = "pedidos";
             this.btnpedidosmi.Text = "Pedidos";
             this.btnpedidosmi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -277,7 +277,7 @@
             // 
             // btninventariomi
             // 
-            this.btninventariomi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(229)))));
+            this.btninventariomi.BackColor = System.Drawing.Color.LightGray;
             this.btninventariomi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btninventariomi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninventariomi.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -289,7 +289,7 @@
             this.btninventariomi.Name = "btninventariomi";
             this.btninventariomi.Padding = new System.Windows.Forms.Padding(10);
             this.btninventariomi.Size = new System.Drawing.Size(240, 79);
-            this.btninventariomi.TabIndex = 7;
+            this.btninventariomi.TabIndex = 1;
             this.btninventariomi.Tag = "Inventario";
             this.btninventariomi.Text = "Inventario";
             this.btninventariomi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -309,6 +309,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -321,6 +322,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(51, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 30);
@@ -347,7 +349,7 @@
             // 
             // panel_titlebar
             // 
-            this.panel_titlebar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel_titlebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel_titlebar.Controls.Add(this.btnCerrar);
             this.panel_titlebar.Controls.Add(this.btnMaximizar);
             this.panel_titlebar.Controls.Add(this.btnMinimizar);

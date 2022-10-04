@@ -546,5 +546,8 @@
         private Button button6;
         private Button button7;
         private GroupBox groupBox1;
+        private MouseEventHandler panel_titlebar_MouseDown;
+
+        public EventHandler Inicio_Load { get; private set; }
     }
 }

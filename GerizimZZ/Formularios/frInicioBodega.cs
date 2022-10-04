@@ -7,7 +7,7 @@ namespace GerizimZZ
         public frInicioBodega()
         {
             InitializeComponent();
-            CollapseMenu();
+            
         }
 
         public void Llenado()
@@ -30,13 +30,6 @@ namespace GerizimZZ
         {
         }
 
-        private void producto1_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void Inicio_Load(object sender, EventArgs e)
-        {
-        }
 
         protected override void WndProc(ref Message m)
         {
@@ -48,18 +41,10 @@ namespace GerizimZZ
             base.WndProc(ref m);
         }
 
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private static extern void ReleaseCapture();
-
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+       
         private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private void panel_titlebar_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
+      
         private void panel_titlebar_Paint(object sender, PaintEventArgs e)
         {
         }
@@ -72,12 +57,12 @@ namespace GerizimZZ
 
         private void button2_Hover(object sender, EventArgs e)
         {
-            this.button2.BackColor = Color.Cyan;
+         
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
-            this.button2.BackColor = Color.Transparent;
+            
         }
 
         // click a boton de minimizar
@@ -110,34 +95,14 @@ namespace GerizimZZ
 
         private void bt_Click(object sender, EventArgs e)
         {
-            CollapseMenu();
+           
         }
 
-        private void CollapseMenu()
-        {
-            if (this.panelsidemenu.Width > 200)
-            {
-                panelsidemenu.Width = 0;
-                //panelsidemenu.Dock = DockStyle.Left;
-                foreach (Button menuButton in panelsidemenu.Controls.OfType<Button>())
-                {
-                    menuButton.Visible = false;
-                }
-            }
-            else
-            {
-                panelsidemenu.Width = 240;
-                //panelsidemenu.Dock = DockStyle.None;
-                foreach (Button menuButton in panelsidemenu.Controls.OfType<Button>())
-                {
-                    menuButton.Visible = true;
-                }
-            }
-        }
+        
 
         private void btnregresarMI_Click(object sender, EventArgs e)
         {
-            CollapseMenu();
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -159,42 +124,41 @@ namespace GerizimZZ
 
         private void btninventarioomi_Hover(object sender, EventArgs e)
         {
-            btninventariomi.BackColor = Color.Cyan;
         }
 
         private void btninventarioomi_MouseLeaves(object sender, EventArgs e)
         {
-            btninventariomi.BackColor = Color.FromArgb(214, 224, 229);
+           
         }
 
         private void btnclientesmi_Hover(object sender, EventArgs e)
         {
-            btnclientesmi.BackColor = Color.Cyan;
+          
         }
 
         private void btnclientesmi_MouseLeaves(object sender, EventArgs e)
         {
-            btnclientesmi.BackColor = Color.FromArgb(214, 224, 229);
+            
         }
 
         private void btnpedidosmi_Hover(object sender, EventArgs e)
         {
-            btnpedidosmi.BackColor = Color.Cyan;
+            
         }
 
         private void btnpedidosmi_MouseLeaves(object sender, EventArgs e)
         {
-            btnpedidosmi.BackColor = Color.FromArgb(214, 224, 229);
+            
         }
 
         private void btnventasmi_Hover(object sender, EventArgs e)
         {
-            btnventasmi.BackColor = Color.Cyan;
+            
         }
 
         private void btnventasmi_MouseLeaves(object sender, EventArgs e)
         {
-            btnventasmi.BackColor = Color.FromArgb(214, 224, 229);
+            
         }
 
         private void btn(object sender, MouseEventArgs e)
@@ -222,12 +186,12 @@ namespace GerizimZZ
 
         private void button3_Hover(object sender, EventArgs e)
         {
-            this.button3.BackColor = Color.Cyan;
+            
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
         {
-            this.button3.BackColor = Color.Transparent;
+            
         }
 
         //Boton para abrir form de pedido

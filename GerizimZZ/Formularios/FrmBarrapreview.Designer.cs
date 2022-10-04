@@ -29,117 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Barra_preview));
-            this.btnUsua = new System.Windows.Forms.Button();
-            this.btnHisto = new System.Windows.Forms.Button();
-            this.btnOpcio = new System.Windows.Forms.Button();
-            this.btnRepor = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnAviso = new System.Windows.Forms.Button();
             this.btncerrarBP = new System.Windows.Forms.Button();
+            this.btnUser = new FontAwesome.Sharp.IconButton();
+            this.btnupd = new FontAwesome.Sharp.IconButton();
+            this.btnavi = new FontAwesome.Sharp.IconButton();
+            this.btnopc = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
-            // 
-            // btnUsua
-            // 
-            this.btnUsua.BackColor = System.Drawing.Color.Transparent;
-            this.btnUsua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnUsua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUsua.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_00_PM;
-            this.btnUsua.Location = new System.Drawing.Point(21, 50);
-            this.btnUsua.Name = "btnUsua";
-            this.btnUsua.Size = new System.Drawing.Size(85, 93);
-            this.btnUsua.TabIndex = 0;
-            this.btnUsua.Text = "Usuario";
-            this.btnUsua.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnUsua.UseVisualStyleBackColor = false;
-            this.btnUsua.Click += new System.EventHandler(this.btnUsua_Click);
-            this.btnUsua.MouseLeave += new System.EventHandler(this.btnUsua_MouseLeave);
-            this.btnUsua.MouseHover += new System.EventHandler(this.btnUsua_Hover);
-            // 
-            // btnHisto
-            // 
-            this.btnHisto.BackColor = System.Drawing.Color.Transparent;
-            this.btnHisto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnHisto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHisto.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_00_PM__2_;
-            this.btnHisto.Location = new System.Drawing.Point(154, 50);
-            this.btnHisto.Name = "btnHisto";
-            this.btnHisto.Size = new System.Drawing.Size(85, 93);
-            this.btnHisto.TabIndex = 1;
-            this.btnHisto.Text = "Historial";
-            this.btnHisto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnHisto.UseVisualStyleBackColor = false;
-            this.btnHisto.Click += new System.EventHandler(this.btnHisto_Click);
-            this.btnHisto.MouseLeave += new System.EventHandler(this.btnHisto_MouseLeave);
-            this.btnHisto.MouseHover += new System.EventHandler(this.btnHisto_Hover);
-            // 
-            // btnOpcio
-            // 
-            this.btnOpcio.BackColor = System.Drawing.Color.Transparent;
-            this.btnOpcio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnOpcio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpcio.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_00_PM__1_;
-            this.btnOpcio.Location = new System.Drawing.Point(21, 149);
-            this.btnOpcio.Name = "btnOpcio";
-            this.btnOpcio.Size = new System.Drawing.Size(85, 93);
-            this.btnOpcio.TabIndex = 2;
-            this.btnOpcio.Text = "Opciones";
-            this.btnOpcio.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnOpcio.UseVisualStyleBackColor = false;
-            this.btnOpcio.Click += new System.EventHandler(this.btnOpcio_Click);
-            this.btnOpcio.MouseLeave += new System.EventHandler(this.btnOpcio_MouseLeave);
-            this.btnOpcio.MouseHover += new System.EventHandler(this.btnOpcio_Hover);
-            // 
-            // btnRepor
-            // 
-            this.btnRepor.BackColor = System.Drawing.Color.Transparent;
-            this.btnRepor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnRepor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRepor.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_00_PM__3_;
-            this.btnRepor.Location = new System.Drawing.Point(154, 149);
-            this.btnRepor.Name = "btnRepor";
-            this.btnRepor.Size = new System.Drawing.Size(85, 93);
-            this.btnRepor.TabIndex = 3;
-            this.btnRepor.Text = "Reportes";
-            this.btnRepor.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnRepor.UseVisualStyleBackColor = false;
-            this.btnRepor.Click += new System.EventHandler(this.btnRepor_Click);
-            this.btnRepor.MouseLeave += new System.EventHandler(this.btnRepor_MouseLeave);
-            this.btnRepor.MouseHover += new System.EventHandler(this.btnRepor_Hover);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_01_PM;
-            this.btnUpdate.Location = new System.Drawing.Point(21, 248);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(85, 93);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            this.btnUpdate.MouseLeave += new System.EventHandler(this.btnUpdate_MouseLeave);
-            this.btnUpdate.MouseHover += new System.EventHandler(this.btnUpdate_Hover);
-            // 
-            // btnAviso
-            // 
-            this.btnAviso.BackColor = System.Drawing.Color.Transparent;
-            this.btnAviso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnAviso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAviso.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_01_PM__1_;
-            this.btnAviso.Location = new System.Drawing.Point(154, 248);
-            this.btnAviso.Name = "btnAviso";
-            this.btnAviso.Size = new System.Drawing.Size(85, 93);
-            this.btnAviso.TabIndex = 5;
-            this.btnAviso.Text = "Avisos";
-            this.btnAviso.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAviso.UseVisualStyleBackColor = false;
-            this.btnAviso.Click += new System.EventHandler(this.btnAviso_Click);
-            this.btnAviso.MouseLeave += new System.EventHandler(this.btnAviso_MouseLeave);
-            this.btnAviso.MouseHover += new System.EventHandler(this.btnAviso_Hover);
             // 
             // btncerrarBP
             // 
@@ -155,19 +50,97 @@
             this.btncerrarBP.UseVisualStyleBackColor = false;
             this.btncerrarBP.Click += new System.EventHandler(this.btncerrarBP_Click);
             // 
+            // btnUser
+            // 
+            this.btnUser.BackColor = System.Drawing.Color.LightGray;
+            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUser.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnUser.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnUser.IconColor = System.Drawing.Color.Black;
+            this.btnUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUser.IconSize = 35;
+            this.btnUser.Location = new System.Drawing.Point(26, 59);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Padding = new System.Windows.Forms.Padding(10);
+            this.btnUser.Size = new System.Drawing.Size(206, 54);
+            this.btnUser.TabIndex = 1;
+            this.btnUser.Tag = "Inventario";
+            this.btnUser.Text = "Usuario";
+            this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUser.UseVisualStyleBackColor = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // btnupd
+            // 
+            this.btnupd.BackColor = System.Drawing.Color.LightGray;
+            this.btnupd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnupd.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnupd.IconChar = FontAwesome.Sharp.IconChar.UserClock;
+            this.btnupd.IconColor = System.Drawing.Color.Black;
+            this.btnupd.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnupd.IconSize = 35;
+            this.btnupd.Location = new System.Drawing.Point(26, 119);
+            this.btnupd.Name = "btnupd";
+            this.btnupd.Padding = new System.Windows.Forms.Padding(10);
+            this.btnupd.Size = new System.Drawing.Size(206, 54);
+            this.btnupd.TabIndex = 2;
+            this.btnupd.Tag = "Inventario";
+            this.btnupd.Text = "Actualizar";
+            this.btnupd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnupd.UseVisualStyleBackColor = false;
+            this.btnupd.Click += new System.EventHandler(this.btnupd_Click);
+            // 
+            // btnavi
+            // 
+            this.btnavi.BackColor = System.Drawing.Color.LightGray;
+            this.btnavi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnavi.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnavi.IconChar = FontAwesome.Sharp.IconChar.Cloud;
+            this.btnavi.IconColor = System.Drawing.Color.Black;
+            this.btnavi.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnavi.IconSize = 35;
+            this.btnavi.Location = new System.Drawing.Point(26, 239);
+            this.btnavi.Name = "btnavi";
+            this.btnavi.Padding = new System.Windows.Forms.Padding(10);
+            this.btnavi.Size = new System.Drawing.Size(206, 54);
+            this.btnavi.TabIndex = 4;
+            this.btnavi.Tag = "Inventario";
+            this.btnavi.Text = "Avisos";
+            this.btnavi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnavi.UseVisualStyleBackColor = false;
+            this.btnavi.Click += new System.EventHandler(this.btnavi_Click);
+            // 
+            // btnopc
+            // 
+            this.btnopc.BackColor = System.Drawing.Color.LightGray;
+            this.btnopc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnopc.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnopc.IconChar = FontAwesome.Sharp.IconChar.Icons;
+            this.btnopc.IconColor = System.Drawing.Color.Black;
+            this.btnopc.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnopc.IconSize = 35;
+            this.btnopc.Location = new System.Drawing.Point(26, 179);
+            this.btnopc.Name = "btnopc";
+            this.btnopc.Padding = new System.Windows.Forms.Padding(10);
+            this.btnopc.Size = new System.Drawing.Size(206, 54);
+            this.btnopc.TabIndex = 3;
+            this.btnopc.Tag = "Inventario";
+            this.btnopc.Text = "Opciones";
+            this.btnopc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnopc.UseVisualStyleBackColor = false;
+            this.btnopc.Click += new System.EventHandler(this.btnopc_Click);
+            // 
             // Barra_preview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GerizimZZ.Properties.Resources._053_Soft_Grass;
-            this.ClientSize = new System.Drawing.Size(269, 353);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(261, 334);
+            this.Controls.Add(this.btnopc);
+            this.Controls.Add(this.btnavi);
+            this.Controls.Add(this.btnupd);
+            this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btncerrarBP);
-            this.Controls.Add(this.btnAviso);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnRepor);
-            this.Controls.Add(this.btnOpcio);
-            this.Controls.Add(this.btnHisto);
-            this.Controls.Add(this.btnUsua);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -181,13 +154,10 @@
         }
 
         #endregion
-
-        private Button btnUsua;
-        private Button btnHisto;
-        private Button btnOpcio;
-        private Button btnRepor;
-        private Button btnUpdate;
-        private Button btnAviso;
         private Button btncerrarBP;
+        private FontAwesome.Sharp.IconButton btnUser;
+        private FontAwesome.Sharp.IconButton btnupd;
+        private FontAwesome.Sharp.IconButton btnavi;
+        private FontAwesome.Sharp.IconButton btnopc;
     }
 }
