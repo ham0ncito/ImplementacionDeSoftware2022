@@ -21,7 +21,7 @@ namespace GerizimZZ
         private string textBox;
         public int cantidad = 0;
         
-        public DetalleVenta dgv = new DetalleVenta();
+        public frmDetalleVenta dgv = new frmDetalleVenta();
 
         public Producto()
         {
@@ -195,7 +195,7 @@ namespace GerizimZZ
             tabla(); 
             if (Convert.ToDecimal(comboBox1.Text )>0)
             {
-                DetalleVenta dgv = new DetalleVenta();
+                frmDetalleVenta dgv = new frmDetalleVenta();
                 dgv.llenartablita();
             }
             else

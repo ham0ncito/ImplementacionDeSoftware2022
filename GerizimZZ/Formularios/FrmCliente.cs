@@ -97,7 +97,7 @@ namespace GerizimZZ
 
         public void actualizarDatos()
         {
-            DetalleVenta dr = Owner as DetalleVenta;
+            frmDetalleVenta dr = Owner as frmDetalleVenta;
             dr.nombresCliente();
         }
 

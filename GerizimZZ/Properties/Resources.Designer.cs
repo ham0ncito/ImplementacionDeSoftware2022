@@ -143,6 +143,26 @@ namespace GerizimZZ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _264855836_4713169605409097_2106932496429429410_n {
+            get {
+                object obj = ResourceManager.GetObject("264855836_4713169605409097_2106932496429429410_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _274349672_4980421895350532_8429971338086587742_n {
+            get {
+                object obj = ResourceManager.GetObject("274349672_4980421895350532_8429971338086587742_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3505647 {
             get {
                 object obj = ResourceManager.GetObject("3505647", resourceCulture);
@@ -166,6 +186,26 @@ namespace GerizimZZ.Properties {
         internal static System.Drawing.Bitmap background_login {
             get {
                 object obj = ResourceManager.GetObject("background_login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blog_Como_hacer_un_reporte_de_ventas6 {
+            get {
+                object obj = ResourceManager.GetObject("blog_Como_hacer_un_reporte_de_ventas6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blog_Como_hacer_un_reporte_de_ventas61 {
+            get {
+                object obj = ResourceManager.GetObject("blog_Como_hacer_un_reporte_de_ventas61", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

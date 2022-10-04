@@ -203,7 +203,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm_AsignarRepartidor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Asignar Repartidor";
+            this.Text = "Gerizm | Asignar Repartidor";
             this.Load += new System.EventHandler(this.Frm_AsignarRepartidor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -166,7 +166,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frCodigoBarra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lector Codigo Barra";
+            this.Text = "Gerizim | Lector Codigo Barra";
             this.Load += new System.EventHandler(this.frCodigoBarra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);

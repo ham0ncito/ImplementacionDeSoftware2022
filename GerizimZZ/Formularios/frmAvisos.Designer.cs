@@ -89,7 +89,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAvisos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Avisos";
+            this.Text = "Gerizim | Avisos";
             this.Load += new System.EventHandler(this.frmAvisos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

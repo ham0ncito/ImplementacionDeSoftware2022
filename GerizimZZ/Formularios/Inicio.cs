@@ -1,4 +1,5 @@
 using GerizimZZ.Clases;
+using GerizimZZ.Formularios;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 
@@ -160,7 +161,7 @@ namespace GerizimZZ
         //llama al formulario de ventas
         private void btnventasmi_Click(object sender, EventArgs e)
         {
-            RegistrosVentas frVentas = new RegistrosVentas();
+            frmRegistrosVentas frVentas = new frmRegistrosVentas();
             AddOwnedForm(frVentas);
             frVentas.Show();
         }
@@ -333,14 +334,14 @@ namespace GerizimZZ
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            frmInicioBodega frmInicio = new frmInicioBodega();
-            AddOwnedForm(frInicio);
-            frInicio.Show();
+            frInicioBodega inicioBodega = new frInicioBodega();
+            AddOwnedForm(inicioBodega);
+            inicioBodega.ShowDialog();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            DetalleVenta detalleVenta = new DetalleVenta();
+            frmDetalleVenta detalleVenta = new frmDetalleVenta();
             AddOwnedForm(detalleVenta);
             detalleVenta.ShowDialog();
         }
@@ -349,6 +350,29 @@ namespace GerizimZZ
         {
             Barra_preview barra_Preview = new Barra_preview();
             barra_Preview.ShowDialog();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("La pantalla de Dashboard cuenta con las opciones esenciales para " +
+                "que pueda realizar sus labores de ventas perfectamente. " +
+                "\nSi desea comunicar algun error o tiene alguna duda contactese mediante " +
+                "el numero +44453434934", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

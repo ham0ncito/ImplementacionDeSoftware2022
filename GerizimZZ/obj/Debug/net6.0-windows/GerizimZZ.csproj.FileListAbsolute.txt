@@ -296,10 +296,8 @@ C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\In
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Interop.TxBDD.dll
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.ResolveComReference.cache
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Datasets.RegistroVentas.resources
-C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.DetalleVenta.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frAgregarInformacionAviso.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frCodigoBarra.resources
-C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frInicioBodega.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmAvisos.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Barra_preview.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmCliente.resources
@@ -314,7 +312,6 @@ C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Ge
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Inventarios.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Opciones.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pantallafactura.resources
-C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.RegistrosVentas.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.VentanaInfoProductos.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Properties.Resources.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Mensaje.resources
@@ -331,3 +328,5 @@ C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Ge
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.genruntimeconfig.cache
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\ref\GerizimZZ.dll
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frInicioBodega.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmDetalleVenta.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmRegistrosVentas.resources

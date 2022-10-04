@@ -84,7 +84,7 @@ namespace GerizimZZ
             string[] numeros = { "+50499499796", "+50433505976", "+50496140758", "+50496671433", "+50494951699", "+50433027713" };
             Random rnd = new Random();
             int llamar = rnd.Next(0, 6);
-            MessageBox.Show("Para recuperar su contraseña, contactese con soporte " + numeros[llamar], "Restablecer Contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Para recuperar su contraseña, contactese con soporte " + numeros[llamar] + "\n En caso de no ser resuelto de inmediato, utilice la cuenta de invitado Usuario: adanD Contaseña: 1234 , para ingresar", "Restablecer Contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void lblUsuario_Click(object sender, EventArgs e)

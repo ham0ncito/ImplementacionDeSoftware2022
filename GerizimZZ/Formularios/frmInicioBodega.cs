@@ -19,7 +19,31 @@ namespace GerizimZZ.Formularios
 
         private void frInicioBodega_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btninventariomi_Click(object sender, EventArgs e)
+        {
+            FrmSolicitudInventario inventario = new FrmSolicitudInventario();
+            AddOwnedForm(inventario);
+            inventario.ShowDialog();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            FrmRepartidores frRepartidores = new FrmRepartidores();
+            AddOwnedForm(frRepartidores);
+            frRepartidores.Show();
+        }
+
+        private void btnenviar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Proximamente en nuevas actualizaciones");
+        }
+
+        private void btnmaterias_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Proximamente en nuevas actualizaciones");
         }
     }
 }
