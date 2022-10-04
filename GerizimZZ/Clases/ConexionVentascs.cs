@@ -13,7 +13,7 @@ namespace GerizimZZ.Clases
             DataTable dt = new DataTable();
 
             da.Fill(dt);
-
+    
             grid.DataSource = dt;
             
         }

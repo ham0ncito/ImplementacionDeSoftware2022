@@ -252,6 +252,10 @@ namespace GerizimZZ
             datagrid();
             dgDetalleVenta.DataSource = tablita;
             Recargar();
+
+            cldv claseDetalleVenta = new cldv();
+            claseDetalleVenta.llenarProductos(dgProductos);
+
         }
         //reiniza los valores de factura, si hubo una venta tomara el valor maximo y lo sumara
         //esto permite que al momento de hacer la venta, este valor sea el id de toda la venta, posibilitando
@@ -572,6 +576,11 @@ namespace GerizimZZ
         }
 
         private void lblNumeroFactura_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void llenarProductos()
         {
 
         }
