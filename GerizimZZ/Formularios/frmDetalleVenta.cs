@@ -570,5 +570,10 @@ namespace GerizimZZ
         {
             datagrid(); 
         }
+
+        private void lblNumeroFactura_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

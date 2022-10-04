@@ -33,7 +33,6 @@ namespace GerizimZZ
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDetalleVenta));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Imprimir = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.cmbPago = new System.Windows.Forms.ComboBox();
@@ -71,7 +70,6 @@ namespace GerizimZZ
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgDetalleVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -84,7 +82,7 @@ namespace GerizimZZ
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = global::GerizimZZ.Properties.Resources.logoComprimido;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -93,19 +91,6 @@ namespace GerizimZZ
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Image = global::GerizimZZ.Properties.Resources.substract;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 87);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1366, 23);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // Imprimir
             // 
@@ -154,7 +139,7 @@ namespace GerizimZZ
             this.facturaLbl.AutoSize = true;
             this.facturaLbl.Font = new System.Drawing.Font("Garamond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.facturaLbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.facturaLbl.Location = new System.Drawing.Point(161, 131);
+            this.facturaLbl.Location = new System.Drawing.Point(161, 396);
             this.facturaLbl.Name = "facturaLbl";
             this.facturaLbl.Size = new System.Drawing.Size(98, 24);
             this.facturaLbl.TabIndex = 18;
@@ -183,8 +168,8 @@ namespace GerizimZZ
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Green;
-            this.label7.Location = new System.Drawing.Point(30, 456);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(27, 446);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 27);
             this.label7.TabIndex = 23;
@@ -192,7 +177,7 @@ namespace GerizimZZ
             // 
             // btnCancelarVenta
             // 
-            this.btnCancelarVenta.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelarVenta.BackColor = System.Drawing.Color.LightGray;
             this.btnCancelarVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCancelarVenta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCancelarVenta.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -206,7 +191,7 @@ namespace GerizimZZ
             // 
             // btnGenerarVenta
             // 
-            this.btnGenerarVenta.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenerarVenta.BackColor = System.Drawing.Color.LightGray;
             this.btnGenerarVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGenerarVenta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGenerarVenta.Location = new System.Drawing.Point(0, 137);
@@ -224,10 +209,10 @@ namespace GerizimZZ
             this.dgDetalleVenta.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dgDetalleVenta.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgDetalleVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgDetalleVenta.Location = new System.Drawing.Point(161, 413);
+            this.dgDetalleVenta.Location = new System.Drawing.Point(161, 423);
             this.dgDetalleVenta.Name = "dgDetalleVenta";
             this.dgDetalleVenta.RowTemplate.Height = 25;
-            this.dgDetalleVenta.Size = new System.Drawing.Size(739, 241);
+            this.dgDetalleVenta.Size = new System.Drawing.Size(739, 268);
             this.dgDetalleVenta.TabIndex = 28;
             this.dgDetalleVenta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDetalleVenta_CellContentClick_1);
             this.dgDetalleVenta.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgDetalleVenta_RowsAdded);
@@ -238,7 +223,7 @@ namespace GerizimZZ
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackColor = System.Drawing.Color.LightGray;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.Dock = System.Windows.Forms.DockStyle.Top;
             this.button4.Location = new System.Drawing.Point(0, 273);
@@ -253,7 +238,7 @@ namespace GerizimZZ
             // 
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lblHora.Location = new System.Drawing.Point(204, 56);
+            this.lblHora.Location = new System.Drawing.Point(373, 131);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(43, 18);
             this.lblHora.TabIndex = 33;
@@ -264,7 +249,7 @@ namespace GerizimZZ
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFecha.Location = new System.Drawing.Point(204, 27);
+            this.lblFecha.Location = new System.Drawing.Point(373, 108);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(55, 18);
             this.lblFecha.TabIndex = 34;
@@ -283,7 +268,7 @@ namespace GerizimZZ
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.cmbPago);
-            this.groupBox1.Location = new System.Drawing.Point(161, 169);
+            this.groupBox1.Location = new System.Drawing.Point(161, 155);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(739, 113);
             this.groupBox1.TabIndex = 35;
@@ -335,7 +320,7 @@ namespace GerizimZZ
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.delivery);
-            this.groupBox2.Location = new System.Drawing.Point(161, 297);
+            this.groupBox2.Location = new System.Drawing.Point(161, 283);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(739, 110);
             this.groupBox2.TabIndex = 36;
@@ -403,13 +388,14 @@ namespace GerizimZZ
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.LightGray;
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.Location = new System.Drawing.Point(0, 206);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 67);
             this.button3.TabIndex = 37;
             this.button3.Text = "Actualizar Información";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // clientedstBindingSource
@@ -419,13 +405,13 @@ namespace GerizimZZ
             // 
             // NuevoCliente
             // 
-            this.NuevoCliente.BackColor = System.Drawing.Color.Transparent;
+            this.NuevoCliente.BackColor = System.Drawing.Color.LightGray;
             this.NuevoCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.NuevoCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.NuevoCliente.Location = new System.Drawing.Point(0, 0);
             this.NuevoCliente.Name = "NuevoCliente";
             this.NuevoCliente.Size = new System.Drawing.Size(126, 68);
-            this.NuevoCliente.TabIndex = 38;
+            this.NuevoCliente.TabIndex = 1;
             this.NuevoCliente.Text = "Nuevo Cliente";
             this.NuevoCliente.UseVisualStyleBackColor = false;
             this.NuevoCliente.Click += new System.EventHandler(this.NuevoCliente_Click);
@@ -435,15 +421,16 @@ namespace GerizimZZ
             this.lblNumeroFactura.AutoSize = true;
             this.lblNumeroFactura.Font = new System.Drawing.Font("Garamond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblNumeroFactura.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblNumeroFactura.Location = new System.Drawing.Point(278, 131);
+            this.lblNumeroFactura.Location = new System.Drawing.Point(265, 396);
             this.lblNumeroFactura.Name = "lblNumeroFactura";
             this.lblNumeroFactura.Size = new System.Drawing.Size(30, 24);
             this.lblNumeroFactura.TabIndex = 39;
             this.lblNumeroFactura.Text = "00";
+            this.lblNumeroFactura.Click += new System.EventHandler(this.lblNumeroFactura_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Controls.Add(this.lblTotal);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -452,15 +439,15 @@ namespace GerizimZZ
             this.panel1.Controls.Add(this.NuevoCliente);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 110);
+            this.panel1.Location = new System.Drawing.Point(0, 87);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(126, 582);
+            this.panel1.Size = new System.Drawing.Size(126, 637);
             this.panel1.TabIndex = 40;
             // 
             // lblTotal
             // 
             this.lblTotal.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotal.ForeColor = System.Drawing.Color.MediumBlue;
+            this.lblTotal.ForeColor = System.Drawing.Color.LightSteelBlue;
             this.lblTotal.Location = new System.Drawing.Point(3, 496);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(120, 48);
@@ -471,7 +458,7 @@ namespace GerizimZZ
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Location = new System.Drawing.Point(161, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 21);
             this.label1.TabIndex = 41;
@@ -487,7 +474,7 @@ namespace GerizimZZ
             this.dataGridView1.Location = new System.Drawing.Point(926, 131);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(428, 523);
+            this.dataGridView1.Size = new System.Drawing.Size(406, 560);
             this.dataGridView1.TabIndex = 42;
             // 
             // frmDetalleVenta
@@ -495,7 +482,7 @@ namespace GerizimZZ
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1366, 692);
+            this.ClientSize = new System.Drawing.Size(1366, 724);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -504,7 +491,6 @@ namespace GerizimZZ
             this.Controls.Add(this.facturaLbl);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.dgDetalleVenta);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -521,7 +507,6 @@ namespace GerizimZZ
             this.Text = "Detalle de venta";
             this.Load += new System.EventHandler(this.DetalleVenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgDetalleVenta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -541,7 +526,6 @@ namespace GerizimZZ
         #endregion
 
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private PrintPreviewDialog printPreviewDialog1;
         private ComboBox cmbPago;
         private CheckBox delivery;
