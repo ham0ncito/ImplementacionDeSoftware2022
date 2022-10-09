@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInventario));
             this.dgvProducto = new System.Windows.Forms.DataGridView();
             this.LineaNegraEstetica = new System.Windows.Forms.PictureBox();
@@ -60,9 +61,29 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.eprovidercodigo = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eproviderPrecio = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eproviderPeso = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eproviderCant = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eprovidercantMin = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eproviderestado = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eproviderccatalogo = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eproviderdesc = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eprovidercbarra = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eprovidernombre = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LineaNegraEstetica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprovidercodigo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderPrecio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderPeso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderCant)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprovidercantMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderestado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderccatalogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderdesc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprovidercbarra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprovidernombre)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvProducto
@@ -242,6 +263,7 @@
             this.txtID_codigoProducto.Name = "txtID_codigoProducto";
             this.txtID_codigoProducto.Size = new System.Drawing.Size(130, 23);
             this.txtID_codigoProducto.TabIndex = 45;
+            this.txtID_codigoProducto.Validating += new System.ComponentModel.CancelEventHandler(this.txtID_codigoProducto_Validating);
             // 
             // txtPrecio_producto
             // 
@@ -250,6 +272,7 @@
             this.txtPrecio_producto.Name = "txtPrecio_producto";
             this.txtPrecio_producto.Size = new System.Drawing.Size(130, 23);
             this.txtPrecio_producto.TabIndex = 46;
+            this.txtPrecio_producto.Validating += new System.ComponentModel.CancelEventHandler(this.txtPrecio_producto_Validating);
             // 
             // txtNombreProducto
             // 
@@ -258,6 +281,7 @@
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.Size = new System.Drawing.Size(130, 23);
             this.txtNombreProducto.TabIndex = 47;
+            this.txtNombreProducto.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombreProducto_Validating);
             // 
             // txtDescripcionProducto
             // 
@@ -267,6 +291,7 @@
             this.txtDescripcionProducto.Name = "txtDescripcionProducto";
             this.txtDescripcionProducto.Size = new System.Drawing.Size(400, 26);
             this.txtDescripcionProducto.TabIndex = 48;
+            this.txtDescripcionProducto.Validating += new System.ComponentModel.CancelEventHandler(this.txtDescripcionProducto_Validating);
             // 
             // txtPesoProducto
             // 
@@ -275,6 +300,7 @@
             this.txtPesoProducto.Name = "txtPesoProducto";
             this.txtPesoProducto.Size = new System.Drawing.Size(126, 23);
             this.txtPesoProducto.TabIndex = 49;
+            this.txtPesoProducto.Validating += new System.ComponentModel.CancelEventHandler(this.txtPesoProducto_Validating);
             // 
             // txtCodigoBarra
             // 
@@ -283,6 +309,7 @@
             this.txtCodigoBarra.Name = "txtCodigoBarra";
             this.txtCodigoBarra.Size = new System.Drawing.Size(126, 23);
             this.txtCodigoBarra.TabIndex = 50;
+            this.txtCodigoBarra.Validating += new System.ComponentModel.CancelEventHandler(this.txtCodigoBarra_Validating);
             // 
             // txtCodigoCatologo
             // 
@@ -291,6 +318,7 @@
             this.txtCodigoCatologo.Name = "txtCodigoCatologo";
             this.txtCodigoCatologo.Size = new System.Drawing.Size(126, 23);
             this.txtCodigoCatologo.TabIndex = 51;
+            this.txtCodigoCatologo.Validating += new System.ComponentModel.CancelEventHandler(this.txtCodigoCatologo_Validating);
             // 
             // txtCantidadProducto
             // 
@@ -299,6 +327,7 @@
             this.txtCantidadProducto.Name = "txtCantidadProducto";
             this.txtCantidadProducto.Size = new System.Drawing.Size(118, 23);
             this.txtCantidadProducto.TabIndex = 52;
+            this.txtCantidadProducto.Validating += new System.ComponentModel.CancelEventHandler(this.txtCantidadProducto_Validating);
             // 
             // txtCantidadMinima
             // 
@@ -307,6 +336,7 @@
             this.txtCantidadMinima.Name = "txtCantidadMinima";
             this.txtCantidadMinima.Size = new System.Drawing.Size(118, 23);
             this.txtCantidadMinima.TabIndex = 53;
+            this.txtCantidadMinima.Validating += new System.ComponentModel.CancelEventHandler(this.txtCantidadMinima_Validating);
             // 
             // txtEstadoPRoducto
             // 
@@ -315,6 +345,7 @@
             this.txtEstadoPRoducto.Name = "txtEstadoPRoducto";
             this.txtEstadoPRoducto.Size = new System.Drawing.Size(118, 23);
             this.txtEstadoPRoducto.TabIndex = 54;
+            this.txtEstadoPRoducto.Validating += new System.ComponentModel.CancelEventHandler(this.txtEstadoPRoducto_Validating);
             // 
             // txtFechaingreso
             // 
@@ -356,6 +387,46 @@
             this.btnEliminar.Text = "Eliminar Producto";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // eprovidercodigo
+            // 
+            this.eprovidercodigo.ContainerControl = this;
+            // 
+            // eproviderPrecio
+            // 
+            this.eproviderPrecio.ContainerControl = this;
+            // 
+            // eproviderPeso
+            // 
+            this.eproviderPeso.ContainerControl = this;
+            // 
+            // eproviderCant
+            // 
+            this.eproviderCant.ContainerControl = this;
+            // 
+            // eprovidercantMin
+            // 
+            this.eprovidercantMin.ContainerControl = this;
+            // 
+            // eproviderestado
+            // 
+            this.eproviderestado.ContainerControl = this;
+            // 
+            // eproviderccatalogo
+            // 
+            this.eproviderccatalogo.ContainerControl = this;
+            // 
+            // eproviderdesc
+            // 
+            this.eproviderdesc.ContainerControl = this;
+            // 
+            // eprovidercbarra
+            // 
+            this.eprovidercbarra.ContainerControl = this;
+            // 
+            // eprovidernombre
+            // 
+            this.eprovidernombre.ContainerControl = this;
             // 
             // FrmInventario
             // 
@@ -401,6 +472,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LineaNegraEstetica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprovidercodigo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderPrecio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderPeso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderCant)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprovidercantMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderestado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderccatalogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eproviderdesc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprovidercbarra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprovidernombre)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,5 +519,15 @@
         private Button btnAgregar;
         private Button btnModificar;
         private Button btnEliminar;
+        private ErrorProvider eprovidercodigo;
+        private ErrorProvider eproviderPrecio;
+        private ErrorProvider eproviderPeso;
+        private ErrorProvider eproviderCant;
+        private ErrorProvider eprovidercantMin;
+        private ErrorProvider eproviderestado;
+        private ErrorProvider eproviderccatalogo;
+        private ErrorProvider eproviderdesc;
+        private ErrorProvider eprovidercbarra;
+        private ErrorProvider eprovidernombre;
     }
 }
