@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace GerizimZZ.Clases
 {
@@ -42,7 +43,9 @@ namespace GerizimZZ.Clases
             SqlCommand comando = new SqlCommand();
             comando.Connection = con;
             comando.CommandType = CommandType.Text;
-            comando.CommandText = "SELECT * FROM Producto";
+            comando.CommandText = "SELECT  ID_codigoProducto as 'Código Producto', Precio_producto 'Precio producto', nombreProducto as 'Nombre producto', pesoProducto as 'Peso producto', codigoBarra as 'Código de barra',codigoCatologo as 'Código de Catálogo', cantidadProducto as 'Cantidad producto', cantidadMinima as 'Cantidad minima', descripcionProducto as 'Descripción producto',estadoPRoducto as 'Estado producto'\r\nFROM Producto";
+
+
             using (con)
             {
                 con.Open();
@@ -62,7 +65,7 @@ namespace GerizimZZ.Clases
                 {
                     string sql = "INSERT INTO Producto(ID_codigoProducto, Precio_producto, NombreProducto, PesoProducto, CodigoBarra, CodigoCatologo, CantidadProducto, CantidadMinima, DescripcionProducto, EstadoPRoducto) VALUES ('"
                     + ID_codigoProducto + "','" + Precio_producto + "','" + NombreProducto + "','" + PesoProducto + "','" + CodigoBarra + "','" + CodigoCatologo +
-                    "','" + CantidadProducto + "','" + CantidadMinima + "','" + DescripcionProducto + "','" + EstadoPRoducto  + "')";
+                    "','" + CantidadProducto + "','" + CantidadMinima + "','" + DescripcionProducto + "','" + EstadoPRoducto + "')";
                     con.Open();
                     SqlCommand cmd = new SqlCommand(sql, con);
                     if (cmd.ExecuteNonQuery() == 1)
@@ -70,9 +73,10 @@ namespace GerizimZZ.Clases
                         con.Close();
                         MessageBox.Show("Registro agregado con exito", "Agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    
-                   
-                }catch( Exception x)
+
+
+                }
+                catch (Exception x)
                 {
                     MessageBox.Show(x.Message);
                 }

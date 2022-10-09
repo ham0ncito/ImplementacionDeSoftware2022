@@ -251,7 +251,6 @@ C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pa
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Producto.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Properties.Resources.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.RegistrosVentas.resources
-C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.RegistroVentas.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.VentanaInfoProductos.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.GenerateResource.cache
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.GeneratedMSBuildEditorConfig.editorconfig
@@ -274,3 +273,12 @@ C:\Users\HP\OneDrive\Documentos\GitHub\GerizimZZ\obj\Debug\net6.0-windows\Gerizi
 C:\Users\HP\OneDrive\Documentos\GitHub\GerizimZZ\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
 C:\Users\HP\OneDrive\Documentos\GitHub\GerizimZZ\bin\Debug\net6.0-windows\itextsharp.dll
 C:\Users\HP\OneDrive\Documentos\GitHub\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Datasets.RegistroVentas.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\bin\Debug\net6.0-windows\IronBarCode.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\bin\Debug\net6.0-windows\itextsharp.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Interop.COMAdmin.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Interop.TxBDD.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Datasets.RegistroVentas.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frCodigoBarra.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmRepartidores.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Frm_AsignarRepartidor.resources

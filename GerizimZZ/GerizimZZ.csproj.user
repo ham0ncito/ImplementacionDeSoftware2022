@@ -7,6 +7,9 @@
     <Compile Update="Formularios\FrmBarrapreview.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Formularios\FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Otros\Component1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -26,9 +29,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\FrmCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Formularios\FrmInventario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\FrmRepartidores.cs">
