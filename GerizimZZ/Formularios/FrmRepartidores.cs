@@ -21,13 +21,21 @@ namespace GerizimZZ
 
         private void FrmRepartidores_Load(object sender, EventArgs e)
         {
+           
             cmda.infogrid(dataGridView1);
+            dataGridView1.Columns[0].HeaderText = "Id Repartidores";
+            dataGridView1.Columns[1].HeaderText = "Nombre del Repartidor";
+            dataGridView1.Columns[2].HeaderText = "Telefono del Repartidor";
+            dataGridView1.Columns[3].HeaderText = "Id Sucursal";
+            dataGridView1.Columns[4].HeaderText = "Direccion de Entrega";
+            dataGridView1.Columns[5].HeaderText = "Id Factura";
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //Llenar textboxt con datos del datagridview
             tb_Nombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            tb_Codigo.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             tb_CodigoRepartidor.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
 
