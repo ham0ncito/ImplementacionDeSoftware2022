@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrosVentas));
             this.barraBusqueda = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.intmensual = new System.Windows.Forms.TextBox();
@@ -55,7 +54,6 @@
             this.idsucursal = new System.Windows.Forms.TextBox();
             this.idcajas = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
@@ -82,25 +80,12 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::GerizimZZ.Properties.Resources.logoComprimido;
-            this.pictureBox1.Location = new System.Drawing.Point(240, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(247, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(236, 114);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::GerizimZZ.Properties.Resources.substract;
-            this.pictureBox2.Location = new System.Drawing.Point(25, 129);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(704, 19);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -130,22 +115,28 @@
             // intmensual
             // 
             this.intmensual.BackColor = System.Drawing.Color.Honeydew;
+            this.intmensual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.intmensual.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.intmensual.Location = new System.Drawing.Point(144, 429);
             this.intmensual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.intmensual.Name = "intmensual";
+            this.intmensual.PlaceholderText = "0.00";
             this.intmensual.ReadOnly = true;
-            this.intmensual.Size = new System.Drawing.Size(110, 23);
+            this.intmensual.Size = new System.Drawing.Size(110, 16);
             this.intmensual.TabIndex = 14;
             this.intmensual.TextChanged += new System.EventHandler(this.intsemanal_TextChanged);
             // 
             // intventasdia
             // 
             this.intventasdia.BackColor = System.Drawing.Color.Honeydew;
+            this.intventasdia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.intventasdia.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.intventasdia.Location = new System.Drawing.Point(144, 394);
             this.intventasdia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.intventasdia.Name = "intventasdia";
+            this.intventasdia.PlaceholderText = "0.00";
             this.intventasdia.ReadOnly = true;
-            this.intventasdia.Size = new System.Drawing.Size(110, 23);
+            this.intventasdia.Size = new System.Drawing.Size(110, 16);
             this.intventasdia.TabIndex = 15;
             this.intventasdia.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -153,6 +144,8 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Honeydew;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(18, 259);
@@ -161,6 +154,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(400, 110);
             this.dataGridView1.TabIndex = 18;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -182,7 +176,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Garamond", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(262, 141);
+            this.label3.Location = new System.Drawing.Point(286, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 25);
             this.label3.TabIndex = 17;
@@ -217,7 +211,7 @@
             this.VFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VFactura.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VFactura.ForeColor = System.Drawing.Color.Black;
-            this.VFactura.Location = new System.Drawing.Point(518, 429);
+            this.VFactura.Location = new System.Drawing.Point(543, 420);
             this.VFactura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VFactura.Name = "VFactura";
             this.VFactura.Size = new System.Drawing.Size(126, 28);
@@ -288,8 +282,9 @@
             this.txtid.Location = new System.Drawing.Point(598, 224);
             this.txtid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtid.Name = "txtid";
+            this.txtid.PlaceholderText = "1";
             this.txtid.Size = new System.Drawing.Size(110, 23);
-            this.txtid.TabIndex = 29;
+            this.txtid.TabIndex = 1;
             // 
             // nventa
             // 
@@ -297,8 +292,9 @@
             this.nventa.Location = new System.Drawing.Point(598, 259);
             this.nventa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nventa.Name = "nventa";
+            this.nventa.PlaceholderText = "10/4/202";
             this.nventa.Size = new System.Drawing.Size(110, 23);
-            this.nventa.TabIndex = 34;
+            this.nventa.TabIndex = 2;
             // 
             // fechapago
             // 
@@ -306,8 +302,9 @@
             this.fechapago.Location = new System.Drawing.Point(598, 293);
             this.fechapago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fechapago.Name = "fechapago";
+            this.fechapago.PlaceholderText = "101";
             this.fechapago.Size = new System.Drawing.Size(110, 23);
-            this.fechapago.TabIndex = 31;
+            this.fechapago.TabIndex = 3;
             // 
             // idsucursal
             // 
@@ -315,8 +312,9 @@
             this.idsucursal.Location = new System.Drawing.Point(598, 327);
             this.idsucursal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.idsucursal.Name = "idsucursal";
+            this.idsucursal.PlaceholderText = "3";
             this.idsucursal.Size = new System.Drawing.Size(110, 23);
-            this.idsucursal.TabIndex = 32;
+            this.idsucursal.TabIndex = 4;
             // 
             // idcajas
             // 
@@ -324,10 +322,11 @@
             this.idcajas.Location = new System.Drawing.Point(598, 364);
             this.idcajas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.idcajas.Name = "idcajas";
+            this.idcajas.PlaceholderText = "1";
             this.idcajas.Size = new System.Drawing.Size(110, 23);
-            this.idcajas.TabIndex = 33;
+            this.idcajas.TabIndex = 5;
             // 
-            // RegistrosVentas
+            // frmRegistrosVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -351,17 +350,15 @@
             this.Controls.Add(this.intmensual);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.barraBusqueda);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "RegistrosVentas";
+            this.Name = "frmRegistrosVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro Ventas";
             this.Load += new System.EventHandler(this.RegistrosVentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
@@ -375,7 +372,6 @@
 
         public TextBox barraBusqueda;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private Label label1;
         private Label label2;
         private TextBox intmensual;
