@@ -52,7 +52,7 @@
     <Compile Update="Formularios\Frm_AsignarRepartidor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\Inventarios.cs">
+    <Compile Update="Formularios\frmInventarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\FrmLogin.cs">
@@ -64,19 +64,19 @@
     <Compile Update="UserObjects\Mensaje.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Formularios\Opciones.cs">
+    <Compile Update="Formularios\frmOpciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\pantallafactura.cs">
+    <Compile Update="Formularios\frmpantallafactura.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\frmRegistrosVentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\VentanaInfoProductos.cs">
+    <Compile Update="Formularios\frmVentanaInfoProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\Inicio.cs">
+    <Compile Update="Formularios\frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UserObjects\PantallaProducto.cs">

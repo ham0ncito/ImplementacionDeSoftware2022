@@ -104,7 +104,7 @@ namespace GerizimZZ
                 cmbDireccion.Items.Clear();
                 lblCodigoCliente.Text = "";
 
-                Inicio Principal = Owner as Inicio;
+                frmInicio Principal = Owner as frmInicio;
                 Principal.IniciarFlowLayout();
                 Principal.FlpDatos.Controls.Clear();
                 Principal.Llenado();

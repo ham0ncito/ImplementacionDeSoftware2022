@@ -308,11 +308,6 @@ C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Ge
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmSolicitudInventario.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmUsuario.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Frm_AsignarRepartidor.resources
-C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Inicio.resources
-C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Inventarios.resources
-C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Opciones.resources
-C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pantallafactura.resources
-C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.VentanaInfoProductos.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Properties.Resources.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Mensaje.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Producto.resources
@@ -333,3 +328,8 @@ C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Ge
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmDetalleVentaAyuda.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmInicioAyuda.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmPendientes.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInicio.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInventarios.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmOpciones.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmpantallafactura.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmVentanaInfoProductos.resources

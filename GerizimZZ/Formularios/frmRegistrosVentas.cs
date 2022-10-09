@@ -65,7 +65,7 @@ namespace GerizimZZ
 
         private void VFactura_Click(object sender, EventArgs e)
         {
-            pantallafactura rc = new pantallafactura();
+            frmpantallafactura rc = new frmpantallafactura();
             rc.ShowDialog();
         }
 

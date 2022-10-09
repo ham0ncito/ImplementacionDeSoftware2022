@@ -128,7 +128,7 @@ namespace GerizimZZ
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            VentanaInfoProductos pr = new VentanaInfoProductos();
+            frmVentanaInfoProductos pr = new frmVentanaInfoProductos();
             pr.lblNombre.Text = this.NombreProducto;
             pr.picImagen.Image = this.ImagenProducto.Image; 
             pr.lbldescripcion.Text = this.descripcion;

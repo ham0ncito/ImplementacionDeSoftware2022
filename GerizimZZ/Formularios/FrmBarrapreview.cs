@@ -131,7 +131,7 @@ namespace GerizimZZ
 
         private void btnopc_Click(object sender, EventArgs e)
         {
-            Opciones opciones = new Opciones();
+            frmOpciones opciones = new frmOpciones();
             opciones.ShowDialog();
         }
     }

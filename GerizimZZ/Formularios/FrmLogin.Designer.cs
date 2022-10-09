@@ -76,7 +76,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(179, 41);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.PlaceholderText = "usuarioGerizim";
+            this.txtUsuario.PlaceholderText = "GerizimSucursal";
             this.txtUsuario.Size = new System.Drawing.Size(219, 29);
             this.txtUsuario.TabIndex = 2;
             this.txtUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -142,7 +142,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::GerizimZZ.Properties.Resources._199848567_4174426372616759_1130399733558613204_n_PhotoRoom1;
-            this.pictureBox1.Location = new System.Drawing.Point(221, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(204, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(163, 126);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -220,7 +220,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::GerizimZZ.Properties.Resources._053_Soft_Grass;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(566, 466);
+            this.ClientSize = new System.Drawing.Size(573, 472);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
