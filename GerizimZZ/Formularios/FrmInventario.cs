@@ -2,6 +2,9 @@
 using GerizimZZ.Datasets;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
+
+
 
 namespace GerizimZZ
 {
@@ -12,6 +15,9 @@ namespace GerizimZZ
         private DataTable dtProducto;
         private int codigo, cantidadproducto, cantidadminima, estadoproducto;
         private double precio_producto, pesoproducto;
+
+
+        Validaciones validar = new Validaciones();
 
         public FrmInventario()
         {
@@ -25,13 +31,15 @@ namespace GerizimZZ
             dstProducto = new Productosdst();
             dstProducto.Tables.Add(dtProducto);
             dgvProducto.DataSource = dstProducto.Tables[0];
+            LoadHeader();
         }
 
         private void dgvProducto_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow item in this.dgvProducto.SelectedRows)
+
             {
-                txtID_codigoProducto.Text = item.Cells[0].Value.ToString();
+                //txtID_codigoProducto.Text = item.Cells[0].Value.ToString();
                 txtPrecio_producto.Text = item.Cells[1].Value.ToString();
                 txtNombreProducto.Text = item.Cells[2].Value.ToString();
                 txtPesoProducto.Text = item.Cells[3].Value.ToString();
@@ -42,7 +50,17 @@ namespace GerizimZZ
                 txtDescripcionProducto.Text = item.Cells[8].Value.ToString();
                 txtEstadoPRoducto.Text = item.Cells[9].Value.ToString();
                 txtFechaingreso.Text = item.Cells[10].Value.ToString();
+                //dgvProducto.Columns["precio_producto"].HeaderText = "Precio";
+
             }
+        }
+
+        private void LoadHeader()
+        {
+            //this.dgvProducto.Columns[0].Name = "ID producto";
+            //this.dgvProducto.Columns[1].Name = "ID producto";
+            //this.dgvProducto.Columns[2].Name = "ID producto";
+            //this.dgvProducto.Columns[3].Name = "ID producto";
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
@@ -61,44 +79,149 @@ namespace GerizimZZ
             dgvProducto.DataSource = dstProducto.Tables[0].DefaultView;
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == ""  || txtID_codigoProducto.Text == "" || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
-            {
-                MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                codigo = Convert.ToInt32(txtID_codigoProducto.Text);
-                cantidadproducto = Convert.ToInt32(txtCantidadProducto.Text);
-                cantidadminima = Convert.ToInt32(txtCantidadMinima.Text);
-                estadoproducto = Convert.ToInt32(txtEstadoPRoducto.Text);
-                precio_producto = Convert.ToDouble(txtPrecio_producto.Text);
-                pesoproducto = Convert.ToDouble(txtPesoProducto.Text);
 
-                productos.Agregar_Producto(codigo, precio_producto, txtNombreProducto.Text, pesoproducto, txtCodigoBarra.Text, txtCodigoCatologo.Text, cantidadproducto, cantidadminima, txtDescripcionProducto.Text, estadoproducto, txtFechaingreso.Text);
-                SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
-                SqlDataAdapter comando = new SqlDataAdapter();
-                string sql = "SELECT * FROM Producto";
-                comando.SelectCommand = new SqlCommand(sql, con);
-                dtProducto = Cl_Inventario.GetAll();
-                dstProducto = new Productosdst();
-                dstProducto.Tables.Add(dtProducto);
-                dgvProducto.DataSource = dstProducto.Tables[0];
-                con.Close();
-              
+        private void txtPrecio_producto_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Ingrese Solo Números", "Campo codigo producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                e.Handled = true;
+                return;
             }
         }
 
+
+        private void txtID_codigoProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Ingrese Solo Números", "Campo codigo producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtNombreProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validar.Letras(e, txtPrecio_producto);
+        }
+
+        private void txtDescripcionProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validar.Letras(e, txtPrecio_producto);
+        }
+
+        private void txtPesoProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Ingrese Solo Números", "Campo peso producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtCodigoCatologo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Ingrese Solo Números", "Campo codigo catalogo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtCantidadProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Ingrese Solo Números", "Cantidad producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtCantidadMinima_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Ingrese Solo Números", "Campo Minima", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtEstadoPRoducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Ingrese Solo Números", "Estado producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void dgvProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" || /*txtID_codigoProducto.Text == ""*/ /*||*/ txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
+                {
+                    MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
+                else
+                {
+                    //codigo = Convert.ToInt32(txtID_codigoProducto.Text);
+                    cantidadproducto = Convert.ToInt32(txtCantidadProducto.Text);
+                    cantidadminima = Convert.ToInt32(txtCantidadMinima.Text);
+                    estadoproducto = Convert.ToInt32(txtEstadoPRoducto.Text);
+                    precio_producto = Convert.ToDouble(txtPrecio_producto.Text);
+                    pesoproducto = Convert.ToDouble(txtPesoProducto.Text);
+
+                    productos.Agregar_Producto(codigo, precio_producto, txtNombreProducto.Text, pesoproducto, txtCodigoBarra.Text, txtCodigoCatologo.Text, cantidadproducto, cantidadminima, txtDescripcionProducto.Text, estadoproducto, txtFechaingreso.Text);
+                    SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+                    SqlDataAdapter comando = new SqlDataAdapter();
+                    string sql = "SELECT * FROM Producto";
+                    comando.SelectCommand = new SqlCommand(sql, con);
+                    dtProducto = Cl_Inventario.GetAll();
+                    dstProducto = new Productosdst();
+                    dstProducto.Tables.Add(dtProducto);
+                    dgvProducto.DataSource = dstProducto.Tables[0];
+                    con.Close();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al ingresar el producto " + ex, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        //No sirve para nada este
+        private void txtPrecio_producto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validar.Letras(e, txtPrecio_producto);
+        }
+
+
+
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" || txtFechaingreso.Text == "" || txtID_codigoProducto.Text == "" || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
+            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" || txtFechaingreso.Text == ""/* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
             {
                 MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                codigo = Convert.ToInt32(txtID_codigoProducto.Text);
+                //codigo = Convert.ToInt32(txtID_codigoProducto.Text);
                 cantidadproducto = Convert.ToInt32(txtCantidadProducto.Text);
                 cantidadminima = Convert.ToInt32(txtCantidadMinima.Text);
                 estadoproducto = Convert.ToInt32(txtEstadoPRoducto.Text);
@@ -119,7 +242,7 @@ namespace GerizimZZ
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" || txtFechaingreso.Text == "" || txtID_codigoProducto.Text == "" || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
+            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" || txtFechaingreso.Text == ""/* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
             {
                 MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

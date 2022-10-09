@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
-            this.lblCodigo = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -46,7 +45,6 @@
             this.lblcantidad_Minima = new System.Windows.Forms.Label();
             this.lblestado_Producto = new System.Windows.Forms.Label();
             this.lblfecha_Ingreso = new System.Windows.Forms.Label();
-            this.txtID_codigoProducto = new System.Windows.Forms.TextBox();
             this.txtPrecio_producto = new System.Windows.Forms.TextBox();
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
             this.txtDescripcionProducto = new System.Windows.Forms.TextBox();
@@ -80,11 +78,12 @@
             this.dgvProducto.RowTemplate.Height = 29;
             this.dgvProducto.Size = new System.Drawing.Size(938, 205);
             this.dgvProducto.TabIndex = 25;
+            this.dgvProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducto_CellContentClick);
             this.dgvProducto.Click += new System.EventHandler(this.dgvProducto_Click);
             // 
             // LineaNegraEstetica
             // 
-            this.LineaNegraEstetica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LineaNegraEstetica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LineaNegraEstetica.Image = global::GerizimZZ.Properties.Resources.substract;
             this.LineaNegraEstetica.Location = new System.Drawing.Point(10, 80);
@@ -97,7 +96,7 @@
             // 
             // LogoGerizim
             // 
-            this.LogoGerizim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LogoGerizim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LogoGerizim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.LogoGerizim.Image = global::GerizimZZ.Properties.Resources.logoComprimido;
@@ -136,19 +135,10 @@
             this.lblBuscar.TabIndex = 31;
             this.lblBuscar.Text = "Buscar :";
             // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(10, 356);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(52, 15);
-            this.lblCodigo.TabIndex = 34;
-            this.lblCodigo.Text = "Codigo :";
-            // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(18, 389);
+            this.lblPrecio.Location = new System.Drawing.Point(50, 392);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(46, 15);
             this.lblPrecio.TabIndex = 35;
@@ -157,7 +147,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(10, 421);
+            this.lblNombre.Location = new System.Drawing.Point(39, 421);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(57, 15);
             this.lblNombre.TabIndex = 36;
@@ -166,11 +156,11 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(10, 451);
+            this.lblDescripcion.Location = new System.Drawing.Point(17, 449);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(75, 15);
             this.lblDescripcion.TabIndex = 37;
-            this.lblDescripcion.Text = "Descripcion :";
+            this.lblDescripcion.Text = "Descripción :";
             // 
             // lblPeso
             // 
@@ -188,7 +178,7 @@
             this.lvlcodigo_Barra.Name = "lvlcodigo_Barra";
             this.lvlcodigo_Barra.Size = new System.Drawing.Size(98, 15);
             this.lvlcodigo_Barra.TabIndex = 39;
-            this.lvlcodigo_Barra.Text = "Codigo de Barra :";
+            this.lvlcodigo_Barra.Text = "Código de Barra :";
             // 
             // lblcodigo_Catologo
             // 
@@ -197,7 +187,7 @@
             this.lblcodigo_Catologo.Name = "lblcodigo_Catologo";
             this.lblcodigo_Catologo.Size = new System.Drawing.Size(103, 15);
             this.lblcodigo_Catologo.TabIndex = 40;
-            this.lblcodigo_Catologo.Text = "Codigo Catalogo :";
+            this.lblcodigo_Catologo.Text = "Código Catalogo :";
             // 
             // lblcantidad_Producto
             // 
@@ -215,7 +205,7 @@
             this.lblcantidad_Minima.Name = "lblcantidad_Minima";
             this.lblcantidad_Minima.Size = new System.Drawing.Size(105, 15);
             this.lblcantidad_Minima.TabIndex = 42;
-            this.lblcantidad_Minima.Text = "Cantidad Minima :";
+            this.lblcantidad_Minima.Text = "Cantidad Mínima :";
             // 
             // lblestado_Producto
             // 
@@ -229,35 +219,29 @@
             // lblfecha_Ingreso
             // 
             this.lblfecha_Ingreso.AutoSize = true;
-            this.lblfecha_Ingreso.Location = new System.Drawing.Point(557, 453);
+            this.lblfecha_Ingreso.Location = new System.Drawing.Point(10, 362);
             this.lblfecha_Ingreso.Name = "lblfecha_Ingreso";
             this.lblfecha_Ingreso.Size = new System.Drawing.Size(86, 15);
             this.lblfecha_Ingreso.TabIndex = 44;
             this.lblfecha_Ingreso.Text = "Fecha Ingreso :";
             // 
-            // txtID_codigoProducto
-            // 
-            this.txtID_codigoProducto.Location = new System.Drawing.Point(93, 351);
-            this.txtID_codigoProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtID_codigoProducto.Name = "txtID_codigoProducto";
-            this.txtID_codigoProducto.Size = new System.Drawing.Size(130, 23);
-            this.txtID_codigoProducto.TabIndex = 45;
-            // 
             // txtPrecio_producto
             // 
-            this.txtPrecio_producto.Location = new System.Drawing.Point(93, 384);
+            this.txtPrecio_producto.Location = new System.Drawing.Point(105, 384);
             this.txtPrecio_producto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrecio_producto.Name = "txtPrecio_producto";
-            this.txtPrecio_producto.Size = new System.Drawing.Size(130, 23);
+            this.txtPrecio_producto.Size = new System.Drawing.Size(118, 23);
             this.txtPrecio_producto.TabIndex = 46;
+            this.txtPrecio_producto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_producto_KeyPress_1);
             // 
             // txtNombreProducto
             // 
-            this.txtNombreProducto.Location = new System.Drawing.Point(93, 416);
+            this.txtNombreProducto.Location = new System.Drawing.Point(105, 416);
             this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreProducto.Name = "txtNombreProducto";
-            this.txtNombreProducto.Size = new System.Drawing.Size(130, 23);
+            this.txtNombreProducto.Size = new System.Drawing.Size(118, 23);
             this.txtNombreProducto.TabIndex = 47;
+            this.txtNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreProducto_KeyPress);
             // 
             // txtDescripcionProducto
             // 
@@ -265,8 +249,9 @@
             this.txtDescripcionProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescripcionProducto.Multiline = true;
             this.txtDescripcionProducto.Name = "txtDescripcionProducto";
-            this.txtDescripcionProducto.Size = new System.Drawing.Size(400, 26);
+            this.txtDescripcionProducto.Size = new System.Drawing.Size(687, 26);
             this.txtDescripcionProducto.TabIndex = 48;
+            this.txtDescripcionProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescripcionProducto_KeyPress);
             // 
             // txtPesoProducto
             // 
@@ -275,6 +260,7 @@
             this.txtPesoProducto.Name = "txtPesoProducto";
             this.txtPesoProducto.Size = new System.Drawing.Size(126, 23);
             this.txtPesoProducto.TabIndex = 49;
+            this.txtPesoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPesoProducto_KeyPress);
             // 
             // txtCodigoBarra
             // 
@@ -291,6 +277,7 @@
             this.txtCodigoCatologo.Name = "txtCodigoCatologo";
             this.txtCodigoCatologo.Size = new System.Drawing.Size(126, 23);
             this.txtCodigoCatologo.TabIndex = 51;
+            this.txtCodigoCatologo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoCatologo_KeyPress);
             // 
             // txtCantidadProducto
             // 
@@ -299,6 +286,7 @@
             this.txtCantidadProducto.Name = "txtCantidadProducto";
             this.txtCantidadProducto.Size = new System.Drawing.Size(118, 23);
             this.txtCantidadProducto.TabIndex = 52;
+            this.txtCantidadProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadProducto_KeyPress);
             // 
             // txtCantidadMinima
             // 
@@ -307,6 +295,7 @@
             this.txtCantidadMinima.Name = "txtCantidadMinima";
             this.txtCantidadMinima.Size = new System.Drawing.Size(118, 23);
             this.txtCantidadMinima.TabIndex = 53;
+            this.txtCantidadMinima.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadMinima_KeyPress);
             // 
             // txtEstadoPRoducto
             // 
@@ -315,10 +304,11 @@
             this.txtEstadoPRoducto.Name = "txtEstadoPRoducto";
             this.txtEstadoPRoducto.Size = new System.Drawing.Size(118, 23);
             this.txtEstadoPRoducto.TabIndex = 54;
+            this.txtEstadoPRoducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEstadoPRoducto_KeyPress);
             // 
             // txtFechaingreso
             // 
-            this.txtFechaingreso.Location = new System.Drawing.Point(667, 451);
+            this.txtFechaingreso.Location = new System.Drawing.Point(105, 357);
             this.txtFechaingreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFechaingreso.Name = "txtFechaingreso";
             this.txtFechaingreso.Size = new System.Drawing.Size(118, 23);
@@ -375,7 +365,6 @@
             this.Controls.Add(this.txtDescripcionProducto);
             this.Controls.Add(this.txtNombreProducto);
             this.Controls.Add(this.txtPrecio_producto);
-            this.Controls.Add(this.txtID_codigoProducto);
             this.Controls.Add(this.lblfecha_Ingreso);
             this.Controls.Add(this.lblestado_Producto);
             this.Controls.Add(this.lblcantidad_Minima);
@@ -386,7 +375,6 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.lblBuscar);
@@ -413,7 +401,6 @@
         private Label label3;
         private TextBox txtBuscar;
         private Label lblBuscar;
-        private Label lblCodigo;
         private Label lblPrecio;
         private Label lblNombre;
         private Label lblDescripcion;
@@ -424,7 +411,6 @@
         private Label lblcantidad_Minima;
         private Label lblestado_Producto;
         private Label lblfecha_Ingreso;
-        private TextBox txtID_codigoProducto;
         private TextBox txtPrecio_producto;
         private TextBox txtNombreProducto;
         private TextBox txtDescripcionProducto;
