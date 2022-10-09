@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Formularios\DetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frAgregarInformacionAviso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frCodigoBarra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frInicioBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frmAvisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\FrmBarrapreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frmPantallaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\FrmRepartidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\FrmSolicitudInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\Frm_AsignarRepartidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\Inventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\Opciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\pantallafactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\RegistrosVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\VentanaInfoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Otros\Component1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="UserObjects\Mensaje.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserObjects\PantallaProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

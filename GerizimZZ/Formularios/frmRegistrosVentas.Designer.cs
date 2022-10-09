@@ -49,11 +49,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtFechap = new System.Windows.Forms.TextBox();
-            this.txtIdCliente = new System.Windows.Forms.TextBox();
-            this.txtidsucursal = new System.Windows.Forms.TextBox();
+            this.txtFechaPago = new System.Windows.Forms.TextBox();
+            this.txtClienteId = new System.Windows.Forms.TextBox();
+            this.txtIdSucursal = new System.Windows.Forms.TextBox();
             this.txtidcajas = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -71,7 +72,7 @@
             this.barraBusqueda.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.barraBusqueda.Multiline = true;
             this.barraBusqueda.Name = "barraBusqueda";
-            this.barraBusqueda.Size = new System.Drawing.Size(242, 28);
+            this.barraBusqueda.Size = new System.Drawing.Size(193, 28);
             this.barraBusqueda.TabIndex = 19;
             this.barraBusqueda.TextChanged += new System.EventHandler(this.barraBusqueda_TextChanged_1);
             this.barraBusqueda.KeyUp += new System.Windows.Forms.KeyEventHandler(this.barraBusqueda_KeyUp);
@@ -86,7 +87,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(274, 13);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(327, 152);
+            this.pictureBox1.Size = new System.Drawing.Size(269, 152);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -98,7 +99,7 @@
             this.pictureBox2.Image = global::GerizimZZ.Properties.Resources.substract;
             this.pictureBox2.Location = new System.Drawing.Point(29, 172);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(862, 25);
+            this.pictureBox2.Size = new System.Drawing.Size(804, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -109,7 +110,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(559, 497);
+            this.label1.Location = new System.Drawing.Point(532, 456);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 22);
             this.label1.TabIndex = 9;
@@ -122,17 +123,16 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(559, 541);
+            this.label2.Location = new System.Drawing.Point(532, 494);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 22);
             this.label2.TabIndex = 13;
             this.label2.Text = "Total Mensual:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // intmensual
             // 
             this.intmensual.BackColor = System.Drawing.Color.Honeydew;
-            this.intmensual.Location = new System.Drawing.Point(724, 539);
+            this.intmensual.Location = new System.Drawing.Point(683, 494);
             this.intmensual.Name = "intmensual";
             this.intmensual.ReadOnly = true;
             this.intmensual.Size = new System.Drawing.Size(125, 27);
@@ -142,7 +142,7 @@
             // intventasdia
             // 
             this.intventasdia.BackColor = System.Drawing.Color.Honeydew;
-            this.intventasdia.Location = new System.Drawing.Point(724, 492);
+            this.intventasdia.Location = new System.Drawing.Point(683, 456);
             this.intventasdia.Name = "intventasdia";
             this.intventasdia.ReadOnly = true;
             this.intventasdia.Size = new System.Drawing.Size(125, 27);
@@ -160,7 +160,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(532, 230);
+            this.dataGridView1.Size = new System.Drawing.Size(485, 222);
             this.dataGridView1.TabIndex = 18;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -182,7 +182,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Garamond", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(320, 188);
+            this.label3.Location = new System.Drawing.Point(310, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 31);
             this.label3.TabIndex = 17;
@@ -216,11 +216,11 @@
             this.VFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VFactura.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VFactura.ForeColor = System.Drawing.Color.Black;
-            this.VFactura.Location = new System.Drawing.Point(592, 587);
+            this.VFactura.Location = new System.Drawing.Point(584, 551);
             this.VFactura.Name = "VFactura";
-            this.VFactura.Size = new System.Drawing.Size(198, 37);
+            this.VFactura.Size = new System.Drawing.Size(144, 37);
             this.VFactura.TabIndex = 22;
-            this.VFactura.Text = "Imprimir Factura";
+            this.VFactura.Text = "Ver Factura";
             this.VFactura.UseVisualStyleBackColor = false;
             this.VFactura.Click += new System.EventHandler(this.VFactura_Click);
             // 
@@ -229,7 +229,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(569, 281);
+            this.label5.Location = new System.Drawing.Point(542, 274);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 22);
             this.label5.TabIndex = 24;
@@ -241,18 +241,19 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(566, 320);
+            this.label6.Location = new System.Drawing.Point(542, 313);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 22);
             this.label6.TabIndex = 25;
             this.label6.Text = "Fecha Pago:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(569, 359);
+            this.label7.Location = new System.Drawing.Point(542, 345);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 22);
             this.label7.TabIndex = 26;
@@ -263,7 +264,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(569, 403);
+            this.label8.Location = new System.Drawing.Point(542, 380);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 22);
             this.label8.TabIndex = 27;
@@ -274,40 +275,40 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(569, 448);
+            this.label9.Location = new System.Drawing.Point(542, 416);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 22);
             this.label9.TabIndex = 28;
             this.label9.Text = "Id Cajas:";
             // 
-            // txtFechap
+            // txtFechaPago
             // 
-            this.txtFechap.BackColor = System.Drawing.Color.Honeydew;
-            this.txtFechap.Location = new System.Drawing.Point(724, 315);
-            this.txtFechap.Name = "txtFechap";
-            this.txtFechap.Size = new System.Drawing.Size(125, 27);
-            this.txtFechap.TabIndex = 34;
+            this.txtFechaPago.BackColor = System.Drawing.Color.Honeydew;
+            this.txtFechaPago.Location = new System.Drawing.Point(683, 307);
+            this.txtFechaPago.Name = "txtFechaPago";
+            this.txtFechaPago.Size = new System.Drawing.Size(125, 27);
+            this.txtFechaPago.TabIndex = 34;
             // 
-            // txtIdCliente
+            // txtClienteId
             // 
-            this.txtIdCliente.BackColor = System.Drawing.Color.Honeydew;
-            this.txtIdCliente.Location = new System.Drawing.Point(724, 359);
-            this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(125, 27);
-            this.txtIdCliente.TabIndex = 31;
+            this.txtClienteId.BackColor = System.Drawing.Color.Honeydew;
+            this.txtClienteId.Location = new System.Drawing.Point(683, 345);
+            this.txtClienteId.Name = "txtClienteId";
+            this.txtClienteId.Size = new System.Drawing.Size(125, 27);
+            this.txtClienteId.TabIndex = 31;
             // 
-            // txtidsucursal
+            // txtIdSucursal
             // 
-            this.txtidsucursal.BackColor = System.Drawing.Color.Honeydew;
-            this.txtidsucursal.Location = new System.Drawing.Point(724, 403);
-            this.txtidsucursal.Name = "txtidsucursal";
-            this.txtidsucursal.Size = new System.Drawing.Size(125, 27);
-            this.txtidsucursal.TabIndex = 32;
+            this.txtIdSucursal.BackColor = System.Drawing.Color.Honeydew;
+            this.txtIdSucursal.Location = new System.Drawing.Point(683, 380);
+            this.txtIdSucursal.Name = "txtIdSucursal";
+            this.txtIdSucursal.Size = new System.Drawing.Size(125, 27);
+            this.txtIdSucursal.TabIndex = 32;
             // 
             // txtidcajas
             // 
             this.txtidcajas.BackColor = System.Drawing.Color.Honeydew;
-            this.txtidcajas.Location = new System.Drawing.Point(724, 448);
+            this.txtidcajas.Location = new System.Drawing.Point(683, 416);
             this.txtidcajas.Name = "txtidcajas";
             this.txtidcajas.Size = new System.Drawing.Size(125, 27);
             this.txtidcajas.TabIndex = 33;
@@ -315,21 +316,37 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox1.Location = new System.Drawing.Point(724, 276);
+            this.textBox1.Location = new System.Drawing.Point(683, 274);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 27);
             this.textBox1.TabIndex = 35;
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.Honeydew;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Items.AddRange(new object[] {
+            "Descripcion: Para Ver los datos en los TextBox debe tocar la primera ",
+            "linea del data y seleccionar todos los datos."});
+            this.listBox1.Location = new System.Drawing.Point(21, 573);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(457, 40);
+            this.listBox1.TabIndex = 37;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // RegistrosVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(908, 636);
+            this.ClientSize = new System.Drawing.Size(850, 642);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtidcajas);
-            this.Controls.Add(this.txtidsucursal);
-            this.Controls.Add(this.txtIdCliente);
-            this.Controls.Add(this.txtFechap);
+            this.Controls.Add(this.txtIdSucursal);
+            this.Controls.Add(this.txtClienteId);
+            this.Controls.Add(this.txtFechaPago);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -384,15 +401,11 @@
         private Label label7;
         private Label label8;
         private Label label9;
-        private TextBox txtid;
-        private TextBox nventa;
-        private TextBox fechapago;
-        private TextBox idsucursal;
-        private TextBox idcajas;
-        private TextBox txtFechap;
-        private TextBox txtIdCliente;
-        private TextBox txtidsucursal;
+        private TextBox txtFechaPago;
+        private TextBox txtClienteId;
+        private TextBox txtIdSucursal;
         private TextBox txtidcajas;
         private TextBox textBox1;
+        private ListBox listBox1;
     }
 }
