@@ -40,7 +40,7 @@
             // 
             // btnUsua
             // 
-            this.btnUsua.BackColor = System.Drawing.Color.Transparent;
+            this.btnUsua.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnUsua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnUsua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -58,7 +58,7 @@
             // 
             // btnHisto
             // 
-            this.btnHisto.BackColor = System.Drawing.Color.Transparent;
+            this.btnHisto.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnHisto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnHisto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHisto.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_00_PM__2_;
@@ -75,7 +75,7 @@
             // 
             // btnOpcio
             // 
-            this.btnOpcio.BackColor = System.Drawing.Color.Transparent;
+            this.btnOpcio.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnOpcio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnOpcio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpcio.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_00_PM__1_;
@@ -92,7 +92,7 @@
             // 
             // btnRepor
             // 
-            this.btnRepor.BackColor = System.Drawing.Color.Transparent;
+            this.btnRepor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnRepor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnRepor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRepor.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_00_PM__3_;
@@ -109,7 +109,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_01_PM;
@@ -117,7 +117,7 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(85, 93);
             this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Actualizar";
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -126,7 +126,7 @@
             // 
             // btnAviso
             // 
-            this.btnAviso.BackColor = System.Drawing.Color.Transparent;
+            this.btnAviso.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAviso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAviso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAviso.Image = global::GerizimZZ.Properties.Resources.WhatsApp_Image_2022_06_30_at_7_40_01_PM__1_;
@@ -174,7 +174,7 @@
             this.MinimizeBox = false;
             this.Name = "Barra_preview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Configuracion";
+            this.Text = "Configuración";
             this.Load += new System.EventHandler(this.Barra_preview_Load);
             this.ResumeLayout(false);
 

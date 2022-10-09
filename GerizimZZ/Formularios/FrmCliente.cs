@@ -1,6 +1,7 @@
 ﻿using GerizimZZ.Clases;
 using System.Data;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace GerizimZZ
 {
@@ -181,6 +182,28 @@ namespace GerizimZZ
 
         private void lblprimerNombre_Click(object sender, EventArgs e)
         {
+        }
+
+        private void txtID_cliente_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!Regex.IsMatch(txtID_cliente.Text, @"^(\d\d\d){0,1}|1000)$"))
+            {
+                e.Cancel = true;
+                txtID_cliente.Focus();
+                MessageBox.Show("El valor ingresado debe ser un numero positivo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void txtTelefono_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!Regex.IsMatch(txtID_cliente.Text, @"^(\d\d\d){0,1}|30)$"))
+            {
+                e.Cancel = true;
+                txtID_cliente.Focus();
+                MessageBox.Show("Debe ingresar un numero telefonico valido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
     }
 }
