@@ -56,6 +56,7 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).BeginInit();
             this.SuspendLayout();
@@ -355,11 +356,23 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1047, 574);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(174, 31);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "Limpiar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 605);
+            this.ClientSize = new System.Drawing.Size(1241, 613);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
@@ -391,6 +404,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "FrmInventario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerizim Inventario";
             this.Load += new System.EventHandler(this.FrmProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
@@ -428,5 +442,6 @@
         private Button btnAgregar;
         private Button btnModificar;
         private Button btnEliminar;
+        private Button button1;
     }
 }
