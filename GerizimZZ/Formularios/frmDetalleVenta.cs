@@ -16,7 +16,7 @@ namespace GerizimZZ
         private bool bandera = false;
 
         private DataGridView dgView;
-        cldv detalleVenta = new cldv();
+        ClDetalleVentas detalleVenta = new ClDetalleVentas();
 
 
 
@@ -63,22 +63,22 @@ namespace GerizimZZ
         //TODOS los botones toman un color al momento de hacer hover en ellos y retornan a su valor inicial saliendo
         private void button1_Hover(object sender, EventArgs e)
         {
-            this.btnCancelarVenta.BackColor = Color.IndianRed;
+            
         }
 
         private void button1_MouseLeaves(object sender, EventArgs e)
         {
-            this.btnCancelarVenta.BackColor = Color.Transparent;
+            
         }
 
         private void button2_Hover(object sender, EventArgs e)
         {
-            this.btnGenerarVenta.BackColor = Color.Cyan;
+           
         }
 
         private void button2_MouseLeaves(object sender, EventArgs e)
         {
-            this.btnGenerarVenta.BackColor = Color.Transparent;
+            
         }
         //limpia los datos de la venta
         private void button1_Click_1(object sender, EventArgs e)
@@ -104,10 +104,7 @@ namespace GerizimZZ
                 cmbDireccion.Items.Clear();
                 lblCodigoCliente.Text = "";
 
-                frmInicio Principal = Owner as frmInicio;
-                Principal.IniciarFlowLayout();
-                Principal.FlpDatos.Controls.Clear();
-                Principal.Llenado();
+              
             }
             catch (Exception x)
             {
@@ -229,8 +226,8 @@ namespace GerizimZZ
             Recargar();
             cmbCliente.SelectedIndex = 1; 
             cmbPago.SelectedIndex = 0; 
-            cldv claseDetalleVenta = new cldv();
-            claseDetalleVenta.llenarProductos(dgProductos);
+            ClDetalleVentas claseDetalleVenta = new ClDetalleVentas();
+            claseDetalleVenta.llenarProductos(dgProductos,txtBusquedaProducto);
 
         }
         //reiniza los valores de factura, si hubo una venta tomara el valor maximo y lo sumara
@@ -376,7 +373,7 @@ namespace GerizimZZ
             buscarId();
             lblCodigoCliente.Visible = true;
             lblCodCliente.Visible = true;
-
+            txtBusquedaCliente.Text = cmbCliente.SelectedItem.ToString();
             TelefonosDireccions();
         }
         //busca las direcciones del cliente que han sido registradas
@@ -399,7 +396,7 @@ namespace GerizimZZ
         public void nombresCliente()
         {
           
-            detalleVenta.llenarClientes(cmbCliente);
+            detalleVenta.llenarClientes(cmbCliente,txtBusquedaCliente);
         }
 
         private void printPreviewDialog1_Load(object sender, EventArgs e)

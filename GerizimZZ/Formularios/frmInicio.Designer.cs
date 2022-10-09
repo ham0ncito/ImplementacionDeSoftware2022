@@ -155,6 +155,7 @@
             this.btnayuda.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnayuda.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnayuda.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnayuda.IconChar = FontAwesome.Sharp.IconChar.Question;
             this.btnayuda.IconColor = System.Drawing.Color.Black;
             this.btnayuda.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -177,6 +178,7 @@
             this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton3.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconButton3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.BoxesAlt;
             this.iconButton3.IconColor = System.Drawing.Color.Black;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -199,6 +201,7 @@
             this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconButton2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Barcode;
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -220,6 +223,7 @@
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Cog;
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -251,6 +255,7 @@
             this.btnclientesmi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnclientesmi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclientesmi.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnclientesmi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnclientesmi.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.btnclientesmi.IconColor = System.Drawing.Color.Black;
             this.btnclientesmi.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -274,6 +279,7 @@
             this.btnventasmi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnventasmi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnventasmi.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnventasmi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnventasmi.IconChar = FontAwesome.Sharp.IconChar.ShoppingBag;
             this.btnventasmi.IconColor = System.Drawing.Color.Black;
             this.btnventasmi.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -297,6 +303,7 @@
             this.btnpedidosmi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnpedidosmi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnpedidosmi.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnpedidosmi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnpedidosmi.IconChar = FontAwesome.Sharp.IconChar.Truck;
             this.btnpedidosmi.IconColor = System.Drawing.Color.Black;
             this.btnpedidosmi.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -320,6 +327,7 @@
             this.btninventariomi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btninventariomi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninventariomi.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btninventariomi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btninventariomi.IconChar = FontAwesome.Sharp.IconChar.CommentMedical;
             this.btninventariomi.IconColor = System.Drawing.Color.Black;
             this.btninventariomi.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -360,11 +368,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(51, 38);
+            this.label1.Font = new System.Drawing.Font("Garamond", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(32, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 30);
+            this.label1.Size = new System.Drawing.Size(180, 39);
             this.label1.TabIndex = 1;
             this.label1.Tag = "Menu";
             this.label1.Text = "Dashboard";
@@ -450,6 +458,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label4.Location = new System.Drawing.Point(304, 499);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 28);
@@ -521,12 +530,13 @@
             this.label5.TabIndex = 21;
             this.label5.Text = resources.GetString("label5.Text");
             // 
-            // Inicio
+            // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ControlBox = false;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.btnAdd);
@@ -545,7 +555,9 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Inicio";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerizim Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);

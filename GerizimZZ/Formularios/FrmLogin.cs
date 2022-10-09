@@ -27,14 +27,10 @@ namespace GerizimZZ
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtContraseña.Text) && string.IsNullOrEmpty(txtUsuario.Text))
-            {
-                errorProvider1.SetError(groupBox1, "Ingrese todos los datos para continuar"); 
-            }
-            else
-            {
-                errorProvider1.SetError(groupBox1, "");
-                try
+            clValidacion validar = new clValidacion();
+            validar.validacionTexto(txtUsuario, 5, 45, 3,false);
+            validar.validacionTexto(txtContraseña, 5, 45, (int)Math.Round((decimal)(45 / 10)), true);
+            try
                 {
                     bool entro = false;
                     frmInicio inicio = new frmInicio();
@@ -52,7 +48,7 @@ namespace GerizimZZ
                 {
                     MessageBox.Show(x.Message); 
                 }
-            }
+            
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

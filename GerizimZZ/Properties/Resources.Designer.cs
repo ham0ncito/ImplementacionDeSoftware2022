@@ -523,6 +523,16 @@ namespace GerizimZZ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap The_Importance_of_Delivery_Services_during_COVID_19_1024x682 {
+            get {
+                object obj = ResourceManager.GetObject("The-Importance-of-Delivery-Services-during-COVID-19-1024x682", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap trade {
             get {
                 object obj = ResourceManager.GetObject("trade", resourceCulture);
