@@ -65,17 +65,17 @@ namespace GerizimZZ
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            dstProducto.Tables[0].DefaultView.RowFilter = string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "ID_codigoProducto", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Precio_producto", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "NombreProducto", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "PesoProducto", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "CodigoBarra", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "CodigoCatologo", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "CantidadProducto", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "CantidadMinima", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "DescripcionProducto", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "EstadoPRoducto", txtBuscar.Text) + " OR " +
-            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Fechaingreso", txtBuscar.Text);
+            dstProducto.Tables[0].DefaultView.RowFilter = /*string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "ID_codigoProducto", txtBuscar.Text) + " OR " +*/
+            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Precio producto", txtBuscar.Text) + " OR " +
+            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Nombre producto", txtBuscar.Text) + " OR " +
+            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Peso producto", txtBuscar.Text) + " OR " +
+            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Código de barra", txtBuscar.Text) + " OR " +
+            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Código de Catálogo", txtBuscar.Text) + " OR " +
+            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Cantidad producto", txtBuscar.Text) + " OR " +
+            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Cantidad minima", txtBuscar.Text) + " OR " +
+            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Descripción producto", txtBuscar.Text) + " OR " +
+            string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Estado producto", txtBuscar.Text); /*+ " OR " +*/
+            //string.Format("Convert([{0}], 'System.String') LIKE '{1}%'", "Fechaingreso", txtBuscar.Text);
             dgvProducto.DataSource = dstProducto.Tables[0].DefaultView;
         }
 
@@ -145,7 +145,7 @@ namespace GerizimZZ
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Ingrese Solo Números", "Campo Minima", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ingrese Solo Números", "Campo Cantidad minima", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 e.Handled = true;
                 return;
             }
@@ -186,7 +186,7 @@ namespace GerizimZZ
                     pesoproducto = Convert.ToDouble(txtPesoProducto.Text);
 
                     productos.Agregar_Producto(codigo, precio_producto, txtNombreProducto.Text, pesoproducto, txtCodigoBarra.Text, txtCodigoCatologo.Text, cantidadproducto, cantidadminima, txtDescripcionProducto.Text, estadoproducto, txtFechaingreso.Text);
-                    SqlConnection con = new SqlConnection("Data Source=TATO180\\SQLEXPRESS;Initial Catalog=Gerizim; Integrated Security=True;");
+                    SqlConnection con = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
                     SqlDataAdapter comando = new SqlDataAdapter();
                     string sql = "SELECT * FROM Producto";
                     comando.SelectCommand = new SqlCommand(sql, con);
@@ -228,7 +228,7 @@ namespace GerizimZZ
                 precio_producto = Convert.ToDouble(txtPrecio_producto.Text);
                 pesoproducto = Convert.ToDouble(txtPesoProducto.Text);
                 productos.Modificar_Producto(codigo, precio_producto, txtNombreProducto.Text, pesoproducto, txtCodigoBarra.Text, txtCodigoCatologo.Text, cantidadproducto, cantidadminima, txtDescripcionProducto.Text, estadoproducto);
-                SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+                SqlConnection con = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
                 SqlDataAdapter comando = new SqlDataAdapter();
                 string sql = "SELECT * FROM Producto";
                 comando.SelectCommand = new SqlCommand(sql, con);
