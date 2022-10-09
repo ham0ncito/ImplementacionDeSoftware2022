@@ -330,3 +330,6 @@ C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\re
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frInicioBodega.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmDetalleVenta.resources
 C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmRegistrosVentas.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmDetalleVentaAyuda.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmInicioAyuda.resources
+C:\Users\userHP\Uni\Implementacion\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmPendientes.resources

@@ -4,10 +4,19 @@
     <_LastSelectedProfileId>C:\Users\HP\OneDrive\Documentos\GitHub\GerizimZZ\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Formularios\frmDetalleVentaAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frmInicioAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Formularios\frmInicioBodega.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\FrmBarrapreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frmPendientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Otros\Component1.cs">

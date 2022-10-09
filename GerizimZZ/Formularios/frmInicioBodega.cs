@@ -38,12 +38,16 @@ namespace GerizimZZ.Formularios
 
         private void btnenviar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proximamente en nuevas actualizaciones");
+            frmPendientes mostrar = new frmPendientes();
+            mostrar.Text = "Gerizim | Enviar";
+            mostrar.ShowDialog();
         }
 
         private void btnmaterias_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proximamente en nuevas actualizaciones");
+            frmPendientes mostrar = new frmPendientes();
+            mostrar.Text = "Gerizim | Materias Primas";
+            mostrar.ShowDialog();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
 ﻿using GerizimZZ.Clases;
+using GerizimZZ.Formularios;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing.Printing;
@@ -503,6 +504,12 @@ namespace GerizimZZ
         private void cmbDireccion_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            frmDetalleVentaAyuda desplegar = new frmDetalleVentaAyuda();
+            desplegar.ShowDialog();
         }
     }
 }

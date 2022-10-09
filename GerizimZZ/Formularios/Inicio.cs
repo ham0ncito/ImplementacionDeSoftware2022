@@ -358,6 +358,8 @@ namespace GerizimZZ
                 "que pueda realizar sus labores de ventas perfectamente. " +
                 "\nSi desea comunicar algun error o tiene alguna duda contactese mediante " +
                 "el numero +44453434934", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmInicioAyuda mostrar = new frmInicioAyuda();
+            mostrar.ShowDialog();
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)

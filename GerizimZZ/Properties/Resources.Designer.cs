@@ -143,6 +143,56 @@ namespace GerizimZZ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _245529273_4532701076789285_5622936224095500023_n {
+            get {
+                object obj = ResourceManager.GetObject("245529273_4532701076789285_5622936224095500023_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _257939201_4636816369711088_2288677740232719792_n {
+            get {
+                object obj = ResourceManager.GetObject("257939201_4636816369711088_2288677740232719792_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _260525954_4682060098520048_6419776544082246378_n {
+            get {
+                object obj = ResourceManager.GetObject("260525954_4682060098520048_6419776544082246378_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _261084354_4674209339305124_1571746378142733173_n {
+            get {
+                object obj = ResourceManager.GetObject("261084354_4674209339305124_1571746378142733173_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _264088550_4700327126693345_7442596036063913344_n {
+            get {
+                object obj = ResourceManager.GetObject("264088550_4700327126693345_7442596036063913344_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _264855836_4713169605409097_2106932496429429410_n {
             get {
                 object obj = ResourceManager.GetObject("264855836_4713169605409097_2106932496429429410_n", resourceCulture);
@@ -226,6 +276,16 @@ namespace GerizimZZ.Properties {
         internal static System.Drawing.Bitmap blog_Como_hacer_un_reporte_de_ventas61 {
             get {
                 object obj = ResourceManager.GetObject("blog_Como_hacer_un_reporte_de_ventas61", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Capture {
+            get {
+                object obj = ResourceManager.GetObject("Capture", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +456,16 @@ namespace GerizimZZ.Properties {
         internal static System.Drawing.Bitmap qr_code_min {
             get {
                 object obj = ResourceManager.GetObject("qr-code-min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap s {
+            get {
+                object obj = ResourceManager.GetObject("s", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

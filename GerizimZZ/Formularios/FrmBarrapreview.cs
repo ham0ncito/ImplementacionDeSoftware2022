@@ -1,4 +1,6 @@
-﻿namespace GerizimZZ
+﻿using GerizimZZ.Formularios;
+
+namespace GerizimZZ
 {
     public partial class Barra_preview : Form
     {
@@ -122,7 +124,9 @@
 
         private void btnupd_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proximamente en la nueva actualizacion", "Muy Pronto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmPendientes mostrar = new frmPendientes();
+            mostrar.Text = "Gerizim | Actualizaciones";
+            mostrar.ShowDialog();   
         }
 
         private void btnopc_Click(object sender, EventArgs e)
