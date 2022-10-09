@@ -40,6 +40,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.button1 = new System.Windows.Forms.Button();
@@ -80,24 +83,29 @@
             "GerizimFranquicias"});
             this.txtUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtUsuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtUsuario.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUsuario.Location = new System.Drawing.Point(179, 41);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PlaceholderText = "GerizimSucursal";
-            this.txtUsuario.Size = new System.Drawing.Size(219, 29);
+            this.txtUsuario.Size = new System.Drawing.Size(219, 22);
             this.txtUsuario.TabIndex = 1;
             this.txtUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtContraseña
             // 
             this.txtContraseña.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtContraseña.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtContraseña.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContraseña.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtContraseña.Location = new System.Drawing.Point(179, 87);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PlaceholderText = "************";
-            this.txtContraseña.Size = new System.Drawing.Size(217, 29);
+            this.txtContraseña.Size = new System.Drawing.Size(217, 22);
             this.txtContraseña.TabIndex = 2;
             this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
@@ -116,7 +124,7 @@
             // 
             // btConectar
             // 
-            this.btConectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btConectar.BackColor = System.Drawing.Color.PaleGreen;
             this.btConectar.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btConectar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btConectar.Location = new System.Drawing.Point(79, 363);
@@ -162,11 +170,11 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Garamond", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.linkLabel1.Location = new System.Drawing.Point(32, 141);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(130, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(147, 18);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Recuperar Contraseña";
@@ -174,7 +182,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.groupBox1.Controls.Add(this.linkLabel3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.linkLabel2);
             this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Controls.Add(this.txtUsuario);
@@ -183,6 +194,7 @@
             this.groupBox1.Controls.Add(this.lblContraseña);
             this.groupBox1.Controls.Add(this.txtContraseña);
             this.groupBox1.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBox1.Location = new System.Drawing.Point(58, 153);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(467, 191);
@@ -190,15 +202,47 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de acceso";
             // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabel3.Location = new System.Drawing.Point(250, 141);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(84, 18);
+            this.linkLabel3.TabIndex = 12;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Recordarme";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.SpringGreen;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label2.Location = new System.Drawing.Point(179, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(202, 3);
+            this.label2.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label1.Location = new System.Drawing.Point(179, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 3);
+            this.label1.TabIndex = 10;
+            // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.Font = new System.Drawing.Font("Garamond", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.linkLabel2.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.linkLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.linkLabel2.Location = new System.Drawing.Point(179, 141);
+            this.linkLabel2.Location = new System.Drawing.Point(185, 141);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(54, 18);
+            this.linkLabel2.Size = new System.Drawing.Size(59, 18);
             this.linkLabel2.TabIndex = 7;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Tutorial";
@@ -266,5 +310,8 @@
         private ErrorProvider errorProvider1;
         private LinkLabel linkLabel2;
         private Button button1;
+        private LinkLabel linkLabel3;
+        private Label label2;
+        private Label label1;
     }
 }

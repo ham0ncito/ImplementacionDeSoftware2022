@@ -121,5 +121,19 @@ namespace GerizimZZ
         {
             return (s == null || s == String.Empty) ? true : false;
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Confirmo que he escrito correctamente mi contraseña", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (resultado == DialogResult.Yes)
+            {
+               
+                txtContraseña.AutoCompleteMode = AutoCompleteMode.SuggestAppend; 
+                txtContraseña.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                AutoCompleteStringCollection data = new AutoCompleteStringCollection();
+                data.Add(txtContraseña.Text);
+                txtContraseña.AutoCompleteCustomSource = data;
+            }
+        }
     }
 }

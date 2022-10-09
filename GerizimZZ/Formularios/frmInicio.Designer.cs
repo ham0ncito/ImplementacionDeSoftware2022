@@ -468,11 +468,12 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(305, 530);
+            this.textBox1.Location = new System.Drawing.Point(305, 534);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Agregar cosas pendientes";
-            this.textBox1.Size = new System.Drawing.Size(275, 29);
+            this.textBox1.Size = new System.Drawing.Size(275, 22);
             this.textBox1.TabIndex = 18;
             // 
             // panel1
