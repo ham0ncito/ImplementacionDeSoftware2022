@@ -142,6 +142,9 @@
   <data name="trade" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="273186167_4918331624892893_6754485724703248458_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\273186167_4918331624892893_6754485724703248458_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imagencomprimida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagencomprimida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -201,6 +204,9 @@
   </data>
   <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blog_Como_hacer_un_reporte_de_ventas61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blog_Como_hacer_un_reporte_de_ventas61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Presione el boton de escanear (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Presione el boton de escanear (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,7 +268,7 @@
   <data name="WhatsApp Image 2022-06-30 at 7.40.01 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-06-30 at 7.40.01 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blog_Como_hacer_un_reporte_de_ventas61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blog_Como_hacer_un_reporte_de_ventas61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="272963207_4918331628226226_5944811752821849762_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\272963207_4918331628226226_5944811752821849762_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

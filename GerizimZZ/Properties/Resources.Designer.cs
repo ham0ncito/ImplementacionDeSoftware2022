@@ -153,6 +153,26 @@ namespace GerizimZZ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _272963207_4918331628226226_5944811752821849762_n {
+            get {
+                object obj = ResourceManager.GetObject("272963207_4918331628226226_5944811752821849762_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _273186167_4918331624892893_6754485724703248458_n {
+            get {
+                object obj = ResourceManager.GetObject("273186167_4918331624892893_6754485724703248458_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _274349672_4980421895350532_8429971338086587742_n {
             get {
                 object obj = ResourceManager.GetObject("274349672_4980421895350532_8429971338086587742_n", resourceCulture);

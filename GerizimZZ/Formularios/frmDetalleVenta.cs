@@ -15,8 +15,8 @@ namespace GerizimZZ
         private bool bandera = false;
 
         private DataGridView dgView;
+        cldv detalleVenta = new cldv();
 
-     
 
 
 
@@ -129,50 +129,24 @@ namespace GerizimZZ
             {
                 errorProvider1.SetError(groupBox1, "");
                 errorProvider1.SetError(dgDetalleVenta, "");
-                try
-                {
-                    SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
-                    conexion.Open();
-                    try
-                    {
-                        SqlCommand comando = new SqlCommand("exec ventaNueva '" + lblNumeroFactura.Text + "', '" + lblCodigoCliente.Text + "','1','1'", conexion);
-                        comando.ExecuteNonQuery();
-                    }
-                    catch (SqlException x)
-                    {
-                        MessageBox.Show(x.Message);
-                    }
-                    foreach (DataGridViewRow row in dgDetalleVenta.Rows)
-                    {
-                        SqlCommand comando = new SqlCommand("exec detalleVenta '" + lblNumeroFactura.Text.ToString() + "','" + row.Cells[2].Value + "' , '" + row.Cells[3].Value + "' , '" + row.Cells[0].Value + "';", conexion);
-                        comando.ExecuteNonQuery();
-                    }
-                    if (delivery.Checked)
-                    {
-                        Random rand = new Random();
-                        int id = rand.Next(1, 5);
-                        SqlCommand comando = new SqlCommand("exec nuevoPedido '" + lblNumeroFactura.Text + "','" + id.ToString() + "', '" + cmbDireccion.Text + "', ' " + cmbNumero.Text + "';", conexion);
-                        comando.ExecuteNonQuery();
-                    }
-                    conexion.Close();
-                }
-                catch (SqlException x)
-                {
-                    MessageBox.Show(x.Message);
-                }
+                detalleVenta.ventecita(lblNumeroFactura, lblCodigoCliente, dgDetalleVenta, delivery, cmbDireccion, cmbNumero);
                 Imprimir = new PrintDocument();
                 try
                 {
                     PrinterSettings ps = new PrinterSettings();
                     MessageBox.Show("Factura " + lblNumeroFactura.Text + " en impresion", "Venta realizada");
                     Imprimir.PrinterSettings = ps;
+                    
+                   
                     Imprimir.PrintPage += printDocument1_PrintPage;
+                    Imprimir.DocumentName = String.Concat("Factura#", lblNumeroFactura);
                     Imprimir.Print();
                 }
                 catch (Exception x)
                 {
                     MessageBox.Show(x.Message);
                 }
+                
                 Limpiar();
                 Recargar();
             }
@@ -252,7 +226,8 @@ namespace GerizimZZ
             datagrid();
             dgDetalleVenta.DataSource = tablita;
             Recargar();
-
+            cmbCliente.SelectedIndex = 1; 
+            cmbPago.SelectedIndex = 0; 
             cldv claseDetalleVenta = new cldv();
             claseDetalleVenta.llenarProductos(dgProductos);
 
@@ -262,19 +237,7 @@ namespace GerizimZZ
         //que se ingresen los valores. 
         public void Recargar()
         {
-            int numeroFactura = 0;
-            SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
-
-            SqlCommand comando = new SqlCommand("Use Gerizim; select MAX(ID_factura) from Factura ;", conexion);
-            comando.Parameters.AddWithValue("ID", lblNumeroFactura.Text);
-            conexion.Open();
-            SqlDataReader registro = comando.ExecuteReader();
-            if (registro.Read())
-            {
-                numeroFactura = Convert.ToInt32(registro[0]) + 1;
-                lblNumeroFactura.Text = numeroFactura.ToString();
-            }
-            conexion.Close();
+            detalleVenta.recargito(lblNumeroFactura);
         }
 
         public void dgDetalleVenta_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -301,8 +264,9 @@ namespace GerizimZZ
         }
         //Este es el documento que se modifica segun la venta. Es una plantilla que se llena segun los datos la cual 
         //luego se manda a imprimir 
-        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        public void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
+            
             Font fuente = new Font("Arial", 12);
             Font Titulo = new Font("Arial", 24, FontStyle.Bold);
             float ubicacion = 460;
@@ -417,90 +381,24 @@ namespace GerizimZZ
         //busca las direcciones del cliente que han sido registradas
         public void direccion()
         {
-            SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
-            conexion.Open();
-            SqlCommand coma = new SqlCommand(" exec Direcciones '" + lblCodigoCliente.Text + "' ; ", conexion);
-            SqlDataReader regist = coma.ExecuteReader();
-            while (regist.Read() && !(regist.IsDBNull(0) == true))
-            {
-                cmbDireccion.Items.Add(regist[0].ToString());
-            }
-            conexion.Close();
+            detalleVenta.direccion(lblCodigoCliente,cmbDireccion);
         }
 
         //busca los telefonos que el cliente tiene registrado. 
         public void TelefonosDireccions()
         {
-            try
-            {
-                SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
-                SqlCommand comando = new SqlCommand(" exec Telefonos '" + lblCodigoCliente.Text + "' ; ", conexion);
-                conexion.Open();
-                SqlDataReader registro = comando.ExecuteReader();
-                while (registro.Read() && !(registro.IsDBNull(0) == true))
-                {
-                    cmbNumero.Items.Add(registro[0].ToString());
-                }
-
-                comando.Dispose();
-                conexion.Close();
-                direccion();
-
-            }
-
-            catch (SqlException x)
-            {
-                MessageBox.Show(x.Message);
-            }
+            detalleVenta.telefonosDireccion(lblCodigoCliente, cmbNumero, cmbDireccion);
         }
         //busca el id del cliente segun el seleccionado en el combobox. 
         public void buscarId()
         {
-            try
-            {
-                SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
-
-                SqlCommand comando = new SqlCommand(" exec buscarId '" + cmbCliente.Text + "' ; ", conexion);
-                conexion.Open();
-                SqlDataReader registro = comando.ExecuteReader();
-                if (registro.Read())
-                {
-                    lblCodigoCliente.Text = registro[0].ToString();
-                    cmbNumero.Items.Add(registro["telefono"].ToString());
-                    cmbDireccion.Items.Add(registro["direccion"].ToString());
-                }
-                else
-                {
-                    MessageBox.Show("Tuvimos un problema buscando la informacion del cliente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                conexion.Close();
-            }
-            catch (SqlException x)
-            {
-                MessageBox.Show(x.Message);
-            }
+            detalleVenta.buscarId(cmbCliente, lblCodigoCliente, cmbNumero, cmbDireccion);
         }
         //busca todos los nombres de clientes que han sido registrados. 
         public void nombresCliente()
         {
-            try
-            {
-                SqlConnection conexion = new SqlConnection("Data Source = localhost ; Initial Catalog = Gerizim; Integrated Security = True");
-
-                SqlCommand comando = new SqlCommand("exec nombres; ", conexion);
-                conexion.Open();
-                cmbCliente.Items.Clear();
-                SqlDataReader registro = comando.ExecuteReader();
-                while (registro.Read())
-                {
-                    cmbCliente.Items.Add(registro["Nombre"]).ToString();
-                }
-                conexion.Close();
-            }
-            catch (SqlException x)
-            {
-                MessageBox.Show(x.Message);
-            }
+          
+            detalleVenta.llenarClientes(cmbCliente);
         }
 
         private void printPreviewDialog1_Load(object sender, EventArgs e)
@@ -523,8 +421,9 @@ namespace GerizimZZ
 
                 if (Regex.IsMatch(telefono, @"^[0-9]+$")  && telefono.Length == 8 && !string.Equals(lblCodigoCliente.Text, "00") && (string.Equals(telefono.Substring(0,1),"3") || string.Equals(telefono.Substring(0,1), "2") || string.Equals(telefono.Substring(0,1), "8") || string.Equals(telefono.Substring(0,1), "9")))
                 {
-                    string consulta = "insert into telefonosClientes (ID_cliente, numeroCliente) values (" + lblCodigoCliente.Text + ", '" + Convert.ToString(telefono) + "';";
+                    string consulta = "insert into telefonosClientes (ID_cliente, numeroCliente) values (" + lblCodigoCliente.Text + ", '" + Convert.ToString(telefono) + "');";
                     cmbNumero.Items.Add(telefono);
+                    detalleVenta.ejecutar(consulta);
                     MessageBox.Show("Valores Ingresados", "Ejecución exitosa");
                 }
                 else
@@ -556,8 +455,9 @@ namespace GerizimZZ
                 }
                 if (direccion.Length > 7 && direccion.Length < 100 && contador < Math.Floor(Convert.ToDecimal(direccion.Length / 2) ) && !string.Equals(lblCodigoCliente.Text,"00"))
                 {
-                    string consulta = "insert into Direcciones (ID_cliente, numeroCliente) values (" + lblCodigoCliente.Text + ", '" + Convert.ToString(direccion) + "';";
+                    string consulta = "insert into DireccionesClientes (ID_cliente, direccionCliente) values (" + lblCodigoCliente.Text + ", '" + Convert.ToString(direccion) + "');";
                     cmbDireccion.Items.Add(direccion);
+                    detalleVenta.ejecutar(consulta);
                     MessageBox.Show("Valores Ingresados", "Ejecución exitosa");
                 }
                 else
@@ -581,6 +481,26 @@ namespace GerizimZZ
         }
 
         private void llenarProductos()
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbDireccion_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

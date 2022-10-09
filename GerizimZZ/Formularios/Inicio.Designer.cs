@@ -60,6 +60,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnAdd = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panelsidemenu.SuspendLayout();
@@ -468,6 +469,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackgroundImage = global::GerizimZZ.Properties.Resources._273186167_4918331624892893_6754485724703248458_n;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Location = new System.Drawing.Point(636, 499);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(265, 220);
@@ -502,10 +505,21 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
+            this.panel5.BackgroundImage = global::GerizimZZ.Properties.Resources._272963207_4918331628226226_5944811752821849762_n;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel5.Location = new System.Drawing.Point(931, 539);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(424, 180);
+            this.panel5.Size = new System.Drawing.Size(186, 180);
             this.panel5.TabIndex = 20;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(1123, 527);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(230, 196);
+            this.label5.TabIndex = 21;
+            this.label5.Text = resources.GetString("label5.Text");
             // 
             // Inicio
             // 
@@ -513,6 +527,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel4);
@@ -583,5 +598,6 @@
         private TextBox textBox1;
         private Panel panel5;
         private FontAwesome.Sharp.IconButton btnAdd;
+        private Label label5;
     }
 }

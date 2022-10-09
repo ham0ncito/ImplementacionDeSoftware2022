@@ -66,10 +66,15 @@ namespace GerizimZZ
             this.NuevoCliente = new System.Windows.Forms.Button();
             this.lblNumeroFactura = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgProductos = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgDetalleVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
@@ -88,7 +93,7 @@ namespace GerizimZZ
             this.pictureBox1.Image = global::GerizimZZ.Properties.Resources.logoComprimido;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1366, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(1315, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -140,7 +145,7 @@ namespace GerizimZZ
             this.facturaLbl.AutoSize = true;
             this.facturaLbl.Font = new System.Drawing.Font("Garamond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.facturaLbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.facturaLbl.Location = new System.Drawing.Point(926, 102);
+            this.facturaLbl.Location = new System.Drawing.Point(906, 102);
             this.facturaLbl.Name = "facturaLbl";
             this.facturaLbl.Size = new System.Drawing.Size(98, 24);
             this.facturaLbl.TabIndex = 18;
@@ -149,7 +154,7 @@ namespace GerizimZZ
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(293, 39);
+            this.label5.Location = new System.Drawing.Point(297, 39);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 18);
             this.label5.TabIndex = 21;
@@ -170,7 +175,7 @@ namespace GerizimZZ
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(27, 446);
+            this.label7.Location = new System.Drawing.Point(25, 461);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 27);
             this.label7.TabIndex = 23;
@@ -210,10 +215,10 @@ namespace GerizimZZ
             this.dgDetalleVenta.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dgDetalleVenta.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgDetalleVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgDetalleVenta.Location = new System.Drawing.Point(926, 131);
+            this.dgDetalleVenta.Location = new System.Drawing.Point(906, 131);
             this.dgDetalleVenta.Name = "dgDetalleVenta";
             this.dgDetalleVenta.RowTemplate.Height = 25;
-            this.dgDetalleVenta.Size = new System.Drawing.Size(428, 565);
+            this.dgDetalleVenta.Size = new System.Drawing.Size(353, 565);
             this.dgDetalleVenta.TabIndex = 28;
             this.dgDetalleVenta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDetalleVenta_CellContentClick_1);
             this.dgDetalleVenta.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgDetalleVenta_RowsAdded);
@@ -367,6 +372,7 @@ namespace GerizimZZ
             this.cmbDireccion.Name = "cmbDireccion";
             this.cmbDireccion.Size = new System.Drawing.Size(306, 26);
             this.cmbDireccion.TabIndex = 19;
+            this.cmbDireccion.SelectedIndexChanged += new System.EventHandler(this.cmbDireccion_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -422,7 +428,7 @@ namespace GerizimZZ
             this.lblNumeroFactura.AutoSize = true;
             this.lblNumeroFactura.Font = new System.Drawing.Font("Garamond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblNumeroFactura.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblNumeroFactura.Location = new System.Drawing.Point(1030, 102);
+            this.lblNumeroFactura.Location = new System.Drawing.Point(1010, 102);
             this.lblNumeroFactura.Name = "lblNumeroFactura";
             this.lblNumeroFactura.Size = new System.Drawing.Size(30, 24);
             this.lblNumeroFactura.TabIndex = 39;
@@ -432,6 +438,7 @@ namespace GerizimZZ
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lblTotal);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -445,11 +452,23 @@ namespace GerizimZZ
             this.panel1.Size = new System.Drawing.Size(126, 637);
             this.panel1.TabIndex = 40;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Location = new System.Drawing.Point(0, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 79);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "Ayuda";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // lblTotal
             // 
             this.lblTotal.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTotal.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.lblTotal.Location = new System.Drawing.Point(3, 496);
+            this.lblTotal.Location = new System.Drawing.Point(3, 527);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(120, 48);
             this.lblTotal.TabIndex = 41;
@@ -472,29 +491,70 @@ namespace GerizimZZ
             this.dgProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dgProductos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgProductos.Location = new System.Drawing.Point(161, 423);
+            this.dgProductos.Location = new System.Drawing.Point(161, 453);
             this.dgProductos.Name = "dgProductos";
             this.dgProductos.RowTemplate.Height = 25;
-            this.dgProductos.Size = new System.Drawing.Size(725, 273);
+            this.dgProductos.Size = new System.Drawing.Size(725, 243);
             this.dgProductos.TabIndex = 42;
+            this.dgProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgProductos_CellContentClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Garamond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(161, 396);
+            this.label2.Location = new System.Drawing.Point(161, 415);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 24);
             this.label2.TabIndex = 43;
             this.label2.Text = "Productos";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(599, 131);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Consumidor Final Gerizim";
+            this.textBox1.Size = new System.Drawing.Size(287, 25);
+            this.textBox1.TabIndex = 44;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(599, 414);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "Producto Gerizim";
+            this.textBox3.Size = new System.Drawing.Size(287, 25);
+            this.textBox3.TabIndex = 46;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(487, 134);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 18);
+            this.label4.TabIndex = 47;
+            this.label4.Text = "Buscar Cliente";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(474, 419);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(113, 18);
+            this.label8.TabIndex = 48;
+            this.label8.Text = "Buscar Producto";
             // 
             // frmDetalleVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1366, 724);
+            this.ClientSize = new System.Drawing.Size(1315, 724);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgProductos);
             this.Controls.Add(this.label1);
@@ -513,7 +573,6 @@ namespace GerizimZZ
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmDetalleVenta";
-            this.Opacity = 0.95D;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -582,5 +641,10 @@ namespace GerizimZZ
         private Label label1;
         public DataGridView dgProductos;
         private Label label2;
+        private Label label4;
+        private TextBox textBox3;
+        private TextBox textBox1;
+        private Label label8;
+        private Button button1;
     }
 }

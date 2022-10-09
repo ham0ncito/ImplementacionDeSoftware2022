@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frInicioBodega));
             this.panel_titlebar = new System.Windows.Forms.Panel();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
-            this.btnMaximizar = new FontAwesome.Sharp.IconButton();
             this.btnMinimizar = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnmaterias = new FontAwesome.Sharp.IconButton();
@@ -54,7 +53,6 @@
             // 
             this.panel_titlebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel_titlebar.Controls.Add(this.btnCerrar);
-            this.panel_titlebar.Controls.Add(this.btnMaximizar);
             this.panel_titlebar.Controls.Add(this.btnMinimizar);
             this.panel_titlebar.Location = new System.Drawing.Point(715, 12);
             this.panel_titlebar.Name = "panel_titlebar";
@@ -76,23 +74,7 @@
             this.btnCerrar.Size = new System.Drawing.Size(34, 25);
             this.btnCerrar.TabIndex = 9;
             this.btnCerrar.UseVisualStyleBackColor = false;
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.BackColor = System.Drawing.Color.Transparent;
-            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximizar.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.btnMaximizar.IconColor = System.Drawing.Color.Black;
-            this.btnMaximizar.IconFont = FontAwesome.Sharp.IconFont.Regular;
-            this.btnMaximizar.IconSize = 15;
-            this.btnMaximizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMaximizar.Location = new System.Drawing.Point(49, 14);
-            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(43, 25);
-            this.btnMaximizar.TabIndex = 8;
-            this.btnMaximizar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnMinimizar
             // 
@@ -104,12 +86,13 @@
             this.btnMinimizar.IconFont = FontAwesome.Sharp.IconFont.Regular;
             this.btnMinimizar.IconSize = 15;
             this.btnMinimizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMinimizar.Location = new System.Drawing.Point(15, 14);
+            this.btnMinimizar.Location = new System.Drawing.Point(58, 14);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(0);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(34, 25);
             this.btnMinimizar.TabIndex = 7;
             this.btnMinimizar.UseVisualStyleBackColor = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // panel1
             // 
@@ -299,7 +282,6 @@
 
         private Panel panel_titlebar;
         private FontAwesome.Sharp.IconButton btnCerrar;
-        private FontAwesome.Sharp.IconButton btnMaximizar;
         private FontAwesome.Sharp.IconButton btnMinimizar;
         private Panel panel1;
         private PictureBox pictureBox1;

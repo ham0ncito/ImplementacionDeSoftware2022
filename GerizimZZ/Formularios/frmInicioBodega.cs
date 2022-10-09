@@ -45,5 +45,22 @@ namespace GerizimZZ.Formularios
         {
             MessageBox.Show("Proximamente en nuevas actualizaciones");
         }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea continuar?", "Salir del sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Salida del sistema de bodega cancelada");
+            }
+        }
     }
 }
