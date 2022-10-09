@@ -186,7 +186,7 @@ namespace GerizimZZ
                     pesoproducto = Convert.ToDouble(txtPesoProducto.Text);
 
                     productos.Agregar_Producto(codigo, precio_producto, txtNombreProducto.Text, pesoproducto, txtCodigoBarra.Text, txtCodigoCatologo.Text, cantidadproducto, cantidadminima, txtDescripcionProducto.Text, estadoproducto, txtFechaingreso.Text);
-                    SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+                    SqlConnection con = new SqlConnection("Data Source=TATO180\\SQLEXPRESS;Initial Catalog=Gerizim; Integrated Security=True;");
                     SqlDataAdapter comando = new SqlDataAdapter();
                     string sql = "SELECT * FROM Producto";
                     comando.SelectCommand = new SqlCommand(sql, con);
