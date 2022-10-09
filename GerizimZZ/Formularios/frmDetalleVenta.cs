@@ -508,5 +508,10 @@ namespace GerizimZZ
             frmDetalleVentaAyuda desplegar = new frmDetalleVentaAyuda();
             desplegar.ShowDialog();
         }
+
+        private void txtBusquedaCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

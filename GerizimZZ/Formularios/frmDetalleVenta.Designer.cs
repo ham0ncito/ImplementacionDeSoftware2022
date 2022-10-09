@@ -542,6 +542,7 @@ namespace GerizimZZ
             this.txtBusquedaCliente.PlaceholderText = "Consumidor Final Gerizim";
             this.txtBusquedaCliente.Size = new System.Drawing.Size(287, 25);
             this.txtBusquedaCliente.TabIndex = 44;
+            this.txtBusquedaCliente.TextChanged += new System.EventHandler(this.txtBusquedaCliente_TextChanged);
             // 
             // txtBusquedaProducto
             // 
