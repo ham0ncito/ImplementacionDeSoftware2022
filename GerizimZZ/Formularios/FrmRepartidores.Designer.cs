@@ -49,7 +49,6 @@
             this.tb_Fecha = new System.Windows.Forms.TextBox();
             this.btn_Asignar = new System.Windows.Forms.Button();
             this.fecha = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -61,10 +60,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::GerizimZZ.Properties.Resources.logoComprimido;
-            this.pictureBox1.Location = new System.Drawing.Point(229, -8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(200, -6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 149);
+            this.pictureBox1.Size = new System.Drawing.Size(192, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -74,9 +72,10 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::GerizimZZ.Properties.Resources.substract;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 119);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 89);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(623, 23);
+            this.pictureBox2.Size = new System.Drawing.Size(545, 17);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -87,11 +86,10 @@
             this.brbRepartidores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.brbRepartidores.BackColor = System.Drawing.Color.Honeydew;
-            this.brbRepartidores.Location = new System.Drawing.Point(385, 221);
-            this.brbRepartidores.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.brbRepartidores.Location = new System.Drawing.Point(337, 166);
             this.brbRepartidores.Multiline = true;
             this.brbRepartidores.Name = "brbRepartidores";
-            this.brbRepartidores.Size = new System.Drawing.Size(234, 39);
+            this.brbRepartidores.Size = new System.Drawing.Size(205, 30);
             this.brbRepartidores.TabIndex = 6;
             this.brbRepartidores.TextChanged += new System.EventHandler(this.brbRepartidores_TextChanged);
             // 
@@ -102,9 +100,9 @@
             this.lbRepartidores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbRepartidores.Font = new System.Drawing.Font("Garamond", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbRepartidores.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lbRepartidores.Location = new System.Drawing.Point(265, 136);
+            this.lbRepartidores.Location = new System.Drawing.Point(232, 102);
             this.lbRepartidores.Name = "lbRepartidores";
-            this.lbRepartidores.Size = new System.Drawing.Size(143, 27);
+            this.lbRepartidores.Size = new System.Drawing.Size(115, 21);
             this.lbRepartidores.TabIndex = 8;
             this.lbRepartidores.Text = "Repartidores";
             // 
@@ -113,33 +111,33 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Honeydew;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 283);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 212);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(607, 187);
+            this.dataGridView1.Size = new System.Drawing.Size(531, 140);
             this.dataGridView1.TabIndex = 9;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // lb_Barra
             // 
             this.lb_Barra.AutoSize = true;
             this.lb_Barra.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_Barra.Location = new System.Drawing.Point(385, 195);
+            this.lb_Barra.Location = new System.Drawing.Point(337, 146);
             this.lb_Barra.Name = "lb_Barra";
-            this.lb_Barra.Size = new System.Drawing.Size(218, 22);
+            this.lb_Barra.Size = new System.Drawing.Size(179, 18);
             this.lb_Barra.TabIndex = 10;
-            this.lb_Barra.Text = "Búsqueda Repartidores :";
+            this.lb_Barra.Text = "Busqueda Repartidores :";
             // 
             // lb_inf
             // 
             this.lb_inf.AutoSize = true;
             this.lb_inf.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_inf.Location = new System.Drawing.Point(11, 259);
+            this.lb_inf.Location = new System.Drawing.Point(10, 194);
             this.lb_inf.Name = "lb_inf";
-            this.lb_inf.Size = new System.Drawing.Size(238, 21);
+            this.lb_inf.Size = new System.Drawing.Size(197, 17);
             this.lb_inf.TabIndex = 11;
             this.lb_inf.Text = "Informacion de Repartidores :";
             // 
@@ -147,81 +145,85 @@
             // 
             this.lb_CodigoPedido.AutoSize = true;
             this.lb_CodigoPedido.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_CodigoPedido.Location = new System.Drawing.Point(11, 496);
+            this.lb_CodigoPedido.Location = new System.Drawing.Point(10, 372);
             this.lb_CodigoPedido.Name = "lb_CodigoPedido";
-            this.lb_CodigoPedido.Size = new System.Drawing.Size(156, 21);
+            this.lb_CodigoPedido.Size = new System.Drawing.Size(129, 17);
             this.lb_CodigoPedido.TabIndex = 12;
-            this.lb_CodigoPedido.Text = "Codigó de Pedido :";
+            this.lb_CodigoPedido.Text = "Codigo de Pedido :";
             // 
             // tb_Codigo
             // 
             this.tb_Codigo.BackColor = System.Drawing.Color.Honeydew;
-            this.tb_Codigo.Location = new System.Drawing.Point(229, 496);
+            this.tb_Codigo.Location = new System.Drawing.Point(200, 372);
+            this.tb_Codigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Codigo.Name = "tb_Codigo";
-            this.tb_Codigo.Size = new System.Drawing.Size(222, 27);
+            this.tb_Codigo.Size = new System.Drawing.Size(195, 23);
             this.tb_Codigo.TabIndex = 13;
             // 
             // lb_NombreRepartidor
             // 
             this.lb_NombreRepartidor.AutoSize = true;
             this.lb_NombreRepartidor.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_NombreRepartidor.Location = new System.Drawing.Point(11, 536);
+            this.lb_NombreRepartidor.Location = new System.Drawing.Point(10, 402);
             this.lb_NombreRepartidor.Name = "lb_NombreRepartidor";
-            this.lb_NombreRepartidor.Size = new System.Drawing.Size(194, 21);
+            this.lb_NombreRepartidor.Size = new System.Drawing.Size(159, 17);
             this.lb_NombreRepartidor.TabIndex = 14;
             this.lb_NombreRepartidor.Text = "Nombre de Repartidor :";
             // 
             // tb_Nombre
             // 
             this.tb_Nombre.BackColor = System.Drawing.Color.Honeydew;
-            this.tb_Nombre.Location = new System.Drawing.Point(229, 533);
+            this.tb_Nombre.Location = new System.Drawing.Point(200, 400);
+            this.tb_Nombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Nombre.Name = "tb_Nombre";
-            this.tb_Nombre.Size = new System.Drawing.Size(223, 27);
+            this.tb_Nombre.Size = new System.Drawing.Size(196, 23);
             this.tb_Nombre.TabIndex = 15;
             // 
             // lb_CodigoRepartidor
             // 
             this.lb_CodigoRepartidor.AutoSize = true;
             this.lb_CodigoRepartidor.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_CodigoRepartidor.Location = new System.Drawing.Point(11, 579);
+            this.lb_CodigoRepartidor.Location = new System.Drawing.Point(10, 434);
             this.lb_CodigoRepartidor.Name = "lb_CodigoRepartidor";
-            this.lb_CodigoRepartidor.Size = new System.Drawing.Size(185, 21);
+            this.lb_CodigoRepartidor.Size = new System.Drawing.Size(152, 17);
             this.lb_CodigoRepartidor.TabIndex = 16;
-            this.lb_CodigoRepartidor.Text = "Codigó de Repartidor :";
+            this.lb_CodigoRepartidor.Text = "Codigo de Repartidor :";
             // 
             // tb_CodigoRepartidor
             // 
             this.tb_CodigoRepartidor.BackColor = System.Drawing.Color.Honeydew;
-            this.tb_CodigoRepartidor.Location = new System.Drawing.Point(229, 581);
+            this.tb_CodigoRepartidor.Location = new System.Drawing.Point(200, 436);
+            this.tb_CodigoRepartidor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_CodigoRepartidor.Name = "tb_CodigoRepartidor";
-            this.tb_CodigoRepartidor.Size = new System.Drawing.Size(222, 27);
+            this.tb_CodigoRepartidor.Size = new System.Drawing.Size(195, 23);
             this.tb_CodigoRepartidor.TabIndex = 17;
             // 
             // lb_Direccion
             // 
             this.lb_Direccion.AutoSize = true;
             this.lb_Direccion.Font = new System.Drawing.Font("Garamond", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_Direccion.Location = new System.Drawing.Point(11, 621);
+            this.lb_Direccion.Location = new System.Drawing.Point(10, 466);
             this.lb_Direccion.Name = "lb_Direccion";
-            this.lb_Direccion.Size = new System.Drawing.Size(100, 21);
+            this.lb_Direccion.Size = new System.Drawing.Size(78, 17);
             this.lb_Direccion.TabIndex = 18;
-            this.lb_Direccion.Text = "Dirección :";
+            this.lb_Direccion.Text = "Direccion :";
             // 
             // tb_Direccion
             // 
             this.tb_Direccion.BackColor = System.Drawing.Color.Honeydew;
-            this.tb_Direccion.Location = new System.Drawing.Point(229, 621);
+            this.tb_Direccion.Location = new System.Drawing.Point(200, 466);
+            this.tb_Direccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Direccion.Name = "tb_Direccion";
-            this.tb_Direccion.Size = new System.Drawing.Size(223, 27);
+            this.tb_Direccion.Size = new System.Drawing.Size(196, 23);
             this.tb_Direccion.TabIndex = 19;
             // 
             // lb_FechaPedido
             // 
             this.lb_FechaPedido.AutoSize = true;
             this.lb_FechaPedido.Font = new System.Drawing.Font("Garamond", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_FechaPedido.Location = new System.Drawing.Point(12, 686);
+            this.lb_FechaPedido.Location = new System.Drawing.Point(10, 500);
             this.lb_FechaPedido.Name = "lb_FechaPedido";
-            this.lb_FechaPedido.Size = new System.Drawing.Size(158, 21);
+            this.lb_FechaPedido.Size = new System.Drawing.Size(121, 17);
             this.lb_FechaPedido.TabIndex = 20;
             this.lb_FechaPedido.Text = "Fecha de Pedido :";
             this.lb_FechaPedido.Click += new System.EventHandler(this.lb_FechaPedido_Click);
@@ -229,9 +231,10 @@
             // tb_Fecha
             // 
             this.tb_Fecha.BackColor = System.Drawing.Color.Honeydew;
-            this.tb_Fecha.Location = new System.Drawing.Point(230, 686);
+            this.tb_Fecha.Location = new System.Drawing.Point(200, 500);
+            this.tb_Fecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Fecha.Name = "tb_Fecha";
-            this.tb_Fecha.Size = new System.Drawing.Size(222, 27);
+            this.tb_Fecha.Size = new System.Drawing.Size(195, 23);
             this.tb_Fecha.TabIndex = 21;
             this.tb_Fecha.TextChanged += new System.EventHandler(this.tb_Fecha_TextChanged);
             // 
@@ -239,9 +242,10 @@
             // 
             this.btn_Asignar.BackColor = System.Drawing.Color.Honeydew;
             this.btn_Asignar.Font = new System.Drawing.Font("Garamond", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Asignar.Location = new System.Drawing.Point(475, 579);
+            this.btn_Asignar.Location = new System.Drawing.Point(416, 434);
+            this.btn_Asignar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Asignar.Name = "btn_Asignar";
-            this.btn_Asignar.Size = new System.Drawing.Size(144, 29);
+            this.btn_Asignar.Size = new System.Drawing.Size(126, 22);
             this.btn_Asignar.TabIndex = 22;
             this.btn_Asignar.Text = "Asignar";
             this.btn_Asignar.UseVisualStyleBackColor = false;
@@ -252,22 +256,11 @@
             this.fecha.Enabled = true;
             this.fecha.Tick += new System.EventHandler(this.fecha_Tick);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(309, 651);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 17);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Ingresar Manualmente";
-            // 
             // FrmRepartidores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 725);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(566, 544);
             this.Controls.Add(this.btn_Asignar);
             this.Controls.Add(this.tb_Fecha);
             this.Controls.Add(this.lb_FechaPedido);
@@ -287,6 +280,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmRepartidores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Repartidores";
@@ -320,6 +314,5 @@
         public TextBox tb_Direccion;
         public TextBox tb_Fecha;
         private System.Windows.Forms.Timer fecha;
-        private Label label1;
     }
 }
