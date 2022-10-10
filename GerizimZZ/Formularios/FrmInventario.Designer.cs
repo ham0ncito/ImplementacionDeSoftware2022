@@ -83,7 +83,7 @@
             // 
             // LineaNegraEstetica
             // 
-            this.LineaNegraEstetica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.LineaNegraEstetica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LineaNegraEstetica.Image = global::GerizimZZ.Properties.Resources.substract;
             this.LineaNegraEstetica.Location = new System.Drawing.Point(10, 80);
@@ -96,7 +96,7 @@
             // 
             // LogoGerizim
             // 
-            this.LogoGerizim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.LogoGerizim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LogoGerizim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.LogoGerizim.Image = global::GerizimZZ.Properties.Resources.logoComprimido;

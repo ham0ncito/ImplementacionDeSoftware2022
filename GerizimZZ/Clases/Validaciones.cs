@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GerizimZZ.Clases
 {
@@ -18,20 +19,28 @@ namespace GerizimZZ.Clases
             }
         }
 
-        public void soloNumeros(KeyPressEventArgs pE)
+        public static void soloNumeros(KeyPressEventArgs V)
         {
-            if (char.IsDigit(pE.KeyChar))
+            if (char.IsDigit(V.KeyChar))
             {
-                pE.Handled = false;
+                V.Handled = false;
             }
-            else if (char.IsControl(pE.KeyChar))
+            else if (char.IsSeparator(V.KeyChar))
             {
-                pE.Handled = false;
+                V.Handled = false;
+            }
+            else if (char.IsControl(V.KeyChar))
+            {
+                V.Handled = false;
+            }
+            else if (V.KeyChar.ToString().Equals("."))
+            {
+                V.Handled = false;
             }
             else
             {
-                pE.Handled = true;
-                MessageBox.Show("Solo numeros.");
+                V.Handled = true;
+                MessageBox.Show("Error, Ingrese solo números.", "Campo Precio", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

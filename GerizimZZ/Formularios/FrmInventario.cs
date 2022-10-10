@@ -49,8 +49,8 @@ namespace GerizimZZ
                 txtCantidadMinima.Text = item.Cells[7].Value.ToString();
                 txtDescripcionProducto.Text = item.Cells[8].Value.ToString();
                 txtEstadoPRoducto.Text = item.Cells[9].Value.ToString();
-                txtFechaingreso.Text = item.Cells[10].Value.ToString();
-                //dgvProducto.Columns["precio_producto"].HeaderText = "Precio";
+                //txtFechaingreso.Text = item.Cells[10].Value.ToString();
+               
 
             }
         }
@@ -82,12 +82,14 @@ namespace GerizimZZ
 
         private void txtPrecio_producto_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
-            {
-                MessageBox.Show("Ingrese Solo Números", "Campo codigo producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                e.Handled = true;
-                return;
-            }
+            //if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            //{
+            //    MessageBox.Show("Ingrese Solo Números", "Campo codigo producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    e.Handled = true;
+            //    return;
+            //}
+
+            Validaciones.soloNumeros(e);
         }
 
 
@@ -186,7 +188,7 @@ namespace GerizimZZ
                     pesoproducto = Convert.ToDouble(txtPesoProducto.Text);
 
                     productos.Agregar_Producto(codigo, precio_producto, txtNombreProducto.Text, pesoproducto, txtCodigoBarra.Text, txtCodigoCatologo.Text, cantidadproducto, cantidadminima, txtDescripcionProducto.Text, estadoproducto, txtFechaingreso.Text);
-                    SqlConnection con = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+                    SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
                     SqlDataAdapter comando = new SqlDataAdapter();
                     string sql = "SELECT * FROM Producto";
                     comando.SelectCommand = new SqlCommand(sql, con);
@@ -215,7 +217,7 @@ namespace GerizimZZ
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" || txtFechaingreso.Text == ""/* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
+            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" /*||*/ /*txtFechaingreso.Text == ""*//* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
             {
                 MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -242,7 +244,7 @@ namespace GerizimZZ
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" || txtFechaingreso.Text == ""/* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
+            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" /*|| txtFechaingreso.Text == *//*""*//* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
             {
                 MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

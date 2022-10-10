@@ -53,6 +53,7 @@ namespace GerizimZZ.Clases
                 DataTable table = new DataTable();
                 table.Load(reader);
                 return table;
+                con.Close();
             }
         }
 
@@ -63,9 +64,9 @@ namespace GerizimZZ.Clases
             {
                 try
                 {
-                    string sql = "INSERT INTO Producto(ID_codigoProducto, Precio_producto, NombreProducto, PesoProducto, CodigoBarra, CodigoCatologo, CantidadProducto, CantidadMinima, DescripcionProducto, EstadoPRoducto) VALUES ('"
+                    string sql = "INSERT INTO Producto(ID_codigoProducto, Precio_producto, NombreProducto, PesoProducto, CodigoBarra, CodigoCatologo, CantidadProducto, CantidadMinima, DescripcionProducto, EstadoPRoducto, fechaIngreso) VALUES ('"
                     + ID_codigoProducto + "','" + Precio_producto + "','" + NombreProducto + "','" + PesoProducto + "','" + CodigoBarra + "','" + CodigoCatologo +
-                    "','" + CantidadProducto + "','" + CantidadMinima + "','" + DescripcionProducto + "','" + EstadoPRoducto + "')";
+                    "','" + CantidadProducto + "','" + CantidadMinima + "','" + DescripcionProducto + "','" + EstadoPRoducto  + "','" + fechaingreso  + "')";
                     con.Open();
                     SqlCommand cmd = new SqlCommand(sql, con);
                     if (cmd.ExecuteNonQuery() == 1)
