@@ -54,13 +54,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnAdd = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panelsidemenu.SuspendLayout();
@@ -449,77 +446,30 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(931, 415);
+            this.label3.Location = new System.Drawing.Point(1123, 415);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(424, 112);
+            this.label3.Size = new System.Drawing.Size(232, 112);
             this.label3.TabIndex = 16;
             this.label3.Text = resources.GetString("label3.Text");
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label4.Location = new System.Drawing.Point(304, 499);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 28);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "To Do.";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(305, 534);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Agregar cosas pendientes";
-            this.textBox1.Size = new System.Drawing.Size(275, 22);
-            this.textBox1.TabIndex = 18;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.BackgroundImage = global::GerizimZZ.Properties.Resources._273186167_4918331624892893_6754485724703248458_n;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(636, 499);
+            this.panel1.Location = new System.Drawing.Point(636, 457);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(265, 220);
             this.panel1.TabIndex = 19;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(304, 565);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(307, 154);
-            this.panel4.TabIndex = 20;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.LightGray;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Garamond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.AngleRight;
-            this.btnAdd.IconColor = System.Drawing.Color.Black;
-            this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAdd.IconSize = 35;
-            this.btnAdd.Location = new System.Drawing.Point(590, 530);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Padding = new System.Windows.Forms.Padding(10);
-            this.btnAdd.Size = new System.Drawing.Size(21, 29);
-            this.btnAdd.TabIndex = 9;
-            this.btnAdd.Tag = "Inventario";
-            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
             this.panel5.BackgroundImage = global::GerizimZZ.Properties.Resources._272963207_4918331628226226_5944811752821849762_n;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel5.Location = new System.Drawing.Point(931, 539);
+            this.panel5.Location = new System.Drawing.Point(931, 415);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(186, 180);
+            this.panel5.Size = new System.Drawing.Size(186, 262);
             this.panel5.TabIndex = 20;
             // 
             // label5
@@ -527,9 +477,18 @@
             this.label5.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(1123, 527);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(230, 196);
+            this.label5.Size = new System.Drawing.Size(230, 150);
             this.label5.TabIndex = 21;
             this.label5.Text = resources.GetString("label5.Text");
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(301, 478);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(329, 217);
+            this.label4.TabIndex = 22;
+            this.label4.Text = resources.GetString("label4.Text");
             // 
             // frmInicio
             // 
@@ -538,13 +497,10 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.ControlBox = false;
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label2);
@@ -573,7 +529,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -600,17 +555,14 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton btnayuda;
-        private Label label4;
         private Label label3;
         private PictureBox pictureBox4;
         private Label label2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private Panel panel4;
         private Panel panel1;
-        private TextBox textBox1;
         private Panel panel5;
-        private FontAwesome.Sharp.IconButton btnAdd;
         private Label label5;
+        private Label label4;
     }
 }
