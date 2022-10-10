@@ -748,19 +748,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\userHP\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\userHP\\Uni\\Implementacion\\NewRepo\\GerizimZZ\\GerizimZZ.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Github\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj",
       "projectName": "GerizimZZ",
-      "projectPath": "C:\\Users\\userHP\\Uni\\Implementacion\\NewRepo\\GerizimZZ\\GerizimZZ.csproj",
-      "packagesPath": "C:\\Users\\userHP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\userHP\\Uni\\Implementacion\\NewRepo\\GerizimZZ\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\Github\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\Github\\ImplementacionDeSoftware2022\\GerizimZZ\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\userHP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -835,7 +835,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'BouncyCastle 1.8.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "message": "El paquete \"BouncyCastle 1.8.9\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         "net6.0-windows7.0"
@@ -845,7 +845,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'iTextSharp 5.5.13.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "message": "El paquete \"iTextSharp 5.5.13.3\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "iTextSharp",
       "targetGraphs": [
         "net6.0-windows7.0"
