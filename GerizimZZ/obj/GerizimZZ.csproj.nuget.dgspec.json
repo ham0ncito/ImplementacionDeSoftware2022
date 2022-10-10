@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\keyyo\\OneDrive\\Desktop\\PROYECTO GERIZIM\\NewRepo\\GerizimZZ\\GerizimZZ.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\Github\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\keyyo\\OneDrive\\Desktop\\PROYECTO GERIZIM\\NewRepo\\GerizimZZ\\GerizimZZ.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Github\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\keyyo\\OneDrive\\Desktop\\PROYECTO GERIZIM\\NewRepo\\GerizimZZ\\GerizimZZ.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Github\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj",
         "projectName": "GerizimZZ",
-        "projectPath": "C:\\Users\\keyyo\\OneDrive\\Desktop\\PROYECTO GERIZIM\\NewRepo\\GerizimZZ\\GerizimZZ.csproj",
-        "packagesPath": "C:\\Users\\keyyo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\keyyo\\OneDrive\\Desktop\\PROYECTO GERIZIM\\NewRepo\\GerizimZZ\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Github\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Github\\ImplementacionDeSoftware2022\\GerizimZZ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\keyyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -67,7 +67,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -79,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -186,21 +186,19 @@ namespace GerizimZZ
 
         private void txtID_cliente_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (!Regex.IsMatch(txtID_cliente.Text, @"^(\d\d\d){0,1}|1000)$"))
+            if (!Regex.IsMatch(txtID_cliente.Text, @"^(\d\d\d{0,1}|1000)$"))
             {
                 e.Cancel = true;
-                txtID_cliente.Focus();
-                MessageBox.Show("El valor ingresado debe ser un numero positivo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El ID del cliente debe ser un numero positivo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
 
         private void txtTelefono_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (!Regex.IsMatch(txtID_cliente.Text, @"^(\d\d\d){0,1}|30)$"))
+            if (!Regex.IsMatch(txtTelefono.Text, @"^(\d\d\d{0,1}|1000)$"))
             {
                 e.Cancel = true;
-                txtID_cliente.Focus();
                 MessageBox.Show("Debe ingresar un numero telefonico valido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
