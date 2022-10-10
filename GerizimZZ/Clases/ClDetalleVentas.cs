@@ -18,25 +18,22 @@ namespace GerizimZZ.Clases
 {
    public class ClDetalleVentas: Cl_conexiones
     {
-
-        public void llenarProductos(DataGridView dataGrid, TextBox busquedaProducto)
+        SqlDataAdapter sqlDA;
+        DataTable dt;
+        public void llenarProductos(DataGridView dataGrid)
         {
             try
             {
                 conex.Open();
                 string query = " select nombreProducto as 'Nombre del producto', precio_producto as 'Precio de venta', cantidadProducto as 'Cantidad disponible', codigoBarra as 'Codigo de Barra del producto' from Producto order by nombreProducto ASC; \r\n";
                 SqlCommand comando = new SqlCommand(query, conex);
-                SqlDataAdapter sqlDA = new SqlDataAdapter(comando);
-                DataTable dt = new DataTable();
+                sqlDA = new SqlDataAdapter(comando);
+                dt = new DataTable();
                 sqlDA.Fill(dt);
                 dataGrid.DataSource = dt;
                 conex.Close();
                 comando.Dispose();
-                foreach (DataRow row in dt.Rows)
-                {
-                    busquedaProducto.AutoCompleteCustomSource.Add(row[0].ToString()); 
-
-                }
+                
             } catch (Exception x)
             {
                 MessageBox.Show(x.Message);
@@ -47,7 +44,7 @@ namespace GerizimZZ.Clases
         
 
         
-        public void llenarClientes(ComboBox combo, TextBox busquedaCliente)
+        public void llenarClientes(ComboBox combo)
         {
             try
             {
@@ -59,7 +56,7 @@ namespace GerizimZZ.Clases
                 while (registro.Read())
                 {
                     combo.Items.Add(registro["Nombre"]).ToString();
-                    busquedaCliente.AutoCompleteCustomSource.Add((registro["Nombre"]).ToString());
+                   
                 }
                 conex.Close();
             }
@@ -191,6 +188,13 @@ namespace GerizimZZ.Clases
             SqlCommand comandito = new SqlCommand(consulta, conex);
             comandito.ExecuteNonQuery();
             conex.Close(); 
+        }
+
+        public void nombre(TextBox txtFiltrar, DataGridView dgProductos)
+        {
+            
+
+           
         }
     }
 }

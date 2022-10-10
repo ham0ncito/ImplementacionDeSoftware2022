@@ -227,7 +227,7 @@ namespace GerizimZZ
             cmbCliente.SelectedIndex = 1; 
             cmbPago.SelectedIndex = 0; 
             ClDetalleVentas claseDetalleVenta = new ClDetalleVentas();
-            claseDetalleVenta.llenarProductos(dgProductos,txtBusquedaProducto);
+            claseDetalleVenta.llenarProductos(dgProductos);
 
         }
         //reiniza los valores de factura, si hubo una venta tomara el valor maximo y lo sumara
@@ -373,7 +373,7 @@ namespace GerizimZZ
             buscarId();
             lblCodigoCliente.Visible = true;
             lblCodCliente.Visible = true;
-            txtBusquedaCliente.Text = cmbCliente.SelectedItem.ToString();
+            
             TelefonosDireccions();
         }
         //busca las direcciones del cliente que han sido registradas
@@ -396,7 +396,7 @@ namespace GerizimZZ
         public void nombresCliente()
         {
           
-            detalleVenta.llenarClientes(cmbCliente,txtBusquedaCliente);
+            detalleVenta.llenarClientes(cmbCliente);
         }
 
         private void printPreviewDialog1_Load(object sender, EventArgs e)
@@ -495,7 +495,7 @@ namespace GerizimZZ
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void cmbDireccion_SelectedIndexChanged(object sender, EventArgs e)
