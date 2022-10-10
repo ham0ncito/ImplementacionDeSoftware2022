@@ -152,7 +152,7 @@ namespace GerizimZZ
         //llama al formulario de ventas
         private void btnventasmi_Click(object sender, EventArgs e)
         {
-            frmRegistrosVentas frVentas = new frmRegistrosVentas();
+            RegistrosVentas frVentas = new RegistrosVentas();
             AddOwnedForm(frVentas);
             frVentas.Show();
         }

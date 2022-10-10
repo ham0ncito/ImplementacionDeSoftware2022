@@ -124,6 +124,11 @@
             // 
             // dgvInventario
             // 
+            this.dgvInventario.AllowUserToAddRows = false;
+            this.dgvInventario.AllowUserToDeleteRows = false;
+            this.dgvInventario.AllowUserToResizeColumns = false;
+            this.dgvInventario.AllowUserToResizeRows = false;
+            this.dgvInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventario.Location = new System.Drawing.Point(42, 135);
             this.dgvInventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -402,6 +407,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSolicitudInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gerizim Solicitud Inventario";
             this.Load += new System.EventHandler(this.FrmSolicitudInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LineaNegraEstetica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).EndInit();
