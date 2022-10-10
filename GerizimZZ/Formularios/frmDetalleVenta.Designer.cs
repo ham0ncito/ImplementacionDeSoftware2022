@@ -72,10 +72,6 @@ namespace GerizimZZ
             this.label1 = new System.Windows.Forms.Label();
             this.dgProductos = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtBusquedaCliente = new System.Windows.Forms.TextBox();
-            this.txtBusquedaProducto = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgDetalleVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
@@ -532,59 +528,12 @@ namespace GerizimZZ
             this.label2.TabIndex = 43;
             this.label2.Text = "Productos";
             // 
-            // txtBusquedaCliente
-            // 
-            this.txtBusquedaCliente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtBusquedaCliente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtBusquedaCliente.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtBusquedaCliente.Location = new System.Drawing.Point(599, 131);
-            this.txtBusquedaCliente.Name = "txtBusquedaCliente";
-            this.txtBusquedaCliente.PlaceholderText = "Consumidor Final Gerizim";
-            this.txtBusquedaCliente.Size = new System.Drawing.Size(287, 25);
-            this.txtBusquedaCliente.TabIndex = 44;
-            this.txtBusquedaCliente.TextChanged += new System.EventHandler(this.txtBusquedaCliente_TextChanged);
-            // 
-            // txtBusquedaProducto
-            // 
-            this.txtBusquedaProducto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtBusquedaProducto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtBusquedaProducto.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtBusquedaProducto.Location = new System.Drawing.Point(599, 414);
-            this.txtBusquedaProducto.Name = "txtBusquedaProducto";
-            this.txtBusquedaProducto.PlaceholderText = "Producto Gerizim";
-            this.txtBusquedaProducto.Size = new System.Drawing.Size(287, 25);
-            this.txtBusquedaProducto.TabIndex = 14;
-            this.txtBusquedaProducto.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(487, 134);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 18);
-            this.label4.TabIndex = 47;
-            this.label4.Text = "Buscar Cliente";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(474, 419);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 18);
-            this.label8.TabIndex = 48;
-            this.label8.Text = "Buscar Producto";
-            // 
             // frmDetalleVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1315, 724);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtBusquedaProducto);
-            this.Controls.Add(this.txtBusquedaCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgProductos);
             this.Controls.Add(this.label1);
@@ -672,10 +621,6 @@ namespace GerizimZZ
         private Label label1;
         public DataGridView dgProductos;
         private Label label2;
-        private Label label4;
-        private TextBox txtBusquedaProducto;
-        private TextBox txtBusquedaCliente;
-        private Label label8;
         private Button button1;
         private PictureBox pictureBox2;
     }
