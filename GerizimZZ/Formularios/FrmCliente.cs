@@ -24,6 +24,8 @@ namespace GerizimZZ
             dstCliente.Tables.Add(dtCliente);
             dgvCliente.DataSource = dstCliente.Tables[0];
 
+            txtBuscar.Focus();
+
             dgvCliente.Columns[0].HeaderText = "ID Cliente";
             dgvCliente.Columns[1].HeaderText = "Primer nombre";
             dgvCliente.Columns[2].HeaderText = "Segundo nombre";
@@ -32,7 +34,7 @@ namespace GerizimZZ
             dgvCliente.Columns[5].HeaderText = "Direccion";
             dgvCliente.Columns[6].HeaderText = "Telefono";
 
-            txtBuscar.Focus();
+            
         }
 
         private void btneliminar_Cliente_Click(object sender, EventArgs e)
