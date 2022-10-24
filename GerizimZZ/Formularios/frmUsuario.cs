@@ -1,4 +1,5 @@
 ﻿using GerizimZZ.Clases;
+using GerizimZZ.Formularios;
 
 namespace GerizimZZ
 {
@@ -20,7 +21,9 @@ namespace GerizimZZ
 
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Para cualquier consulta puede llamar a soporte, estarán alegres de ayudarle", "Ayuda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmPendientes mostrar = new frmPendientes();
+            mostrar.Text = "Gerizim | Usuarios | Ayuda";
+            mostrar.ShowDialog();
         }
 
         private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,20 +66,23 @@ namespace GerizimZZ
 
         private void cambiarFotoDePerfilToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proximamente en actualizaciones");
+            frmPendientes mostrar = new frmPendientes();
+            mostrar.Text = "Gerizim | Cambiar mi foto de Perfil";
+            mostrar.ShowDialog();
         }
 
         private void configuracionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proximamente en actualizaciones");
+            frmPendientes mostrar = new frmPendientes();
+            mostrar.Text = "Gerizim | Configuraciones";
+            mostrar.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            MessageBox.Show("Nos vemos pronto");
-            FrmLogin fr = new FrmLogin();
-            fr.Show();
+            frmPendientes mostrar = new frmPendientes();
+            mostrar.Text = "Gerizim | Cerrar Sesion";
+            mostrar.ShowDialog();
         }
     }
 }

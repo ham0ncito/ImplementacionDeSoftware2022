@@ -127,8 +127,8 @@
   <data name="Presione el boton de escanear (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Presione el boton de escanear (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="106 Party Bliss" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\106 Party Bliss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="273186167_4918331624892893_6754485724703248458_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\273186167_4918331624892893_6754485724703248458_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhatsApp Image 2022-06-30 at 7.40.00 PM (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-06-30 at 7.40.00 PM (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,20 +145,26 @@
   <data name="imagencomprimida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagencomprimida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="qr-code-min" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qr-code-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="199848567_4174426372616759_1130399733558613204_n-PhotoRoom1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\199848567_4174426372616759_1130399733558613204_n-PhotoRoom1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="264855836_4713169605409097_2106932496429429410_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\264855836_4713169605409097_2106932496429429410_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menu (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="245529273_4532701076789285_5622936224095500023_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\245529273_4532701076789285_5622936224095500023_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="199848567_4174426372616759_1130399733558613204_n-PhotoRoom1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\199848567_4174426372616759_1130399733558613204_n-PhotoRoom1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="plusComprimida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plusComprimida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,8 +187,17 @@
   <data name="user (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="programmer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\programmer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2022-06-30 at 7.44.33 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2022-06-30 at 7.44.33 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minus-signComprimido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minus-signComprimido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="260525954_4682060098520048_6419776544082246378_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\260525954_4682060098520048_6419776544082246378_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="026 Saint Petersburg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\026 Saint Petersburg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +211,20 @@
   <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="blog_Como_hacer_un_reporte_de_ventas61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blog_Como_hacer_un_reporte_de_ventas61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Presione el boton de escanear (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Presione el boton de escanear (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="plus (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="261084354_4674209339305124_1571746378142733173_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\261084354_4674209339305124_1571746378142733173_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="012 Tempting Azure" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\012 Tempting Azure.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +235,9 @@
   <data name="plus (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="264088550_4700327126693345_7442596036063913344_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\264088550_4700327126693345_7442596036063913344_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="WhatsApp Image 2022-06-30 at 7.40.00 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-06-30 at 7.40.00 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,8 +247,8 @@
   <data name="substract" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\substract.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Image 2022-06-30 at 7.44.33 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2022-06-30 at 7.44.33 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="274349672_4980421895350532_8429971338086587742_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\274349672_4980421895350532_8429971338086587742_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="078 Cochiti Lake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\078 Cochiti Lake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,8 +256,11 @@
   <data name="199848567_4174426372616759_1130399733558613204_n-PhotoRoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\199848567_4174426372616759_1130399733558613204_n-PhotoRoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="106 Party Bliss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\106 Party Bliss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="qr-code-min" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qr-code-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="minus-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minus-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,13 +274,25 @@
   <data name="starComprimida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\starComprimida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="257939201_4636816369711088_2288677740232719792_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\257939201_4636816369711088_2288677740232719792_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="272963207_4918331628226226_5944811752821849762_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\272963207_4918331628226226_5944811752821849762_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blog_Como_hacer_un_reporte_de_ventas6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blog_Como_hacer_un_reporte_de_ventas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Imagen1-PhotoRoom (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen1-PhotoRoom (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhatsApp Image 2022-06-30 at 7.40.01 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-06-30 at 7.40.01 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Presione el boton de escanear (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Presione el boton de escanear (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="The-Importance-of-Delivery-Services-during-COVID-19-1024x682" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The-Importance-of-Delivery-Services-during-COVID-19-1024x682.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

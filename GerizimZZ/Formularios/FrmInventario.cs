@@ -168,6 +168,23 @@ namespace GerizimZZ
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is TextBox )
+                {
+                    if(c is not null)
+                    {
+                        c.Text = "";
+                    }
+                }
+            }
+            txtFechaingreso.Text = DateTime.Now.ToString("yyyy'-'mm'-'dd' 'hh:mm");
+            txtFechaingreso.Focus();
+            MessageBox.Show("Valores limpiados");
+        }
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try

@@ -82,7 +82,7 @@ namespace GerizimZZ
                         cantidad[1] = Convert.ToInt32(registro[3]);
                         if (Convert.ToInt32(registro[4]) != 0 && Convert.ToInt32(cmbCantidad.Text) <= Convert.ToInt32(registro[3]))
                         {
-                            DetalleVenta dv = Owner as DetalleVenta;
+                            frmDetalleVenta dv = Owner as frmDetalleVenta;
                             DataTable dt = new DataTable();
 
                             for (int i = 0; i < dv.dgDetalleVenta.Rows.Count; i++)

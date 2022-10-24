@@ -133,7 +133,9 @@
             this.txtID_cliente.Name = "txtID_cliente";
             this.txtID_cliente.Size = new System.Drawing.Size(171, 25);
             this.txtID_cliente.TabIndex = 7;
+            this.txtID_cliente.TabStop = false;
             this.txtID_cliente.TextChanged += new System.EventHandler(this.txtID_cliente_TextChanged);
+            this.txtID_cliente.Validating += new System.ComponentModel.CancelEventHandler(this.txtID_cliente_Validating);
             // 
             // txtprimerNombre
             // 
@@ -141,6 +143,7 @@
             this.txtprimerNombre.Name = "txtprimerNombre";
             this.txtprimerNombre.Size = new System.Drawing.Size(171, 25);
             this.txtprimerNombre.TabIndex = 8;
+            this.txtprimerNombre.TabStop = false;
             this.txtprimerNombre.TextChanged += new System.EventHandler(this.txtprimerNombre_TextChanged);
             // 
             // txtsegundoNombre
@@ -149,6 +152,7 @@
             this.txtsegundoNombre.Name = "txtsegundoNombre";
             this.txtsegundoNombre.Size = new System.Drawing.Size(171, 25);
             this.txtsegundoNombre.TabIndex = 9;
+            this.txtsegundoNombre.TabStop = false;
             this.txtsegundoNombre.TextChanged += new System.EventHandler(this.txtsegundoNombre_TextChanged);
             // 
             // txtprimerApellido
@@ -157,6 +161,7 @@
             this.txtprimerApellido.Name = "txtprimerApellido";
             this.txtprimerApellido.Size = new System.Drawing.Size(171, 25);
             this.txtprimerApellido.TabIndex = 10;
+            this.txtprimerApellido.TabStop = false;
             this.txtprimerApellido.TextChanged += new System.EventHandler(this.txtprimerApellido_TextChanged);
             // 
             // txtsegundoApellido
@@ -165,6 +170,7 @@
             this.txtsegundoApellido.Name = "txtsegundoApellido";
             this.txtsegundoApellido.Size = new System.Drawing.Size(171, 25);
             this.txtsegundoApellido.TabIndex = 11;
+            this.txtsegundoApellido.TabStop = false;
             this.txtsegundoApellido.TextChanged += new System.EventHandler(this.txtsegundoApellido_TextChanged);
             // 
             // txtTelefono
@@ -173,7 +179,9 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(171, 25);
             this.txtTelefono.TabIndex = 12;
+            this.txtTelefono.TabStop = false;
             this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
+            this.txtTelefono.Validating += new System.ComponentModel.CancelEventHandler(this.txtTelefono_Validating);
             // 
             // txtdireccion
             // 
@@ -182,6 +190,7 @@
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.Size = new System.Drawing.Size(591, 45);
             this.txtdireccion.TabIndex = 13;
+            this.txtdireccion.TabStop = false;
             this.txtdireccion.TextChanged += new System.EventHandler(this.txtdireccion_TextChanged);
             // 
             // btnagregar_Cliente
@@ -190,6 +199,7 @@
             this.btnagregar_Cliente.Name = "btnagregar_Cliente";
             this.btnagregar_Cliente.Size = new System.Drawing.Size(154, 33);
             this.btnagregar_Cliente.TabIndex = 14;
+            this.btnagregar_Cliente.TabStop = false;
             this.btnagregar_Cliente.Text = "Agregar Cliente";
             this.btnagregar_Cliente.UseVisualStyleBackColor = true;
             this.btnagregar_Cliente.Click += new System.EventHandler(this.btnagregar_Cliente_Click);
@@ -200,6 +210,7 @@
             this.btnmodificar_Cliente.Name = "btnmodificar_Cliente";
             this.btnmodificar_Cliente.Size = new System.Drawing.Size(154, 33);
             this.btnmodificar_Cliente.TabIndex = 15;
+            this.btnmodificar_Cliente.TabStop = false;
             this.btnmodificar_Cliente.Text = "Modificar Cliente";
             this.btnmodificar_Cliente.UseVisualStyleBackColor = true;
             this.btnmodificar_Cliente.Click += new System.EventHandler(this.btnmodificar_Cliente_Click);
@@ -229,15 +240,22 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(229, 25);
             this.txtBuscar.TabIndex = 18;
+            this.txtBuscar.TabStop = false;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // dgvCliente
             // 
+            this.dgvCliente.AllowUserToAddRows = false;
+            this.dgvCliente.AllowUserToDeleteRows = false;
+            this.dgvCliente.AllowUserToResizeColumns = false;
+            this.dgvCliente.AllowUserToResizeRows = false;
+            this.dgvCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCliente.Location = new System.Drawing.Point(23, 191);
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.RowHeadersWidth = 51;
             this.dgvCliente.RowTemplate.Height = 29;
+            this.dgvCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCliente.Size = new System.Drawing.Size(941, 298);
             this.dgvCliente.TabIndex = 19;
             this.dgvCliente.Click += new System.EventHandler(this.dgvCliente_Click);
@@ -313,7 +331,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cliente";
+            this.Text = "Gerizim Clientes ";
             this.Load += new System.EventHandler(this.FrmCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LineaNegraEstetica)).EndInit();

@@ -19,7 +19,7 @@ namespace GerizimZZ.Clases
             SqlCommand comando = new SqlCommand();
             comando.Connection = conec;
             comando.CommandType = CommandType.Text;
-            comando.CommandText = "SELECT * FROM Producto";
+            comando.CommandText = "SELECT TOP (1000) [ID_codigoProducto] as 'Código del producto'\r\n      ,[precio_producto] as 'Precio del producto'\r\n      ,[nombreProducto] as 'Nombre del producto'\r\n      ,[pesoProducto] as 'Peso del producto'\r\n      ,[codigoBarra] as 'Código de barra'\r\n      ,[codigoCatologo]  as 'Código de Catalago'\r\n      ,[cantidadProducto] as 'Cantidad en inventario'\r\n      ,[cantidadMinima] as 'Cantidad minima permitida'\r\n      ,[descripcionProducto] as 'Descripcion del producto'\r\n      ,[estadoPRoducto] as 'Estado del producto'\r\n      ,[fechaIngreso] as 'Fecha de ingreso'\r\n  FROM [Gerizim].[dbo].[Producto]";
             using (conec)
             {
                 conec.Open();

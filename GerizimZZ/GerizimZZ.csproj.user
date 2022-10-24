@@ -4,16 +4,25 @@
     <_LastSelectedProfileId>C:\Users\HP\OneDrive\Documentos\GitHub\GerizimZZ\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Formularios\frmDetalleVentaAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frmInicioAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\frmInicioBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Formularios\FrmBarrapreview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\FrmInventario.cs">
+    <Compile Update="Formularios\frmPendientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Otros\Component1.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Formularios\DetalleVenta.cs">
+    <Compile Update="Formularios\frmDetalleVenta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\frAgregarInformacionAviso.cs">
@@ -22,13 +31,13 @@
     <Compile Update="Formularios\frCodigoBarra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\frInicioBodega.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Formularios\frmAvisos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\FrmInventario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\FrmRepartidores.cs">
@@ -43,7 +52,7 @@
     <Compile Update="Formularios\Frm_AsignarRepartidor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\Inventarios.cs">
+    <Compile Update="Formularios\frmInventarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Formularios\FrmLogin.cs">
@@ -55,19 +64,19 @@
     <Compile Update="UserObjects\Mensaje.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Formularios\Opciones.cs">
+    <Compile Update="Formularios\frmOpciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\pantallafactura.cs">
+    <Compile Update="Formularios\frmpantallafactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\RegistrosVentas.cs">
+    <Compile Update="Formularios\frmRegistrosVentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\VentanaInfoProductos.cs">
+    <Compile Update="Formularios\frmVentanaInfoProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formularios\Inicio.cs">
+    <Compile Update="Formularios\frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UserObjects\PantallaProducto.cs">

@@ -27,7 +27,7 @@ namespace GerizimZZ.Clases
             }
             else
             {
-                MessageBox.Show("Datos incorrectos", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No se logró acceder al sistema :c ", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             con.Close();
             return entro;

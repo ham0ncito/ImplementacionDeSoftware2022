@@ -21,7 +21,7 @@ namespace GerizimZZ
         private string textBox;
         public int cantidad = 0;
         
-        public DetalleVenta dgv = new DetalleVenta();
+        public frmDetalleVenta dgv = new frmDetalleVenta();
 
         public Producto()
         {
@@ -128,7 +128,7 @@ namespace GerizimZZ
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            VentanaInfoProductos pr = new VentanaInfoProductos();
+            frmVentanaInfoProductos pr = new frmVentanaInfoProductos();
             pr.lblNombre.Text = this.NombreProducto;
             pr.picImagen.Image = this.ImagenProducto.Image; 
             pr.lbldescripcion.Text = this.descripcion;
@@ -195,7 +195,7 @@ namespace GerizimZZ
             tabla(); 
             if (Convert.ToDecimal(comboBox1.Text )>0)
             {
-                DetalleVenta dgv = new DetalleVenta();
+                frmDetalleVenta dgv = new frmDetalleVenta();
                 dgv.llenartablita();
             }
             else

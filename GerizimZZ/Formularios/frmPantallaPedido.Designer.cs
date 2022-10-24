@@ -92,6 +92,7 @@
             // 
             this.datagridPedidosRecientes.AllowUserToAddRows = false;
             this.datagridPedidosRecientes.AllowUserToDeleteRows = false;
+            this.datagridPedidosRecientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.datagridPedidosRecientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridPedidosRecientes.Location = new System.Drawing.Point(12, 224);
             this.datagridPedidosRecientes.Name = "datagridPedidosRecientes";
@@ -109,7 +110,7 @@
             this.label3.Font = new System.Drawing.Font("Garamond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(326, 103);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 30);
+            this.label3.Size = new System.Drawing.Size(83, 24);
             this.label3.TabIndex = 10;
             this.label3.Text = "Pedidos";
             // 
@@ -119,7 +120,7 @@
             this.label4.Font = new System.Drawing.Font("Garamond", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(12, 200);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 27);
+            this.label4.Size = new System.Drawing.Size(160, 21);
             this.label4.TabIndex = 11;
             this.label4.Text = "Pedidos Recientes";
             // 
@@ -129,7 +130,7 @@
             this.label1.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(12, 132);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 22);
+            this.label1.Size = new System.Drawing.Size(142, 18);
             this.label1.TabIndex = 15;
             this.label1.Text = "Introduzca dirección:";
             // 
@@ -139,9 +140,9 @@
             this.label2.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(457, 201);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 21);
+            this.label2.Size = new System.Drawing.Size(125, 17);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Codigo de factura:";
+            this.label2.Text = "Código de factura:";
             // 
             // label5
             // 
@@ -149,9 +150,9 @@
             this.label5.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(434, 239);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 21);
+            this.label5.Size = new System.Drawing.Size(148, 17);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Codigo de Repartidor:";
+            this.label5.Text = "Código de Repartidor:";
             // 
             // label6
             // 
@@ -159,7 +160,7 @@
             this.label6.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(434, 275);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(190, 21);
+            this.label6.Size = new System.Drawing.Size(148, 17);
             this.label6.TabIndex = 18;
             this.label6.Text = "Dirección de Entrega:";
             // 
@@ -169,7 +170,7 @@
             this.label7.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(466, 309);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(152, 21);
+            this.label7.Size = new System.Drawing.Size(116, 17);
             this.label7.TabIndex = 19;
             this.label7.Text = "Fecha de pedido:";
             // 
@@ -177,28 +178,28 @@
             // 
             this.txtFactura.Location = new System.Drawing.Point(632, 198);
             this.txtFactura.Name = "txtFactura";
-            this.txtFactura.Size = new System.Drawing.Size(100, 27);
+            this.txtFactura.Size = new System.Drawing.Size(100, 23);
             this.txtFactura.TabIndex = 20;
             // 
             // txtRepartidor
             // 
             this.txtRepartidor.Location = new System.Drawing.Point(632, 239);
             this.txtRepartidor.Name = "txtRepartidor";
-            this.txtRepartidor.Size = new System.Drawing.Size(100, 27);
+            this.txtRepartidor.Size = new System.Drawing.Size(100, 23);
             this.txtRepartidor.TabIndex = 21;
             // 
             // txtEntrega
             // 
             this.txtEntrega.Location = new System.Drawing.Point(632, 275);
             this.txtEntrega.Name = "txtEntrega";
-            this.txtEntrega.Size = new System.Drawing.Size(100, 27);
+            this.txtEntrega.Size = new System.Drawing.Size(100, 23);
             this.txtEntrega.TabIndex = 22;
             // 
             // txtFechaPedido
             // 
             this.txtFechaPedido.Location = new System.Drawing.Point(632, 309);
             this.txtFechaPedido.Name = "txtFechaPedido";
-            this.txtFechaPedido.Size = new System.Drawing.Size(100, 27);
+            this.txtFechaPedido.Size = new System.Drawing.Size(100, 23);
             this.txtFechaPedido.TabIndex = 23;
             // 
             // botonCancelarPedido
@@ -209,6 +210,7 @@
             this.botonCancelarPedido.TabIndex = 24;
             this.botonCancelarPedido.Text = "Cancelar pedido";
             this.botonCancelarPedido.UseVisualStyleBackColor = true;
+            this.botonCancelarPedido.Visible = false;
             this.botonCancelarPedido.Click += new System.EventHandler(this.botonCancelarPedido_Click);
             // 
             // frmPantallaPedido
@@ -233,6 +235,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPantallaPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gerizim | Pedidos";
             this.Load += new System.EventHandler(this.PantallaDescripcionProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LineaNegraEstetica)).EndInit();

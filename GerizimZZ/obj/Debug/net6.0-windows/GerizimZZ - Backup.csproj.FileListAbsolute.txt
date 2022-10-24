@@ -1,0 +1,32 @@
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ - Backup.csproj.AssemblyReference.cache
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Interop.VBIDE.dll
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ - Backup.csproj.ResolveComReference.cache
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ_-_Backup.Datasets.RegistroVentas.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.DetalleVenta.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frAgregarInformacionAviso.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frCodigoBarra.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frInicioBodega.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmAvisos.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Barra_preview.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmCliente.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmInventario.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmLogin.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmPantallaPedido.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmRepartidores.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmSolicitudInventario.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmUsuario.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Frm_AsignarRepartidor.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Inicio.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Inventarios.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Opciones.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pantallafactura.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.RegistrosVentas.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.VentanaInfoProductos.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ_-_Backup.Properties.Resources.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Mensaje.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Producto.resources
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ - Backup.csproj.GenerateResource.cache
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ - Backup.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ - Backup.AssemblyInfoInputs.cache
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ - Backup.AssemblyInfo.cs
+C:\Users\keyyo\OneDrive\Desktop\PROYECTO GERIZIM\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ - Backup.csproj.CoreCompileInputs.cache

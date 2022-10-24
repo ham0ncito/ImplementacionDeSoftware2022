@@ -5,7 +5,7 @@ namespace GerizimZZ.Clases
     public class Cl_conexiones
     {
         public SqlDataReader read;
-        protected SqlConnection conex = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
+        public SqlConnection conex = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
 
         public SqlCommand cm;
         public void conexOpen()
