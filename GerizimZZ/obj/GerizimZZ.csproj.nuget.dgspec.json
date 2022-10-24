@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\userHP\\Uni\\Implementacion\\NewRepo\\GerizimZZ\\GerizimZZ.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\Github\\GerizimZZ\\GerizimZZ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\userHP\\Uni\\Implementacion\\NewRepo\\GerizimZZ\\GerizimZZ.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Github\\GerizimZZ\\GerizimZZ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\userHP\\Uni\\Implementacion\\NewRepo\\GerizimZZ\\GerizimZZ.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Github\\GerizimZZ\\GerizimZZ.csproj",
         "projectName": "GerizimZZ",
-        "projectPath": "C:\\Users\\userHP\\Uni\\Implementacion\\NewRepo\\GerizimZZ\\GerizimZZ.csproj",
-        "packagesPath": "C:\\Users\\userHP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\userHP\\Uni\\Implementacion\\NewRepo\\GerizimZZ\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Github\\GerizimZZ\\GerizimZZ.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Github\\GerizimZZ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\userHP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

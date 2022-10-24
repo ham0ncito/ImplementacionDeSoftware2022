@@ -31,6 +31,8 @@ namespace GerizimZZ
             dgvCliente.Columns[4].HeaderText = "Segundo apellido";
             dgvCliente.Columns[5].HeaderText = "Direccion";
             dgvCliente.Columns[6].HeaderText = "Telefono";
+
+            txtBuscar.Focus();
         }
 
         private void btneliminar_Cliente_Click(object sender, EventArgs e)
@@ -194,9 +196,8 @@ namespace GerizimZZ
 
         private void txtID_cliente_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (!Regex.IsMatch(txtID_cliente.Text, @"^(\d\d\d){0,1}|1000)$"))
+            if (!Regex.IsMatch(txtID_cliente.Text,@"^(\d\d\d{0,1}|1000)$"))
             {
-                e.Cancel = true;
                 txtID_cliente.Focus();
                 MessageBox.Show("El valor ingresado debe ser un numero positivo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -211,7 +212,7 @@ namespace GerizimZZ
             }
             else
             {
-                MessageBox.Show("Valores no validos", "Ingrese un telefono valido");
+                MessageBox.Show("Ingrese un numero de telefono valido", "Valores no validos");
             }
         }
     }
