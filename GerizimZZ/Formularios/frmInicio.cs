@@ -239,6 +239,7 @@ namespace GerizimZZ
 
         private void Inicio_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void lblUsuario_Click(object sender, EventArgs e)

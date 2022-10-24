@@ -92,7 +92,7 @@
             // 
             this.datagridPedidosRecientes.AllowUserToAddRows = false;
             this.datagridPedidosRecientes.AllowUserToDeleteRows = false;
-            this.datagridPedidosRecientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.datagridPedidosRecientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.datagridPedidosRecientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridPedidosRecientes.Location = new System.Drawing.Point(12, 224);
             this.datagridPedidosRecientes.Name = "datagridPedidosRecientes";
@@ -142,7 +142,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 17);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Codigo de factura:";
+            this.label2.Text = "Código de factura:";
             // 
             // label5
             // 
@@ -152,7 +152,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(148, 17);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Codigo de Repartidor:";
+            this.label5.Text = "Código de Repartidor:";
             // 
             // label6
             // 
@@ -210,6 +210,7 @@
             this.botonCancelarPedido.TabIndex = 24;
             this.botonCancelarPedido.Text = "Cancelar pedido";
             this.botonCancelarPedido.UseVisualStyleBackColor = true;
+            this.botonCancelarPedido.Visible = false;
             this.botonCancelarPedido.Click += new System.EventHandler(this.botonCancelarPedido_Click);
             // 
             // frmPantallaPedido
@@ -234,6 +235,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPantallaPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gerizim | Pedidos";
             this.Load += new System.EventHandler(this.PantallaDescripcionProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LineaNegraEstetica)).EndInit();

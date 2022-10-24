@@ -128,7 +128,7 @@
             this.dgvInventario.AllowUserToDeleteRows = false;
             this.dgvInventario.AllowUserToResizeColumns = false;
             this.dgvInventario.AllowUserToResizeRows = false;
-            this.dgvInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventario.Location = new System.Drawing.Point(42, 135);
             this.dgvInventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -167,7 +167,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 42;
-            this.label4.Text = "Codigo barra :";
+            this.label4.Text = "Código barra :";
             // 
             // txtProveedor
             // 
@@ -251,7 +251,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 15);
             this.label5.TabIndex = 52;
-            this.label5.Text = "Codigo Producto :";
+            this.label5.Text = "Código Producto :";
             // 
             // txtID_CodigoProducto
             // 
@@ -299,7 +299,7 @@
             this.lblcodigo_Catologo.Name = "lblcodigo_Catologo";
             this.lblcodigo_Catologo.Size = new System.Drawing.Size(103, 15);
             this.lblcodigo_Catologo.TabIndex = 58;
-            this.lblcodigo_Catologo.Text = "Codigo Catalogo :";
+            this.lblcodigo_Catologo.Text = "Código Catalogo :";
             // 
             // txtCodigoCatalogo
             // 
