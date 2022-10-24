@@ -1,6 +1,7 @@
 ﻿using GerizimZZ.Clases;
 using System.Data;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace GerizimZZ
 {
@@ -22,6 +23,14 @@ namespace GerizimZZ
             dstCliente = new Clientedst();
             dstCliente.Tables.Add(dtCliente);
             dgvCliente.DataSource = dstCliente.Tables[0];
+
+            dgvCliente.Columns[0].HeaderText = "ID Cliente";
+            dgvCliente.Columns[1].HeaderText = "Primer nombre";
+            dgvCliente.Columns[2].HeaderText = "Segundo nombre";
+            dgvCliente.Columns[3].HeaderText = "Primer apellido";
+            dgvCliente.Columns[4].HeaderText = "Segundo apellido";
+            dgvCliente.Columns[5].HeaderText = "Direccion";
+            dgvCliente.Columns[6].HeaderText = "Telefono";
         }
 
         private void btneliminar_Cliente_Click(object sender, EventArgs e)
@@ -181,6 +190,29 @@ namespace GerizimZZ
 
         private void lblprimerNombre_Click(object sender, EventArgs e)
         {
+        }
+
+        private void txtID_cliente_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!Regex.IsMatch(txtID_cliente.Text, @"^(\d\d\d){0,1}|1000)$"))
+            {
+                e.Cancel = true;
+                txtID_cliente.Focus();
+                MessageBox.Show("El valor ingresado debe ser un numero positivo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void txtTelefono_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            string telefono = txtTelefono.Text;
+            if (Regex.IsMatch(telefono, @"^[0-9]+$") && telefono.Length == 8 && !string.Equals(txtTelefono.Text, "00") && (string.Equals(telefono.Substring(0, 1), "3") || string.Equals(telefono.Substring(0, 1), "2") || string.Equals(telefono.Substring(0, 1), "8") || string.Equals(telefono.Substring(0, 1), "9")))
+            {
+            }
+            else
+            {
+                MessageBox.Show("Valores no validos", "Ingrese un telefono valido");
+            }
         }
     }
 }
