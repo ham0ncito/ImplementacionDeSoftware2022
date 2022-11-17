@@ -448,3 +448,188 @@ C:\Users\Usuario\Documents\Github\ImplementacionDeSoftware2022\GerizimZZ\obj\Deb
 C:\Users\Usuario\Documents\Github\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pdb
 C:\Users\Usuario\Documents\Github\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.genruntimeconfig.cache
 C:\Users\Usuario\Documents\Github\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\ref\GerizimZZ.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.exe
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.deps.json
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.runtimeconfig.json
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.pdb
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\IronBarCode.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\itextsharp.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\Serilog.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.AssemblyReference.cache
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\Interop.VBIDE.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\Interop.COMAdmin.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\Interop.TxBDD.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.ResolveComReference.cache
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Datasets.RegistroVentas.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frAgregarInformacionAviso.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frCodigoBarra.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmAvisos.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Barra_preview.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmCliente.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmDetalleVenta.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmDetalleVentaAyuda.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInicio.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmInicioAyuda.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frInicioBodega.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmInventario.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInventarios.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmLogin.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmOpciones.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmpantallafactura.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmPantallaPedido.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmPendientes.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.RegistrosVentas.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmRepartidores.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmSolicitudInventario.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmUsuario.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmVentanaInfoProductos.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Frm_AsignarRepartidor.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Properties.Resources.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Mensaje.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Producto.resources
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.GenerateResource.cache
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.AssemblyInfoInputs.cache
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.AssemblyInfo.cs
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.CoreCompileInputs.cache
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.CopyComplete
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\refint\GerizimZZ.dll
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pdb
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.genruntimeconfig.cache
+C:\Users\ENOC ANDRADE\Source\Repos\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\ref\GerizimZZ.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.exe
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.deps.json
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.runtimeconfig.json
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.pdb
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\IronBarCode.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\itextsharp.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\Serilog.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.AssemblyReference.cache
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\Interop.VBIDE.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\Interop.COMAdmin.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\Interop.TxBDD.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.ResolveComReference.cache
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Datasets.RegistroVentas.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frAgregarInformacionAviso.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frCodigoBarra.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmAvisos.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Barra_preview.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmCalendario.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmCliente.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmDetalleVenta.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmDetalleVentaAyuda.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInicio.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmInicioAyuda.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frInicioBodega.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmInventario.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInventarios.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmLogin.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmOpciones.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmpantallafactura.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmPantallaPedido.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmPendientes.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.RegistrosVentas.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmRepartidores.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmSolicitudInventario.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmUsuario.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmVentanaInfoProductos.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Frm_AsignarRepartidor.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.UserControlEmpty.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Properties.Resources.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Mensaje.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Producto.resources
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.GenerateResource.cache
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.AssemblyInfoInputs.cache
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.AssemblyInfo.cs
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.CoreCompileInputs.cache
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.CopyComplete
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\refint\GerizimZZ.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pdb
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.genruntimeconfig.cache
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\ref\GerizimZZ.dll
+C:\Users\ALLAN\source\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.UserControlDays.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.exe
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.deps.json
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.runtimeconfig.json
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\GerizimZZ.pdb
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\IronBarCode.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\itextsharp.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\Serilog.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.AssemblyReference.cache
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\Interop.VBIDE.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\Interop.COMAdmin.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\Interop.TxBDD.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.ResolveComReference.cache
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Datasets.RegistroVentas.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frAgregarInformacionAviso.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frCodigoBarra.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmAvisos.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Barra_preview.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmCalendario.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmCliente.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmDetalleVenta.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmDetalleVentaAyuda.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInicio.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmInicioAyuda.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frInicioBodega.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmInventario.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInventarios.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmLogin.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmOpciones.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmpantallafactura.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmPantallaPedido.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmPendientes.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.RegistrosVentas.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmRepartidores.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmSolicitudInventario.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmUsuario.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmVentanaInfoProductos.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Frm_AsignarRepartidor.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.UserControlDays.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.UserControlEmpty.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Properties.Resources.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Mensaje.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Producto.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.GenerateResource.cache
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.AssemblyInfoInputs.cache
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.AssemblyInfo.cs
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.CoreCompileInputs.cache
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.CopyComplete
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\refint\GerizimZZ.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pdb
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.genruntimeconfig.cache
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\ref\GerizimZZ.dll
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.infotexto.resources
+C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmInfoCalendario.resources

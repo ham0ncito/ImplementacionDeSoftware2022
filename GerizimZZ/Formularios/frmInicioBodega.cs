@@ -66,5 +66,11 @@ namespace GerizimZZ.Formularios
                 MessageBox.Show("Salida del sistema de bodega cancelada");
             }
         }
+
+        private void Calendario_Click(object sender, EventArgs e)
+        {
+            frmCalendario fcal = new frmCalendario();
+            fcal.Show();
+        }
     }
 }
