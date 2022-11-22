@@ -13,17 +13,22 @@ using System.Globalization;
 
 namespace GerizimZZ.Formularios
 {
-    
+
     public partial class frmInfoCalendario : Form
     {
+        // declaracion de variables 
         public SqlDataReader read2;
+        List<string> listafechascom = new List<string>();
         public static SqlConnection conn = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
         public SqlCommand com;
         private bool mouseDown;
         private Point lastLocation;
+        String fechahora;
         public String fechaIn { get; set; }
         public String fechaformato { get; set; }
         String fechasql;
+
+        //llamado en usercontroldays para pasar fecha
         public frmInfoCalendario(String fecha, String fechaform)
         {
             InitializeComponent();
@@ -31,17 +36,19 @@ namespace GerizimZZ.Formularios
             fechaformato = fechaform;
         }
 
+        //funcionalidad boton cerrar
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-            
-        }
 
+        }
+        // funcionalidad de boton para minimizar
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
+        // en los siguientes 3 metodos se desarrollan las funciones/metodos de eventos para el movimiento de la ventana
         private void frmInfoCalendario_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
@@ -63,6 +70,8 @@ namespace GerizimZZ.Formularios
         {
             mouseDown = false;
         }
+
+        //llenar el form de infocalendario 
         public void llenar()
         {
             try
@@ -119,8 +128,6 @@ namespace GerizimZZ.Formularios
                     txbFrmProveedor.Text = prProveedor.ToString();
                     txbIdProveedor.Text = prIdProv.ToString();
                     txbFrmDirProveedor.Text = prDir.ToString();
-
-
                 }
 
 
@@ -128,17 +135,19 @@ namespace GerizimZZ.Formularios
                 com.Dispose();
                 conn.Close();
             }
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.ToString());
             }
         }
-
         private void frmInfoCalendario_Load(object sender, EventArgs e)
         {
             lblfrmfecha.Text = "Ingreso " + fechaIn;
             llenar();
-            //llenarProveedor();
+            
         }
+
+        
+
     }
 }

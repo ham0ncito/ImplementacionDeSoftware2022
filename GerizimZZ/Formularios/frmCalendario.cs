@@ -17,7 +17,8 @@ namespace GerizimZZ.Formularios
     public partial class frmCalendario : Form
     {
         int month, year;
-        List<string> listafechas = new List<string>();
+        public static List<string> listafechas = new List<string>();
+        List<string> listafechascompletas = new List<string>();
         public SqlDataReader read2;
         public static SqlConnection conex2 = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
         public SqlCommand cm;
@@ -63,6 +64,7 @@ namespace GerizimZZ.Formularios
                 Contenedor_dia.Controls.Add(ucempty);
             }
             listafechas.Clear();
+            listafechascompletas.Clear();
             // usercontrol para dias
             for (int i = 0; i<days; i++)
             {
@@ -79,7 +81,6 @@ namespace GerizimZZ.Formularios
                     cm.CommandType = CommandType.Text;
                     DataSet ds = new DataSet();
                     read2 = cm.ExecuteReader();
-                    //read3 = cm.ExecuteReader();
                     var indexcolumna = read2.GetOrdinal("fechaIngreso");
                     bool breaker = false;
                     while(read2.Read())
@@ -99,6 +100,7 @@ namespace GerizimZZ.Formularios
                         {
                             break;
                         }
+                        listafechascompletas.Add(lfecha.ToString());
                         listafechas.Add((lfecha.ToString()).Remove(index));
                     }
                     
@@ -289,29 +291,6 @@ namespace GerizimZZ.Formularios
                 Contenedor_dia.Controls.Add(ucdays);
              }
         }
-        public void llenarinfo()
-        {
-            
-        }
-
-        //private void label5_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        public void seleccioneinfo()
-        {
-            infotexto info = new infotexto();
-            this.panel1.Controls.Add(info);
-            this.panel1.Controls["infotexto"].BringToFront();
-            //infotexto info = new infotexto();
-            //panel1.Controls.Add(info);
-            //infotexto1.cambioinfo("vacio");
-            //infotexto1.BackColor = Color.White;
-            //panel1.ForeColor = Color.White;
-            
-        }
-
 
 
 
