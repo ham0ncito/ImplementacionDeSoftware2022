@@ -16,5 +16,10 @@ namespace GerizimZZ.Formularios
         {
             InitializeComponent();
         }
+
+        private void UserControlEmpty_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

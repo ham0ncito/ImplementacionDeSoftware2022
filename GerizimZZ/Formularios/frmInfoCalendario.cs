@@ -18,14 +18,13 @@ namespace GerizimZZ.Formularios
     {
         // declaracion de variables 
         public SqlDataReader read2;
-        List<string> listafechascom = new List<string>();
         public static SqlConnection conn = new SqlConnection("Data Source =localhost ; Initial Catalog =Gerizim ; Integrated Security = True");
         public SqlCommand com;
         private bool mouseDown;
         private Point lastLocation;
         String fechahora;
         public String fechaIn { get; set; }
-        public String fechaformato { get; set; }
+        public String fechaFormato { get; set; }
         String fechasql;
 
         //llamado en usercontroldays para pasar fecha
@@ -33,7 +32,7 @@ namespace GerizimZZ.Formularios
         {
             InitializeComponent();
             fechaIn = fecha;
-            fechaformato = fechaform;
+            fechaFormato = fechaform;
         }
 
         //funcionalidad boton cerrar
@@ -77,15 +76,16 @@ namespace GerizimZZ.Formularios
             try
             {
                 conn.Open();
-                fechasql = fechaformato + " 00:00:00.000";
-                int initial = fechaformato.IndexOf("-");
-                int last = fechaformato.LastIndexOf("-");
-                String month = fechaformato.Substring(initial + 1, last - initial - 1);
-                String year = fechaformato.Substring(0, 4);
-                String monthday = fechaformato.Substring(initial + 1);
+                fechasql = fechaFormato + " 00:00:00.000";
+                int initial = fechaFormato.IndexOf("-");
+                int last = fechaFormato.LastIndexOf("-");
+                String month = fechaFormato.Substring(initial + 1, last - initial - 1);
+                String year = fechaFormato.Substring(0, 4);
+                String monthday = fechaFormato.Substring(initial + 1);
                 int datsub = monthday.IndexOf("-");
                 string day = monthday.Substring(datsub + 1);
 
+                // declaracion de query sql
                 String sql = "select p.ID_codigoProducto,p.nombreProducto,p.precio_producto,p.cantidadProducto,pr.ID_proveedores ,pr.nombreProveedores , pr.direccionProveedores " +
                     "from Producto p " +
                     "join ProductoProveedores pp " +
@@ -102,7 +102,7 @@ namespace GerizimZZ.Formularios
                 com.CommandType = CommandType.Text;
                 DataSet ds = new DataSet();
                 read2 = com.ExecuteReader();
-                //read3 = cm.ExecuteReader();
+                // obtener las posiciones de los valores a buscar
                 var indexprecio = read2.GetOrdinal("precio_producto");
                 var indexcodigo = read2.GetOrdinal("ID_codigoProducto");
                 var indexnombre = read2.GetOrdinal("nombreProducto");
@@ -111,8 +111,10 @@ namespace GerizimZZ.Formularios
                 var indexnombreproveedor = read2.GetOrdinal("nombreProveedores");
                 var indexdireccion = read2.GetOrdinal("direccionProveedores");
 
+
                 while (read2.Read())
                 {
+                    //sacar el valor de las posiciones
                     var prPro = read2.GetValue(indexprecio);
                     var prNombre = read2.GetValue(indexnombre);
                     var prCod = read2.GetValue(indexcodigo);
@@ -121,6 +123,7 @@ namespace GerizimZZ.Formularios
                     var prIdProv = read2.GetValue(indexid);
                     var prDir = read2.GetValue(indexdireccion);
 
+                    //asignar esos valores a los txtbox
                     txtFrmPrecioProducto.Text = prPro.ToString();
                     txbFrmProducto.Text = prNombre.ToString();
                     txbFrmCodigo.Text = prCod.ToString();
@@ -147,7 +150,9 @@ namespace GerizimZZ.Formularios
             
         }
 
-        
+        private void txbFrmProducto_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "UserControlEmpty";
             this.Size = new System.Drawing.Size(127, 90);
+            this.Load += new System.EventHandler(this.UserControlEmpty_Load);
             this.ResumeLayout(false);
 
         }

@@ -13,8 +13,8 @@ namespace GerizimZZ.Formularios
 {
     public partial class UserControlDays : UserControl
     {
-        String fechadia;
-        String fechaformato;
+        String fechaDia;
+        String fechaFormato;
         public UserControlDays()
         {
             InitializeComponent();
@@ -27,8 +27,8 @@ namespace GerizimZZ.Formularios
         public void days(int numDay, int mes, int año)
         {
             lbdays.Text = numDay + "";
-            fechadia = numDay.ToString() + "/" + mes.ToString() + "/" + año.ToString();
-            fechaformato = año.ToString() + "-" + mes.ToString() + "-" + numDay.ToString();
+            fechaDia = numDay.ToString() + "/" + mes.ToString() + "/" + año.ToString();
+            fechaFormato = año.ToString() + "-" + mes.ToString() + "-" + numDay.ToString();
         }
 
         public void evento(String evento)
@@ -49,14 +49,13 @@ namespace GerizimZZ.Formularios
             
             frmCalendario fmcal = new frmCalendario();
             infotexto infotexto = new infotexto();
-            String texto = "vacio";
 
             if (lbevent.Text != "")
             {
 
-                frmInfoCalendario infocal = new frmInfoCalendario(fechadia,fechaformato);
+                frmInfoCalendario infoCal = new frmInfoCalendario(fechaDia,fechaFormato);
                 
-                infocal.Show();
+                infoCal.Show();
             }
             else
             {

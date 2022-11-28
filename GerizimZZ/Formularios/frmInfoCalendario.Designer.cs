@@ -32,6 +32,7 @@
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.btnMinimizar = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.LogoGerizim = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txbIdProveedor = new System.Windows.Forms.TextBox();
             this.txbFrmDirProveedor = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@
             this.txbFrmCodigo = new System.Windows.Forms.TextBox();
             this.lblfrmfecha = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.LogoGerizim = new System.Windows.Forms.PictureBox();
             this.panel_titlebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).BeginInit();
@@ -121,6 +121,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(605, 328);
             this.panel1.TabIndex = 6;
+            // 
+            // LogoGerizim
+            // 
+            this.LogoGerizim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LogoGerizim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogoGerizim.Image = global::GerizimZZ.Properties.Resources.logoComprimido;
+            this.LogoGerizim.Location = new System.Drawing.Point(462, -1);
+            this.LogoGerizim.Margin = new System.Windows.Forms.Padding(4);
+            this.LogoGerizim.Name = "LogoGerizim";
+            this.LogoGerizim.Size = new System.Drawing.Size(143, 90);
+            this.LogoGerizim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoGerizim.TabIndex = 31;
+            this.LogoGerizim.TabStop = false;
             // 
             // label1
             // 
@@ -214,6 +228,7 @@
             this.txbFrmProducto.ReadOnly = true;
             this.txbFrmProducto.Size = new System.Drawing.Size(265, 23);
             this.txbFrmProducto.TabIndex = 10;
+            this.txbFrmProducto.TextChanged += new System.EventHandler(this.txbFrmProducto_TextChanged);
             // 
             // label3
             // 
@@ -251,20 +266,6 @@
             this.label2.Size = new System.Drawing.Size(98, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Codigo Producto";
-            // 
-            // LogoGerizim
-            // 
-            this.LogoGerizim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LogoGerizim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.LogoGerizim.Image = global::GerizimZZ.Properties.Resources.logoComprimido;
-            this.LogoGerizim.Location = new System.Drawing.Point(462, -1);
-            this.LogoGerizim.Margin = new System.Windows.Forms.Padding(4);
-            this.LogoGerizim.Name = "LogoGerizim";
-            this.LogoGerizim.Size = new System.Drawing.Size(143, 90);
-            this.LogoGerizim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoGerizim.TabIndex = 31;
-            this.LogoGerizim.TabStop = false;
             // 
             // frmInfoCalendario
             // 
