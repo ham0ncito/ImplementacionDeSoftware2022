@@ -33,6 +33,7 @@
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.btnMinimizar = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Calendario = new FontAwesome.Sharp.IconButton();
             this.btnmaterias = new FontAwesome.Sharp.IconButton();
             this.btnenviar = new FontAwesome.Sharp.IconButton();
             this.btnrepartir = new FontAwesome.Sharp.IconButton();
@@ -97,6 +98,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.Calendario);
             this.panel1.Controls.Add(this.btnmaterias);
             this.panel1.Controls.Add(this.btnenviar);
             this.panel1.Controls.Add(this.btnrepartir);
@@ -108,6 +110,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(191, 490);
             this.panel1.TabIndex = 4;
+            // 
+            // Calendario
+            // 
+            this.Calendario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Calendario.BackColor = System.Drawing.Color.LightGray;
+            this.Calendario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Calendario.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Calendario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Calendario.IconChar = FontAwesome.Sharp.IconChar.Calendar;
+            this.Calendario.IconColor = System.Drawing.Color.Black;
+            this.Calendario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Calendario.IconSize = 35;
+            this.Calendario.Location = new System.Drawing.Point(0, 399);
+            this.Calendario.Name = "Calendario";
+            this.Calendario.Padding = new System.Windows.Forms.Padding(10);
+            this.Calendario.Size = new System.Drawing.Size(191, 71);
+            this.Calendario.TabIndex = 10;
+            this.Calendario.Tag = "Inventario";
+            this.Calendario.Text = "Calendario";
+            this.Calendario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Calendario.UseVisualStyleBackColor = false;
+            this.Calendario.Click += new System.EventHandler(this.Calendario_Click);
             // 
             // btnmaterias
             // 
@@ -215,7 +239,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(849, 93);
+            this.pictureBox1.Size = new System.Drawing.Size(849, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -293,5 +317,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Label label2;
+        private FontAwesome.Sharp.IconButton Calendario;
     }
 }
