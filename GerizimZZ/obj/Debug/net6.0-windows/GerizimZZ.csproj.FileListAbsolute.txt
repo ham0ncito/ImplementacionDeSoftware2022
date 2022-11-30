@@ -233,9 +233,7 @@ C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.cs
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Interop.VBIDE.dll
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.ResolveComReference.cache
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Barra_preview.resources
-C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.DetalleVenta.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frAgregarInformacionAviso.resources
-C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frInicioBodega.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmAvisos.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmCliente.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmInventario.resources
@@ -243,16 +241,10 @@ C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Fr
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmPantallaPedido.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmSolicitudInventario.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmUsuario.resources
-C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Inicio.resources
-C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Inventarios.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Mensaje.resources
-C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Opciones.resources
-C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.pantallafactura.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Producto.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Properties.Resources.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.RegistrosVentas.resources
-C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.RegistroVentas.resources
-C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.VentanaInfoProductos.resources
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.csproj.GenerateResource.cache
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.AssemblyInfoInputs.cache
@@ -633,3 +625,27 @@ C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDe
 C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\ref\GerizimZZ.dll
 C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.infotexto.resources
 C:\Users\ENOC ANDRADE\source\repos\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\ImplementacionDeSoftware2022\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmInfoCalendario.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\bin\Debug\net6.0-windows\IronBarCode.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\bin\Debug\net6.0-windows\itextsharp.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Interop.COMAdmin.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\Interop.TxBDD.dll
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Datasets.RegistroVentas.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frCodigoBarra.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmCalendario.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmDetalleVenta.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmDetalleVentaAyuda.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmInfoCalendario.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInicio.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmInicioAyuda.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frInicioBodega.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmInventarios.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmOpciones.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmpantallafactura.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.frmPendientes.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.FrmRepartidores.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.frmVentanaInfoProductos.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Frm_AsignarRepartidor.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.infotexto.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.UserControlDays.resources
+C:\Users\PC\source\repos\NewRepo\GerizimZZ\obj\Debug\net6.0-windows\GerizimZZ.Formularios.UserControlEmpty.resources

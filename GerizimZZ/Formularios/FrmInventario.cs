@@ -48,7 +48,7 @@ namespace GerizimZZ
                 txtCantidadProducto.Text = item.Cells[6].Value.ToString();
                 txtCantidadMinima.Text = item.Cells[7].Value.ToString();
                 txtDescripcionProducto.Text = item.Cells[8].Value.ToString();
-                txtEstadoPRoducto.Text = item.Cells[9].Value.ToString();
+                CmbEstadoProducto.Text = item.Cells[9].Value.ToString();
                 //txtFechaingreso.Text = item.Cells[10].Value.ToString();
                
 
@@ -189,7 +189,7 @@ namespace GerizimZZ
         {
             try
             {
-                if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" || /*txtID_codigoProducto.Text == ""*/ /*||*/ txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
+                if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || CmbEstadoProducto.Text == "" || /*txtID_codigoProducto.Text == ""*/ /*||*/ txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
                 {
                     MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -200,7 +200,7 @@ namespace GerizimZZ
                     //codigo = Convert.ToInt32(txtID_codigoProducto.Text);
                     cantidadproducto = Convert.ToInt32(txtCantidadProducto.Text);
                     cantidadminima = Convert.ToInt32(txtCantidadMinima.Text);
-                    estadoproducto = Convert.ToInt32(txtEstadoPRoducto.Text);
+                    estadoproducto = Convert.ToInt32(CmbEstadoProducto.Text);//Combobox
                     precio_producto = Convert.ToDouble(txtPrecio_producto.Text);
                     pesoproducto = Convert.ToDouble(txtPesoProducto.Text);
                     //cambio de 1
@@ -236,7 +236,7 @@ namespace GerizimZZ
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" /*||*/ /*txtFechaingreso.Text == ""*//* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
+            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || CmbEstadoProducto.Text == "" /*||*/ /*txtFechaingreso.Text == ""*//* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
             {
                 MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -245,7 +245,7 @@ namespace GerizimZZ
                 //codigo = Convert.ToInt32(txtID_codigoProducto.Text);
                 cantidadproducto = Convert.ToInt32(txtCantidadProducto.Text);
                 cantidadminima = Convert.ToInt32(txtCantidadMinima.Text);
-                estadoproducto = Convert.ToInt32(txtEstadoPRoducto.Text);
+                estadoproducto = Convert.ToInt32(CmbEstadoProducto.Text);//ComboBox
                 precio_producto = Convert.ToDouble(txtPrecio_producto.Text);
                 pesoproducto = Convert.ToDouble(txtPesoProducto.Text);
                 productos.Modificar_Producto(codigo, precio_producto, txtNombreProducto.Text, pesoproducto, txtCodigoBarra.Text, txtCodigoCatologo.Text, cantidadproducto, cantidadminima, txtDescripcionProducto.Text, estadoproducto);
@@ -263,7 +263,7 @@ namespace GerizimZZ
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || txtEstadoPRoducto.Text == "" /*|| txtFechaingreso.Text == *//*""*//* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
+            if (txtCantidadMinima.Text == "" || txtCantidadProducto.Text == "" || txtCodigoBarra.Text == "" || txtCodigoCatologo.Text == "" || txtDescripcionProducto.Text == "" || CmbEstadoProducto.Text == "" /*|| txtFechaingreso.Text == *//*""*//* || txtID_codigoProducto.Text == ""*/ || txtNombreProducto.Text == "" || txtPesoProducto.Text == "" || txtPrecio_producto.Text == "")
             {
                 MessageBox.Show("Los campos no pueden ir vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ENOC ANDRADE\\source\\repos\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj": {}
+    "C:\\Users\\PC\\source\\repos\\NewRepo\\GerizimZZ\\GerizimZZ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ENOC ANDRADE\\source\\repos\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj": {
+    "C:\\Users\\PC\\source\\repos\\NewRepo\\GerizimZZ\\GerizimZZ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ENOC ANDRADE\\source\\repos\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\NewRepo\\GerizimZZ\\GerizimZZ.csproj",
         "projectName": "GerizimZZ",
-        "projectPath": "C:\\Users\\ENOC ANDRADE\\source\\repos\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\GerizimZZ\\GerizimZZ.csproj",
-        "packagesPath": "C:\\Users\\ENOC ANDRADE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ENOC ANDRADE\\source\\repos\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\ImplementacionDeSoftware2022\\GerizimZZ\\obj\\",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\NewRepo\\GerizimZZ\\GerizimZZ.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\NewRepo\\GerizimZZ\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ENOC ANDRADE\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

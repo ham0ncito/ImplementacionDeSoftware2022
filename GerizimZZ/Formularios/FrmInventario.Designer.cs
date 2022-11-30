@@ -51,12 +51,12 @@
             this.txtCodigoCatologo = new System.Windows.Forms.TextBox();
             this.txtCantidadProducto = new System.Windows.Forms.TextBox();
             this.txtCantidadMinima = new System.Windows.Forms.TextBox();
-            this.txtEstadoPRoducto = new System.Windows.Forms.TextBox();
             this.txtFechaingreso = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.CmbEstadoProducto = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoGerizim)).BeginInit();
             this.SuspendLayout();
@@ -299,22 +299,6 @@
             this.txtCantidadMinima.TabIndex = 9;
             this.txtCantidadMinima.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadMinima_KeyPress);
             // 
-            // txtEstadoPRoducto
-            // 
-            this.txtEstadoPRoducto.AutoCompleteCustomSource.AddRange(new string[] {
-            "0",
-            "1",
-            "2"});
-            this.txtEstadoPRoducto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtEstadoPRoducto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtEstadoPRoducto.Location = new System.Drawing.Point(858, 502);
-            this.txtEstadoPRoducto.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.txtEstadoPRoducto.Name = "txtEstadoPRoducto";
-            this.txtEstadoPRoducto.PlaceholderText = "1";
-            this.txtEstadoPRoducto.Size = new System.Drawing.Size(151, 25);
-            this.txtEstadoPRoducto.TabIndex = 10;
-            this.txtEstadoPRoducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEstadoPRoducto_KeyPress);
-            // 
             // txtFechaingreso
             // 
             this.txtFechaingreso.Location = new System.Drawing.Point(135, 428);
@@ -367,17 +351,28 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // CmbEstadoProducto
+            // 
+            this.CmbEstadoProducto.FormattingEnabled = true;
+            this.CmbEstadoProducto.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.CmbEstadoProducto.Location = new System.Drawing.Point(858, 505);
+            this.CmbEstadoProducto.Name = "CmbEstadoProducto";
+            this.CmbEstadoProducto.Size = new System.Drawing.Size(151, 26);
+            this.CmbEstadoProducto.TabIndex = 46;
+            // 
             // FrmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 613);
+            this.Controls.Add(this.CmbEstadoProducto);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtFechaingreso);
-            this.Controls.Add(this.txtEstadoPRoducto);
             this.Controls.Add(this.txtCantidadMinima);
             this.Controls.Add(this.txtCantidadProducto);
             this.Controls.Add(this.txtCodigoCatologo);
@@ -437,11 +432,11 @@
         private TextBox txtCodigoCatologo;
         private TextBox txtCantidadProducto;
         private TextBox txtCantidadMinima;
-        private TextBox txtEstadoPRoducto;
         private TextBox txtFechaingreso;
         private Button btnAgregar;
         private Button btnModificar;
         private Button btnEliminar;
         private Button button1;
+        private ComboBox CmbEstadoProducto;
     }
 }

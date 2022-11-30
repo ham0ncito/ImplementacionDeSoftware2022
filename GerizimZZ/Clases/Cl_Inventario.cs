@@ -6,7 +6,7 @@ namespace GerizimZZ.Clases
 {
     internal class Cl_Inventario : Cl_conexiones
     {
-        private SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=Gerizim; Integrated Security=True;");
+        private SqlConnection con = new SqlConnection("Data Source= localhost;Initial Catalog=Gerizim; Integrated Security=True;");
         private int iD_codigoProducto;
         private double precio_producto;
         private string nombreProducto;
